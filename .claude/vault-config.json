@@ -1,0 +1,67 @@
+{
+  "user": {
+    "name": "Соболев Сергей Андреевич",
+    "background": {
+      "roles": ["Разработчик", "Консультант", "Соло-фаундер", "CTO-кофаундер"],
+      "companies": ["AGIents", "Clario", "Dogovor24 (консалтинг)"],
+      "expertise": [
+        "ИИ-агенты",
+        "Автоматизация с ИИ", 
+        "Аналитика продаж",
+        "AI-код-ревью",
+        "RAG системы",
+        "Vector embeddings",
+        "Multi-agent systems",
+        "Go-kratos",
+        "FastAPI",
+        "PHP микросервисы",
+        "PostgreSQL",
+        "NATS"
+      ],
+      "techStack": {
+        "backend": ["Go", "Python", "PHP"],
+        "frameworks": ["go-kratos", "FastAPI", "go-ent"],
+        "frontend": ["React", "Vite", "Tailwind"],
+        "databases": ["PostgreSQL"],
+        "messaging": ["NATS"],
+        "infrastructure": ["VDS", "Self-hosted"]
+      },
+      "timeAllocation": {
+        "AGIents": "10-15 hours/week",
+        "Clario": "10-15 hours/week", 
+        "Dogovor24": "10-15 hours/week"
+      },
+      "team": {
+        "Clario": "6 people (5 devs + 1 PM)",
+        "AGIents": "Solo",
+        "Consulting": "Solo"
+      },
+      "clients": [
+        "Amaks (сеть санаториев) - ИИ-консультант с бронированием, 4/7 санаториев запущено",
+        "SaaS-платформа - AI-код-ревью для PHP микросервисов"
+      ],
+      "interests": ["AGI разработка", "ИИ-платформы", "Консалтинг по ИИ"],
+      "learningsources": [
+        "Matt from Futuretools",
+        "Wes Roth", 
+        "The Neuron",
+        "Medium AI блоги",
+        "Reddit AI сообщества",
+        "Англоязычные AI рассылки"
+      ]
+    },
+    "publicProfile": false
+  },
+  "vaultPath": "/Users/sergeisobolev/Yandex.Disk.localized/AIExpert",
+  "organizationMethod": "Custom AI-focused",
+  "primaryUses": ["разработка", "консалтинг", "исследования", "управление проектами"],
+  "projects": [
+    "AGIents.pro - приоритет, no-code платформа для ИИ-агентов",
+    "Clario - B2B аналитика продаж, командный проект",
+    "Dogovor24 - консалтинг клиента", 
+    "AI-код-ревью - PHP микросервисы, расширение планируется"
+  ],
+  "areas": ["Разработка", "Консалтинг", "Исследования", "Бизнес"],
+  "importedAt": "2026-01-02",
+  "lastUpdated": "2026-01-02"
+}
