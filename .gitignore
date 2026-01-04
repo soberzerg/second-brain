@@ -9,7 +9,6 @@
 firecrawl_config.sh
 
 # Claude files
-CLAUDE.md
 .claude/settings.local.json
 
 # MCP config
