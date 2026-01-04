@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md",
+                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-01-02 Claudesidian - Claude Code + Obsidian"
+              "title": "2026-01-02 Обо мне"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md",
+                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-01-02 Claudesidian - Claude Code + Obsidian"
+              "title": "Backlinks for 2026-01-02 Обо мне"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md",
+                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-01-02 Claudesidian - Claude Code + Obsidian"
+              "title": "Outgoing links from 2026-01-02 Обо мне"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md",
+                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-02 Claudesidian - Claude Code + Obsidian"
+              "title": "Outline of 2026-01-02 Обо мне"
             }
           }
         ]
@@ -171,6 +171,21 @@
   },
   "active": "d576e64aa39b796c",
   "lastOpenFiles": [
+    "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md",
+    "01_Projects/AISobolev - блог buildinpublic/Published Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md",
+    "100_tasks/01_Task/Additional_Sources.md",
+    "100_tasks/01_Task/Additional_Resources.md",
+    "100_tasks/01_Task/Additional_Resources",
+    "100_tasks/01_Task/Task_1_Transcript.pdf",
+    "100_tasks/01_Task/Case_Study_Startsteps.pdf",
+    "100_tasks/00_Welcome/tableofcontents.pdf",
+    "100_tasks/00_Welcome/scripts_-_pdfs_(Overview_Video).pdf",
+    "100_tasks/00_Welcome/HyperlinkedPoster-220509-141519.pdf",
+    "100_tasks/00_Welcome/AllYouNeedtoKnowBeforeGettingStarted-210820-143749.pdf",
+    "100_tasks/01_Task",
+    "100_tasks/00_Welcome",
+    "100_tasks",
+    "01_Projects/AGIents.pro - ИИ-агенты платформа/Week 1 Progress Summary.md",
     "00_Inbox/Daily Review - 2026-01-03.md",
     "01_Projects/AGIents.pro - ИИ-агенты платформа/Research/Competitive Analysis - Synthesis.md",
     "01_Projects/AGIents.pro - ИИ-агенты платформа/Research/Workflow Automation Platforms (with AI Integration).md",
@@ -178,7 +193,6 @@
     "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
     "Годовой план 2026.md",
     "01_Projects/AGIents.pro - ИИ-агенты платформа/Research/Deep Research Query - Competitive Analysis.md",
-    "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md",
     "01_Projects/AGIents.pro - ИИ-агенты платформа/Week 1 Action Checklist.md",
     "01_Projects/AGIents.pro - ИИ-агенты платформа/Google Sheet Template - AGIents Metrics Q1 2026.md",
     "02_Areas/Бизнес-развитие/Профессиональная справка - Сергей Соболев.md",
@@ -193,20 +207,6 @@
     "03_Resources/RAG-системы/RAG from basics to advanced.md",
     "03_Resources/Агенты/AI Agents From Scratch.md",
     "03_Resources/Бизнес-модели/README.md",
-    "03_Resources/RAG-системы/README.md",
-    "03_Resources/Агенты/README.md",
-    "02_Areas/Клиенты/Amaks/Implementation Details.md",
-    "01_Projects/AGIency.pro - ИИ-автоматизация агентство/Case Studies/Кейс Amaks.md",
-    "02_Areas/Клиенты/Amaks",
-    "01_Projects/AGIency.pro - ИИ-автоматизация агентство/Case Studies",
-    "01_Projects/AISobolev - блог buildinpublic/Research",
-    "01_Projects/AISobolev - блог buildinpublic/Published Posts",
-    "01_Projects/AISobolev - блог buildinpublic/Draft Posts",
-    "01_Projects/AISobolev - блог buildinpublic/Daily Progress",
-    "01_Projects/AISobolev - блог buildinpublic/Content Ideas",
-    "01_Projects/AISobolev - блог buildinpublic/Chats",
-    "01_Projects/AISobolev - блог buildinpublic",
-    "02_Areas/Клиенты",
     "OLD_VAULT/Prompts/images/filming.jpeg",
     "OLD_VAULT/Prompts/images/Sales Funnel.png",
     "OLD_VAULT/Prompts/images/Pasted image 20240722023601.png",
