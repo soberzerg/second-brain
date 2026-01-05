@@ -18,49 +18,44 @@
 
 | Проект | Часов | % |
 |--------|-------|---|
-| Dogovor24 | 13h | 29% |
-| AGIents/AGIency | 12h | 27% |
-| Clario | 10h | 22% |
+| Dogovor24 | 13h | 30% |
+| AGIents/AGIency | 13h | 30% |
+| Clario | 10h | 23% |
 | Amaks | 4h | 9% |
-| Blog | 6h | 13% |
-| **Total** | **45h** | **100%** |
+| Blog | 3h | 7% |
+| **Total** | **43h** | **100%** |
 
 ---
 
 ## 📝 AISobolev - Блог buildinpublic
 
-### Goal: 2 posts published
+### Goal: 1 new post + promotion
 
-**Посты на эту неделю:**
+**Статус:**
+- ✅ **Post #1: "Claudesidian"** - опубликован 3 января 2026
+- 📦 **Post #2: "Обо мне"** - отложен на 2-3 недели
 
-#### Post #1: "Claudesidian - Claude Code + Obsidian"
-- [x] Черновик готов
-- [ ] Финальная вычитка
-- [ ] Publish (Monday)
-- [ ] Share в LinkedIn
+**Задачи на эту неделю:**
+
+#### Promotion для опубликованного поста
+- [ ] Share в LinkedIn (Monday)
 - [ ] Share в соцсетях
+- [ ] Engagement мониторинг
 
-**Time estimate:** 2h (finalization + publishing)
+**Time estimate:** 0.5h
 
-#### Post #2: "Обо мне - профессиональная справка"
-- [x] Черновик готов
-- [ ] Финальная вычитка
-- [ ] Publish (Wednesday)
-- [ ] Share в LinkedIn
+#### New Post #2: Выбрать из списка идей
+- [ ] Выбрать тему (AGIents? 100 задач? CustDev?)
+- [ ] Написать черновик
+- [ ] Publish (если успею)
 
-**Time estimate:** 2h (finalization + publishing)
-
-#### Optional: Post #3 или #4
-- [ ] Выбрать тему из списка идей
-- [ ] Написать черновик (если останется время)
-
-**Time estimate:** 2h (если успею)
+**Time estimate:** 2-3h (optional)
 
 ### Setup Tasks
 - [ ] Plausible Analytics setup (если blog URL готов)
-- [ ] ConvertKit setup (after first publish)
+- [ ] ConvertKit setup (after infrastructure ready)
 
-**Total time: 6 hours**
+**Total time: 3 hours** (flexible - can reduce if needed)
 
 ---
 
@@ -306,13 +301,14 @@
 ### Monday (6 января)
 - **Morning:**
   - Google Sheet setup (15 min)
-  - Blog: Publish post #1 "Claudesidian" (2h)
+  - Blog: Promotion post #1 в LinkedIn/соцсетях (30 min)
   - AGIents: Interview script + respondent list (3h)
 - **Afternoon:**
   - Dogovor24: Начать vulnerability reports (3h)
   - Clario: Code conventions audit (1h)
+  - AGIents: Start outreach (30 min)
 
-**Total: 9h**
+**Total: 8h**
 
 ---
 
@@ -330,13 +326,14 @@
 
 ### Wednesday (8 января)
 - **Morning:**
-  - Blog: Publish post #2 "Обо мне" (2h)
   - AGIents: Interview #2 (1h)
+  - AGIents: Interview #3 prep (30 min)
+  - Dogovor24: Vulnerability reports продолжение (2h)
 - **Afternoon:**
   - Clario: LLM/RAG migration работа (4h)
-  - Dogovor24: Vulnerability reports завершение (2h)
+  - Optional: Blog новый пост draft (1h если успею)
 
-**Total: 9h**
+**Total: 8-9h**
 
 ---
 
@@ -390,7 +387,7 @@
 - ✅ Dogovor24 vulnerability reports delivered (8h)
 - ✅ Dogovor24 security guidelines completed (4h)
 - ✅ Amaks база знаний Усть-Качка готова
-- ✅ 2 blog posts published
+- ✅ Blog post #1 "Claudesidian" promotion
 
 **Should Complete (Medium Priority):**
 - ✅ Interview synthesis с insights
@@ -400,7 +397,7 @@
 - ✅ Google Sheet tracking setup
 
 **Nice to Have (Low Priority):**
-- Blog post #3 drafted
+- Blog post #2 drafted (новый пост)
 - Plausible/ConvertKit setup
 - Template prototyping (если успею)
 
@@ -411,10 +408,10 @@
 | Category | Planned | Actual | Delta |
 |----------|---------|--------|-------|
 | Client work (Dogovor24, Amaks) | 17h | - | - |
-| Product work (AGIents) | 12h | - | - |
+| Product work (AGIents) | 13h | - | - |
 | Team work (Clario) | 10h | - | - |
-| Content (Blog) | 6h | - | - |
-| **Total** | **45h** | - | - |
+| Content (Blog) | 3h | - | - |
+| **Total** | **43h** | - | - |
 
 **To track:** Update daily в Google Sheet
 
@@ -422,8 +419,9 @@
 
 ### Key Milestones
 
-- [ ] **Monday:** Blog post #1 live + CustDev outreach started
-- [ ] **Wednesday:** Blog post #2 live + 2 interviews done
+- [x] **Jan 3:** Blog post #1 "Claudesidian" published ✅
+- [ ] **Monday:** CustDev outreach started + blog promotion
+- [ ] **Wednesday:** 2 interviews done
 - [ ] **Friday:** 5 interviews completed + deliverables shipped
 - [ ] **Weekend:** Synthesis done, Week 3 planned
 
@@ -440,10 +438,11 @@
   - MVP Spec updated
 
 ### Blog
-- **Goal:** 2 posts published
+- **Goal:** Promotion + 1 optional new post
 - **Deliverables:**
-  - "Claudesidian" live
-  - "Обо мне" live
+  - ✅ "Claudesidian" published (Jan 3)
+  - Promotion в LinkedIn и соцсетях
+  - Optional: New post (если успею)
   - Build in Public momentum
 
 ### Dogovor24

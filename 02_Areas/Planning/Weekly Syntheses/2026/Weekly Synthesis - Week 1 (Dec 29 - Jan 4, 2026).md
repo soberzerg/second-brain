@@ -262,22 +262,22 @@ AGIents users → Больше кейсов
 
 **What advanced:**
 - ✅ Первый пост написан (Claudesidian)
-- ✅ Второй пост написан (Обо мне)
+- ✅ **Пост "Claudesidian" опубликован 3 января 2026** 🎉
+- ✅ Второй пост написан (Обо мне) - отложен на 2-3 недели
 - ✅ Style Guide создан
 - ✅ Идеи для 8-10 постов
 - ✅ Build in Public journey начат
 
 **What's blocked:**
-- ⚠️ Публикация отложена (finalization needed)
 - ⚠️ Plausible setup (ждет blog URL)
-- ⚠️ ConvertKit setup (ждет first publish)
+- ⚠️ ConvertKit setup (ждет infrastructure ready)
 
 **Next week's focus:**
-1. Publish first post (Claudesidian)
-2. Publish second post (Обо мне)
-3. Setup Plausible analytics
-4. Setup ConvertKit для email list
-5. Write 2 more posts (target: 2/week)
+1. ✅ ~~Publish first post (Claudesidian)~~ - Done Jan 3
+2. Promotion поста в LinkedIn и соцсетях
+3. Optional: Write new post #2 (если успею)
+4. Setup Plausible analytics (если blog URL готов)
+5. Setup ConvertKit для email list (после infrastructure)
 
 ---
 
@@ -738,8 +738,9 @@ By end of next week (Jan 12):
 - ✅ Pricing validated (or adjusted based на feedback)
 - ✅ Top 3 use cases identified
 - ✅ Self-hosted importance quantified
-- ✅ 2-4 blog posts published
-- ✅ Analytics tracking setup
+- ✅ Blog post "Claudesidian" promoted в соцсетях
+- ✅ Optional: 1 new blog post published
+- ✅ Analytics tracking setup (если infrastructure готов)
 - ✅ Templates concept prototyped
 - ✅ MVP Spec updated based on interviews
 - ✅ Confidence: 8/10
