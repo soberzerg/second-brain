@@ -1,4 +1,12 @@
 {
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "node_modules/",
+    "CHANGELOG.md",
+    "CLAUDE-BOOTSTRAP.md",
+    "CLAUDE.md",
+    "CONTRIBUTING.md",
+    "LICENSE"
+  ]
 }

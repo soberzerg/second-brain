@@ -11,14 +11,10 @@
             "id": "d576e64aa39b796c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-01-02 Обо мне"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-01-02 Обо мне"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-01-02 Обо мне"
+              "title": "Outgoing links"
             }
           },
           {
@@ -142,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-02 Обо мне"
+              "title": "Outline"
             }
           }
         ]
@@ -171,6 +164,11 @@
   },
   "active": "d576e64aa39b796c",
   "lastOpenFiles": [
+    "README.md",
+    "CLAUDE.md",
+    "CHANGELOG.md",
+    "2026-01-05.md",
+    "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
     "03_Resources/Бизнес-модели/16 слов - Методика Evaldo Albuquerque.pdf",
     "03_Resources/Бизнес-модели/Методика '16 слов' - Копирайтинг для постов.md",
     "02_Areas/Planning/Weekly Syntheses/2026/Weekly Synthesis - Week 1 (Dec 29 - Jan 4, 2026).md",
@@ -188,7 +186,6 @@
     "01_Projects/Dogovor24 - консалтинг клиента/Security Audits",
     "01_Projects/Dogovor24 - консалтинг клиента/Client Documentation",
     "04_Archive/Daily Reviews/2026/01-January",
-    "04_Archive/Daily Reviews/2026",
     "00_Inbox/INBOX_PROCESSING_PLAN.md",
     "00_Inbox/Dogovor24 Отчёт по анализу безопасности explorer-service.md",
     "00_Inbox/Dogovor24 План дек 2025 - янв 2026.md",
@@ -198,16 +195,12 @@
     "01_Projects/AGIents.pro - ИИ-агенты платформа/Research/Рынок No-Code_Low-Code AI-Платформ для ИИ-агентов и Автоматизации (Россия, 2026).md",
     "OLD_VAULT/AI Assistants.canvas",
     "00_Inbox/Weekly Synthesis - Week 1 (Dec 29 - Jan 4, 2026).md",
-    "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md",
     "100_tasks/README.md",
     "01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md",
     "01_Projects/AISobolev - блог buildinpublic/Published Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md",
     "100_tasks/01_Task/Additional_Sources.md",
     "100_tasks/01_Task/Additional_Resources.md",
     "01_Projects/AGIents.pro - ИИ-агенты платформа/Week 1 Progress Summary.md",
-    "00_Inbox/Daily Review - 2026-01-03.md",
-    "01_Projects/AGIents.pro - ИИ-агенты платформа/Research/Competitive Analysis - Synthesis.md",
-    "01_Projects/AGIents.pro - ИИ-агенты платформа/Research/Workflow Automation Platforms (with AI Integration).md",
     "OLD_VAULT/Prompts/images/filming.jpeg",
     "OLD_VAULT/Prompts/images/Sales Funnel.png",
     "OLD_VAULT/Prompts/images/Pasted image 20240722023601.png",
