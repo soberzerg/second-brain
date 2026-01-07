@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Resources/Бизнес-модели/Методика '16 слов' - Копирайтинг для постов.md",
+                "file": "02_Areas/Planning/Weekly Plans/2026/Week 2 Plan - Jan 6-12, 2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Методика '16 слов' - Копирайтинг для постов"
+              "title": "Week 2 Plan - Jan 6-12, 2026"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03_Resources/Бизнес-модели/Методика '16 слов' - Копирайтинг для постов.md",
+                "file": "02_Areas/Planning/Weekly Plans/2026/Week 2 Plan - Jan 6-12, 2026.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Методика '16 слов' - Копирайтинг для постов"
+              "title": "Backlinks for Week 2 Plan - Jan 6-12, 2026"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03_Resources/Бизнес-модели/Методика '16 слов' - Копирайтинг для постов.md",
+                "file": "02_Areas/Planning/Weekly Plans/2026/Week 2 Plan - Jan 6-12, 2026.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Методика '16 слов' - Копирайтинг для постов"
+              "title": "Outgoing links from Week 2 Plan - Jan 6-12, 2026"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03_Resources/Бизнес-модели/Методика '16 слов' - Копирайтинг для постов.md",
+                "file": "02_Areas/Planning/Weekly Plans/2026/Week 2 Plan - Jan 6-12, 2026.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Методика '16 слов' - Копирайтинг для постов"
+              "title": "Outline of Week 2 Plan - Jan 6-12, 2026"
             }
           }
         ]
@@ -171,6 +171,9 @@
   },
   "active": "1478d557f3450d75",
   "lastOpenFiles": [
+    "02_Areas/Planning/Daily Reviews/2026/01-January/2026-01-07 Daily Review.md.tmp.74679.1767803570820",
+    "02_Areas/Planning/Daily Reviews/2026/01-January/2026-01-07 Daily Review.md.tmp.74679.1767803530014",
+    "03_Resources/Бизнес-модели/Методика '16 слов' - Копирайтинг для постов.md",
     "02_Areas/Planning/Daily Reviews/2026/01-January/2026-01-07 Daily Review.md",
     "02_Areas/Planning/Daily Reviews/2026/01-January/2026-01-07 Daily Review.md.tmp.74679.1767796898744",
     "01_Projects/Clario - ИИ-аналитика продаж/Architecture/Clario Data Architecture Vision.md",
@@ -197,7 +200,6 @@
     "100_tasks/01_Task/Case_Study_Startsteps.md",
     "100_tasks/01_Task/Problems_Brainstorm.md",
     "100_tasks/01_Task/Task_1_Transcript.md",
-    "01_Projects/Dogovor24 - консалтинг клиента/README.md.tmp.45765.1767615126253",
     "01_Projects/Dogovor24 - консалтинг клиента/Security Guidelines/Code Review Template.md",
     "01_Projects/Dogovor24 - консалтинг клиента/Security Guidelines/Security Checklist.md",
     "01_Projects/Dogovor24 - консалтинг клиента/Security Guidelines/Руководство по безопасной разработке.md",
@@ -205,8 +207,6 @@
     "Годовой план 2026.md",
     "README.md",
     "CLAUDE.md",
-    "CHANGELOG.md",
-    "2026-01-05.md",
     "OLD_VAULT/AI Assistants.canvas",
     "OLD_VAULT/Prompts/images/filming.jpeg",
     "OLD_VAULT/Prompts/images/Sales Funnel.png",
