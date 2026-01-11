@@ -23,10 +23,12 @@ Task one is all about identifying both problems, and trends. It's about finding 
 **Identify current trends to spot possible upward swings that you could take advantage of**
 
 **Отправные точки для исследования:**
+
 - Google Trends
 - LinkedIn (особенно важно)
 
 **Ключевой инсайт:**
+
 > The companies hiring the most are in essence, the ones trending.
 
 Это отличная отправная точка для выявления паттернов индустрии или рынка и использования их в дальнейшем.
@@ -39,11 +41,13 @@ Task one is all about identifying both problems, and trends. It's about finding 
 A major prerequisite to deciding on whether or not to invest time and resources into a problem, is to reflect on some fundamental questions outlined here.
 
 **Требования к работе:**
+
 - Dig deep and try to brainstorm a **minimum of 5 answers per question**
 - Это НЕ упражнение на 5 минут
 - Должно подтолкнуть вас к неочевидным решениям
 
 **Критерий валидации:**
+
 > If the answer to any of these basic questions are anything less than promising, then you're likely to have a problem that is also less than promising. In other words: **It's back to step 1.**
 
 ---
@@ -53,18 +57,23 @@ A major prerequisite to deciding on whether or not to invest time and resources 
 В современном ландшафте существуют три типа бизнес-моделей, достигающих успеха:
 
 ### 1. Need Based (На основе потребности)
+
 - Основано на фундаментальной потребности рынка
 
 ### 2. Trend Based (На основе тренда)
+
 - Использует преимущества текущих рыночных трендов
 
 ### 3. Technology Based (На основе технологии)
+
 - Построено на технологической инновации
 
 **Важно:**
+
 > The foundations of these business models are successful because they are **fundamentally problem-based**.
 
 **Ваше решение может покрывать:**
+
 - Только 1 модель
 - 2 модели
 - Идеально: все 3 модели
@@ -96,10 +105,12 @@ Appreciate where you are in the process, and have the subsequent stages in the b
 ## Почему problem-based подход работает
 
 In general, business models have changed a lot due to:
+
 - Data-driven trends
 - Rapid technological developments
 
 **Ключевое преимущество:**
+
 > By fostering a model grounded in solving a problem, you develop a solution that is **easily adaptable to a changing environment**.
 
 ---
