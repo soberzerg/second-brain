@@ -29,6 +29,15 @@
 - Может интегрироваться с AGIency.pro
 - Демонстрация экспертизы в DevOps/код-ревью
 
+## Продуктизация
+
+### Express Security Audit (ESA)
+
+- **Статус:** Validation Phase (с января 2026)
+- Разовая услуга за $200
+- Lean validation через лендинг + трафик
+- См. [[01_Projects/Express Security Audit/README]]
+
 ## Связанные папки
 - `Research/` - исследования по анализу кода
 - `Chats/` - диалоги с Claude по проекту  
