@@ -34,7 +34,8 @@
     "ip": "inbox-processor",
     "ra": "research-assistant",
     "dr": "daily-review",
-    "ws": "weekly-synthesis"
+    "ws": "weekly-synthesis",
+    "yt": "youtube-summary"
   },
   "preferences": {
     "primary_folders": ["00_Inbox", "01_Projects", "02_Areas", "03_Resources"],
