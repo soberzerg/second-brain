@@ -26,18 +26,26 @@ description: Writes engaging posts using top copywriting techniques (hooks, stor
 
 3.  **Draft the Post**:
     - Once the hook is chosen, write the full draft.
-    - **Tone**: Pragmatic, Honest (Build in Public), Creative. Use `resources/style-guide.md` for specific voice, emoji usage, and formatting nuances.
-    - **Structure**:
-      - **Hook** (The chosen one).
-      - **The Slippery Slide**: Short sentences, open loops, connecting logic.
-      - **Body**: Deliver value/content.
-      - **Conclusion/CTA**: Clear next step or thought-provoking ending.
-    - **Formatting**: Use bolding for emphasis, bullet points for lists, and keep paragraphs short.
+    - **Tone**: Builder thinking out loud (not marketing). Use `resources/style-guide.md` for specific voice, emoji usage, and formatting nuances.
+    - **Structure** (Problem → Reframe → Action):
+      - **Hook** (противоречие, интрига, или личная история).
+      - **Problem**: What's wrong with the current situation (personal experience, specifics).
+      - **Reframe**: Why the common wisdom is incomplete (your perspective from experience).
+      - **Action**: What you're doing about it + invitation to dialogue.
+    - **Formatting**:
+      - Short paragraphs (2-4 lines max).
+      - **Bold** for key points, *italic* for accents.
+      - NO парцелляция, NO em-dashes (—).
+      - Accessible to non-technical audience.
 
-4.  **Review**:
-    - Check against the "Slippery Slide" rule: Does every sentence lead to the next?
-    - Check "so what?": Is the value clear?
-    - Check "fluff": Remove generic words ("revolutionary", "innovative", "landscape").
+4.  **Review** (Checklist from style-guide):
+    - ✅ **Hook?** (противоречие, интрига, провокация)
+    - ✅ **Structure?** (Problem → Reframe → Action)
+    - ✅ **Accessible?** (понятно не-технарям, термины объяснены через применение)
+    - ✅ **Personal?** (личный опыт, не теория)
+    - ✅ **No fluff?** (каждое предложение работает, нет воды)
+    - ✅ **Dialogue?** (вопрос или призыв к реакции в конце)
+    - ✅ **Simple?** (без парцелляции и em-dashes, короткие абзацы)
 
 ## Instructions
 
