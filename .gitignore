@@ -30,3 +30,8 @@ pnpm-lock.yaml
 
 # Never commit real API keys
 *_API_KEY
+
+# Media files
+*.mp4
+*.mov
+*.avi
