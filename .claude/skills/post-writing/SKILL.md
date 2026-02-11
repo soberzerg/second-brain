@@ -32,10 +32,17 @@ description: Writes engaging posts using top copywriting techniques (hooks, stor
       - **Problem**: What's wrong with the current situation (personal experience, specifics).
       - **Reframe**: Why the common wisdom is incomplete (your perspective from experience).
       - **Action**: What you're doing about it + invitation to dialogue.
+    - **Viral Formula** (из анализа топовых LinkedIn-постов, февраль 2026):
+      - **Data**: конкретные цифры в первых строках (не "много", а "776 professionals")
+      - **Narrative**: одна конкретная история или момент
+      - **Framework**: модель/структура для понимания (→ стрелки, "Раньше/Сейчас", numbered)
+      - Все три слоя вместе = максимальный reach. Только цифры = сухо. Только история = нет доверия. Только фреймворк = абстрактно.
     - **Formatting**:
-      - Short paragraphs (2-4 lines max).
+      - Short paragraphs (1-2 lines for LinkedIn, 2-4 for Telegram).
+      - → стрелки для списков (LinkedIn не рендерит markdown bullets).
       - **Bold** for key points, *italic* for accents.
       - NO парцелляция, NO em-dashes (—).
+      - NO H2/H3 headers for LinkedIn (они не рендерятся).
       - Accessible to non-technical audience.
 
 4.  **Review** (Checklist from style-guide):
