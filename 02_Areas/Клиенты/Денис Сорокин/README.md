@@ -33,24 +33,152 @@
 ## Технические требования
 
 ### Функционал
-- [ ] База знаний (тренировки, питание, ответы на FAQ)
+- [x] База знаний (тренировки, питание, ответы на FAQ)
 - [ ] Пейволл — проверка подписки перед доступом
 - [ ] Интеграция с платёжной системой
-- [ ] Telegram Bot
+- [x] Telegram Bot
 
 ### Архитектура
 
+Решение состоит из **двух n8n-воркфлоу** + **AGIents.pro** как ИИ-бэкенд:
+
 ```
-[Пользователь] → [Telegram Bot] → [Проверка подписки]
+[Пользователь] → [Telegram Bot] → [Upsert User в PostgreSQL]
                                          ↓
-                              ┌─────────┴─────────┐
-                              ↓                   ↓
-                        [Не оплачено]       [Оплачено]
-                              ↓                   ↓
-                      [Предложение оплаты]  [Доступ к боту]
-                                                  ↓
-                                          [RAG + LLM ответ]
+                                   [Is not /start?]
+                                   ↓ Да          ↓ Нет
+                          [Check Subscription]  [Paywall]
+                                   ↓
+                          [Has Active Sub?]
+                          ↓ Да          ↓ Нет
+                      [Switch]        [Paywall]
+                    ↓ voice    ↓ text
+            [Get Voice]   [Message]
+                    ↓           ↓
+            [Transcribe]        ↓
+                    ↓           ↓
+                [Send to AGIents.pro]
+                        ↓
+              [AGIents обрабатывает]
+                        ↓
+              [Webhook → n8n Response]
+                        ↓
+              [Send Reply to Telegram]
 ```
+
+---
+
+## Техническая реализация (n8n)
+
+### Workflow 1: Denis Sorokin Fitness Bot - Incoming
+
+| Параметр | Значение |
+|----------|----------|
+| **ID** | `0LutIleO0TqsoHeM` |
+| **Статус** | Active |
+| **Нод** | 15 |
+| **Создан** | 2026-02-02 |
+| **Обновлён** | 2026-02-11 |
+
+**Назначение:** Приём входящих сообщений из Telegram, проверка подписки, маршрутизация текст/голос, отправка в AGIents.pro.
+
+#### Поток данных (ноды):
+
+1. **Telegram Trigger** — слушает входящие сообщения (credential: `SorokinBot`)
+2. **Upsert User** — сохраняет/обновляет пользователя в PostgreSQL (таблица `users`): id, username, first_name, last_name, language_code
+3. **Is not /start** — фильтрует команду `/start` → при `/start` сразу отправляет paywall-сообщение
+4. **Check Subscription** — SQL-запрос в PostgreSQL:
+   ```sql
+   SELECT * FROM subscriptions
+   WHERE user_id = $1 AND status = 'active'
+   AND (expires_at IS NULL OR expires_at > NOW()) LIMIT 1
+   ```
+5. **Has Active Subscription** — проверяет, вернулась ли запись (exists)
+   - **True** → Switch (обработка сообщения)
+   - **False** → Send Paywall Message
+6. **Switch** — маршрутизация по типу контента:
+   - **voice** → Get Voice File → Upload to S3 → Yandex STT Start → Wait → Yandex STT Get Result → Extract STT Text → Send to AGIents
+   - **text** → Message (extract text) → Send to AGIents
+7. **Upload to S3** — загрузка аудио в Yandex Object Storage
+   - Бакет: `sorokin`, путь: `voice/<user_id>_<message_id>.ogg`
+   - URL файла: `https://storage.yandexcloud.net/sorokin/voice/...`
+8. **Yandex STT Start** — POST на `https://stt.api.cloud.yandex.net/stt/v3/recognizeFileAsync`
+   - Header: `x-folder-id: ao7vppd2mqbrc01jc0tv`
+   - Body JSON: `uri` (ссылка на S3), `recognitionModel` (model: `general`, audioFormat: `OGG_OPUS`, lang: `ru-RU`)
+   - Ответ: `{ "id": "<operation_id>", "done": false }`
+9. **Wait** — пауза 5 секунд (ожидание обработки)
+10. **Yandex STT Get Result** — GET на `https://stt.api.cloud.yandex.net/stt/v3/getRecognition?operationId=<id>`
+    - Ответ: массив результатов с `final`/`finalRefinement` → `alternatives[].text`
+11. **Extract STT Text** — Code-нода (JS): парсит ответ, собирает текст из `finalRefinement` или `final`
+12. **Send to AGIents** — HTTP POST на `https://app.agients.ru/v1/messengers/webhook/api/...`
+    - Body: `chat_id`, `user_id`, `content` (= `text`), `user_name`
+13. **Send Paywall Message** — Telegram-сообщение о необходимости подписки
+
+#### Credentials:
+- `SorokinBot` (Telegram API)
+- `Postgres account` (PostgreSQL)
+- `Yandex SpeechKit` (Header Auth: `Authorization: Api-Key ...`)
+- `Yandex Object Storage` (S3: endpoint `storage.yandexcloud.net`, бакет `sorokin`)
+
+---
+
+### Workflow 2: Denis Sorokin Fitness Bot - Response
+
+| Параметр | Значение |
+|----------|----------|
+| **ID** | `3EQfffF5e1O3nGoZ` |
+| **Статус** | Active |
+| **Нод** | 2 |
+| **Создан** | 2026-02-02 |
+| **Обновлён** | 2026-02-10 |
+
+**Назначение:** Приём ответа от AGIents.pro и отправка пользователю в Telegram.
+
+#### Поток данных (ноды):
+
+1. **AGIents Webhook** — принимает POST на path `agients-denis-sorokin` с Header Auth
+2. **Send Reply to Telegram** — отправляет ответ пользователю
+   - `chatId` = `body.chat.external_chat_id`
+   - `text` = `body.message.content`
+   - Формат: HTML
+
+#### Credentials:
+- `Header Auth account` (аутентификация входящего вебхука)
+- `SorokinBot` (Telegram API)
+
+---
+
+### Схема БД (PostgreSQL)
+
+#### Таблица `users`
+| Поле | Тип | Описание |
+|------|-----|----------|
+| id | number (PK) | Telegram user ID |
+| username | string | Telegram username |
+| first_name | string | Имя |
+| last_name | string | Фамилия |
+| language_code | string | Код языка |
+| created_at | datetime | Дата создания |
+| updated_at | datetime | Дата обновления |
+
+#### Таблица `subscriptions`
+| Поле | Тип | Описание |
+|------|-----|----------|
+| user_id | number (FK) | Ссылка на users.id |
+| status | string | Статус (`active`) |
+| expires_at | datetime | Дата окончания (NULL = бессрочная) |
+
+---
+
+### Интеграции
+
+| Сервис | Роль |
+|--------|------|
+| **Telegram Bot** | Интерфейс пользователя (credential: SorokinBot) |
+| **PostgreSQL** | Хранение пользователей и подписок |
+| **AGIents.pro** | ИИ-бэкенд (RAG + LLM, база знаний фитнес-тренера) |
+| **Yandex SpeechKit** | Транскрибация голосовых (async API v3, OGG Opus, ru-RU, до 4ч аудио) |
+| **Yandex Object Storage** | Хранение аудио-файлов (S3, бакет `sorokin`, путь `voice/`) |
 
 ### Платёжная интеграция
 - **Провайдер:** _TBD_
@@ -62,7 +190,8 @@
 ## Статус проекта
 
 ### Текущий этап
-**Ожидание материалов** — клиент готовит базу знаний
+
+**MVP запущен** — бот работает с базой знаний через AGIents.pro, пейволл настроен (ссылка на оплату TBD)
 
 ### Чеклист
 
@@ -70,14 +199,15 @@
 - [x] Созвон с Денисом — уточнить детали
 - [x] Логика пейволла (подписка vs разовый)
 - [ ] Интеграция с платёжкой (какой провайдер)
-- [ ] Контент для базы знаний
-- [ ] Дедлайн
+- [x] Контент для базы знаний
+- [x] Дедлайн
 
 #### Разработка
-- [ ] Создать Telegram бота
-- [ ] Настроить RAG для базы знаний
-- [ ] Реализовать пейволл
-- [ ] Интеграция с платёжной системой
+- [x] Создать Telegram бота
+- [x] Настроить RAG для базы знаний
+- [x] Реализовать пейволл (проверка подписки в PostgreSQL)
+- [x] Обработка голосовых сообщений (Yandex SpeechKit)
+- [ ] Интеграция с платёжной системой (ссылка на оплату)
 - [ ] Тестирование
 
 #### Запуск
@@ -99,8 +229,15 @@
 ## История взаимодействий
 
 ### Январь 2026
+
 - **18.01** — Договорённость о проекте, согласован чек 80К + 5К/мес
 - **Week 4** — Запланирован созвон для уточнения требований
+
+### Февраль 2026
+
+- **02.02** — Созданы n8n-воркфлоу (Incoming + Response), настроена интеграция с AGIents.pro
+- **10.02** — Добавлена обработка голосовых сообщений (OpenAI Whisper), обновлена активная версия
+- **11.02** — Документация текущего решения; замена OpenAI Whisper → Yandex SpeechKit STT (async API v3 + S3, без лимита 30 сек)
 
 ---
 
@@ -120,5 +257,5 @@
 
 ---
 
-*Создано: 2026-01-22*
-*Обновлено: 2026-01-22*
+_Создано: 2026-01-22_
+_Обновлено: 2026-02-11_
