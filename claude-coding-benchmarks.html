@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Models — Coding Benchmarks</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f0f13;
+    color: #e0e0e8;
+    padding: 32px;
+    min-height: 100vh;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #c084fc, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+  }
+  .card {
+    background: #1a1a24;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #2a2a3a;
+  }
+  .card.full {
+    grid-column: 1 / -1;
+  }
+  .card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #fff;
+  }
+  .card .desc {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  .chart-wrap {
+    position: relative;
+    height: 320px;
+  }
+  .card.full .chart-wrap {
+    height: 380px;
+  }
+
+  /* Summary Table */
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .summary-table th {
+    text-align: left;
+    padding: 12px 10px;
+    border-bottom: 2px solid #333;
+    color: #aaa;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .summary-table td {
+    padding: 10px;
+    border-bottom: 1px solid #222;
+  }
+  .summary-table tr:hover td {
+    background: #1f1f2f;
+  }
+  .model-name {
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .model-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .score {
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+  }
+  .score.best {
+    color: #4ade80;
+    font-weight: 700;
+  }
+  .score.na {
+    color: #555;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 100px;
+    font-weight: 600;
+    margin-left: 6px;
+  }
+  .badge.new { background: #2d1b69; color: #a78bfa; }
+  .badge.legacy { background: #1b2e1b; color: #6ee7b7; }
+
+  .insight-box {
+    background: linear-gradient(135deg, #1a1030, #151525);
+    border: 1px solid #3b2d6b;
+    border-radius: 12px;
+    padding: 20px 24px;
+    max-width: 1200px;
+    margin: 0 auto 32px;
+  }
+  .insight-box h3 {
+    font-size: 15px;
+    color: #c084fc;
+    margin-bottom: 10px;
+  }
+  .insight-box p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #bbb;
+  }
+  .insight-box strong { color: #e0e0e8; }
+  .footer {
+    text-align: center;
+    font-size: 11px;
+    color: #555;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Claude Models — Сравнение по кодингу</h1>
+<p class="subtitle">SWE-bench Verified · Terminal-Bench 2.0 · Aider Polyglot · Февраль 2026</p>
+
+<!-- Main SWE-bench Chart -->
+<div class="grid">
+  <div class="card full">
+    <h2>SWE-bench Verified — эволюция моделей</h2>
+    <div class="desc">Главный бенчмарк реального кодинга: решение GitHub issues из популярных open-source проектов</div>
+    <div class="chart-wrap">
+      <canvas id="sweChart"></canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Terminal-Bench 2.0</h2>
+    <div class="desc">Агентный кодинг: планирование, shell-команды, отладка</div>
+    <div class="chart-wrap">
+      <canvas id="termChart"></canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Aider Polyglot</h2>
+    <div class="desc">Редактирование кода на нескольких языках</div>
+    <div class="chart-wrap">
+      <canvas id="aiderChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Insight -->
+<div class="insight-box">
+  <h3>Ключевые выводы</h3>
+  <p>
+    <strong>SWE-bench Verified</strong> — главный индикатор прогресса: от 49% (Sonnet 3.5) до 80.8% (Opus 4.6), рост в <strong>1.65×</strong> за 1.5 года.<br>
+    <strong>Terminal-Bench 2.0</strong> — здесь Opus 4.6 лидер (65.4%), значительно опережая Sonnet 4.5 (51%). Этот бенчмарк лучше показывает агентные способности.<br>
+    <strong>Aider Polyglot</strong> — бенчмарк насыщен: топ-модели упираются в потолок ~72%. Менее показателен для новых моделей.<br><br>
+    <strong>Sonnet 3 и Opus 3</strong> не тестировались на SWE-bench Verified и Terminal-Bench — эти бенчмарки появились позже. На Aider Opus 3 показывал 72% — уровень, который новые модели достигают при гораздо лучших результатах на более сложных тестах.
+  </p>
+</div>
+
+<!-- Summary Table -->
+<div class="grid">
+  <div class="card full">
+    <h2>Сводная таблица</h2>
+    <div class="desc">Все модели · Все бенчмарки · Цены за 1M токенов</div>
+    <table class="summary-table">
+      <thead>
+        <tr>
+          <th>Модель</th>
+          <th>Дата</th>
+          <th>SWE-bench Verified</th>
+          <th>Terminal-Bench 2.0</th>
+          <th>Aider Polyglot</th>
+          <th>Input / Output</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="model-name"><span class="model-dot" style="background:#94a3b8"></span>Claude 3 Sonnet<span class="badge legacy">legacy</span></span></td>
+          <td>Mar 2024</td>
+          <td><span class="score na">—</span></td>
+          <td><span class="score na">—</span></td>
+          <td><span class="score">64.9%</span></td>
+          <td>$3 / $15</td>
+        </tr>
+        <tr>
+          <td><span class="model-name"><span class="model-dot" style="background:#a78bfa"></span>Claude 3 Opus<span class="badge legacy">legacy</span></span></td>
+          <td>Mar 2024</td>
+          <td><span class="score na">—</span></td>
+          <td><span class="score na">—</span></td>
+          <td><span class="score">72.0%</span></td>
+          <td>$15 / $75</td>
+        </tr>
+        <tr>
+          <td><span class="model-name"><span class="model-dot" style="background:#60a5fa"></span>Claude 3.5 Sonnet</span></td>
+          <td>Oct 2024</td>
+          <td><span class="score">49.0%</span></td>
+          <td><span class="score na">—</span></td>
+          <td><span class="score">64.0%</span></td>
+          <td>$3 / $15</td>
+        </tr>
+        <tr>
+          <td><span class="model-name"><span class="model-dot" style="background:#38bdf8"></span>Claude 3.7 Sonnet</span></td>
+          <td>Feb 2025</td>
+          <td><span class="score">62.3%</span></td>
+          <td><span class="score na">—</span></td>
+          <td><span class="score">60.4%</span></td>
+          <td>$3 / $15</td>
+        </tr>
+        <tr>
+          <td><span class="model-name"><span class="model-dot" style="background:#f472b6"></span>Claude Sonnet 4.5</span></td>
+          <td>Sep 2025</td>
+          <td><span class="score best">77.2%</span></td>
+          <td><span class="score">51.0%</span></td>
+          <td><span class="score">72.0%</span></td>
+          <td>$3 / $15</td>
+        </tr>
+        <tr>
+          <td><span class="model-name"><span class="model-dot" style="background:#c084fc"></span>Claude Opus 4.6<span class="badge new">новый</span></span></td>
+          <td>Jan 2026</td>
+          <td><span class="score best">80.8%</span></td>
+          <td><span class="score best">65.4%</span></td>
+          <td><span class="score">72.0%</span></td>
+          <td>$15 / $75</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="footer">
+  Источники: Anthropic, Vellum AI, SWE-bench.com, Aider LLM Leaderboards · Данные на февраль 2026
+</div>
+
+<script>
+const colors = {
+  'Claude 3 Sonnet':   '#94a3b8',
+  'Claude 3 Opus':     '#a78bfa',
+  'Claude 3.5 Sonnet': '#60a5fa',
+  'Claude 3.7 Sonnet': '#38bdf8',
+  'Sonnet 4.5':        '#f472b6',
+  'Opus 4.6':          '#c084fc',
+};
+
+Chart.defaults.color = '#888';
+Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+
+// --- SWE-bench Verified ---
+const sweCtx = document.getElementById('sweChart').getContext('2d');
+new Chart(sweCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Claude 3.5 Sonnet\n(Oct 2024)', 'Claude 3.7 Sonnet\n(Feb 2025)', 'Claude Sonnet 4.5\n(Sep 2025)', 'Claude Opus 4.6\n(Jan 2026)'],
+    datasets: [{
+      data: [49.0, 62.3, 77.2, 80.8],
+      backgroundColor: ['#60a5fa', '#38bdf8', '#f472b6', '#c084fc'],
+      borderRadius: 8,
+      borderSkipped: false,
+      barPercentage: 0.6,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => ctx.parsed.y + '%'
+        }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 100,
+        grid: { color: '#1f1f2f' },
+        ticks: {
+          callback: v => v + '%',
+          font: { size: 12 }
+        }
+      },
+      x: {
+        grid: { display: false },
+        ticks: { font: { size: 11 }, maxRotation: 0 }
+      }
+    },
+    animation: {
+      onComplete: function() {
+        const chart = this;
+        const ctx = chart.ctx;
+        ctx.save();
+        ctx.font = 'bold 14px -apple-system, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        chart.data.datasets[0].data.forEach((value, i) => {
+          const meta = chart.getDatasetMeta(0);
+          const bar = meta.data[i];
+          ctx.fillStyle = chart.data.datasets[0].backgroundColor[i];
+          ctx.fillText(value + '%', bar.x, bar.y - 6);
+        });
+        ctx.restore();
+      }
+    }
+  }
+});
+
+// --- Terminal-Bench ---
+const termCtx = document.getElementById('termChart').getContext('2d');
+new Chart(termCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Sonnet 4.5', 'Opus 4.6'],
+    datasets: [{
+      data: [51.0, 65.4],
+      backgroundColor: ['#f472b6', '#c084fc'],
+      borderRadius: 8,
+      borderSkipped: false,
+      barPercentage: 0.5,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: { label: ctx => ctx.parsed.y + '%' }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 80,
+        grid: { color: '#1f1f2f' },
+        ticks: {
+          callback: v => v + '%',
+          font: { size: 12 }
+        }
+      },
+      x: {
+        grid: { display: false },
+        ticks: { font: { size: 12 } }
+      }
+    },
+    animation: {
+      onComplete: function() {
+        const chart = this;
+        const ctx = chart.ctx;
+        ctx.save();
+        ctx.font = 'bold 14px -apple-system, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        chart.data.datasets[0].data.forEach((value, i) => {
+          const meta = chart.getDatasetMeta(0);
+          const bar = meta.data[i];
+          ctx.fillStyle = chart.data.datasets[0].backgroundColor[i];
+          ctx.fillText(value + '%', bar.x, bar.y - 6);
+        });
+        ctx.restore();
+      }
+    }
+  }
+});
+
+// --- Aider Polyglot ---
+const aiderCtx = document.getElementById('aiderChart').getContext('2d');
+new Chart(aiderCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Sonnet 3', 'Opus 3', '3.5 Sonnet', '3.7 Sonnet', 'Sonnet 4.5', 'Opus 4.6'],
+    datasets: [{
+      data: [64.9, 72.0, 64.0, 60.4, 72.0, 72.0],
+      backgroundColor: ['#94a3b8', '#a78bfa', '#60a5fa', '#38bdf8', '#f472b6', '#c084fc'],
+      borderRadius: 6,
+      borderSkipped: false,
+      barPercentage: 0.65,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: { label: ctx => ctx.parsed.y + '%' }
+      }
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 85,
+        grid: { color: '#1f1f2f' },
+        ticks: {
+          callback: v => v + '%',
+          font: { size: 12 }
+        }
+      },
+      x: {
+        grid: { display: false },
+        ticks: { font: { size: 11 }, maxRotation: 0 }
+      }
+    },
+    animation: {
+      onComplete: function() {
+        const chart = this;
+        const ctx = chart.ctx;
+        ctx.save();
+        ctx.font = 'bold 12px -apple-system, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        chart.data.datasets[0].data.forEach((value, i) => {
+          const meta = chart.getDatasetMeta(0);
+          const bar = meta.data[i];
+          ctx.fillStyle = chart.data.datasets[0].backgroundColor[i];
+          ctx.fillText(value + '%', bar.x, bar.y - 4);
+        });
+        ctx.restore();
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>

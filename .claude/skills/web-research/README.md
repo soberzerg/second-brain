@@ -376,8 +376,8 @@ projects: [[связанный проект]]
 
 ### В следующих версиях
 
-- [ ] Reddit API интеграция
-- [ ] X/Twitter API интеграция
+- [x] Reddit API интеграция (см. social-research skill)
+- [x] X/Twitter API интеграция (см. social-research skill)
 - [ ] Google Cloud integration
 - [ ] Batch processing для множественных URL
 - [ ] Advanced filtering и search operators

@@ -427,6 +427,7 @@ mcp__firecrawl__firecrawl_extract({
 - **brainstorming**: Найденные данные для стратегических решений
 - **daily-review**: Включить проведённые исследования в обзор
 - **youtube-summary**: Дополнить видео-выжимки веб-исследованиями
+- **social-research**: X/Twitter и Reddit анализ (Grok + OpenAI APIs)
 
 ## Examples
 

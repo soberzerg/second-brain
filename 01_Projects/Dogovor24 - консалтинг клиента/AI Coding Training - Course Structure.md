@@ -28,13 +28,18 @@
 #### Занятие 1: Введение в ИИ для разработки (2 часа)
 
 **Теория (40 мин):**
+
+- Факты
+  - ~90% of the code for Claude Code is written by Claude Code itself
 - Текущее состояние AI coding в 2026
   - Статистика: 65% разработчиков используют AI weekly
   - Реальные кейсы применения в индустрии
 - Мифы и реальность
   - "AI заменит программистов" vs "AI — инструмент"
   - Когда ИИ помогает, а когда мешает
-- Принцип: ИИ как teammate, не как magic wand
+- Подходы
+  - ❌ Prompt Engineering
+  - ✅ Context Engineering
 - Ограничения и риски
   - Hallucinations
   - Security vulnerabilities
