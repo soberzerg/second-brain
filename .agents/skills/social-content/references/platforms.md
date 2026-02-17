@@ -2,11 +2,11 @@
 
 Detailed strategies for each major social platform.
 
-## LinkedIn
+## LinkedIn (Secondary Platform)
 
 **Best for:** B2B, thought leadership, professional networking, recruiting
 **Audience:** Professionals, decision-makers, job seekers
-**Posting frequency:** 3-5x per week
+**Posting frequency:** 1-2x per week (best content only)
 **Best times:** Tuesday-Thursday, 7-8am, 12pm, 5-6pm
 
 **What works:**
@@ -40,12 +40,54 @@ Detailed strategies for each major social platform.
 
 ---
 
+## Threads
+
+**Best for:** Short-form engagement, daily micro-insights, reaching new Russian-speaking audience
+**Audience:** Начинающие предприниматели, бутстрэпперы, фаундеры
+**Posting frequency:** Daily
+**Best times:** 9-10 утра, 12-13 дня, 19-21 вечера (МСК)
+**Language:** Russian
+
+**What works:**
+- Микро-инсайты из жизни фаундера (одно наблюдение = один пост)
+- Behind-the-scenes: что только что произошло
+- Вопросы, провоцирующие обсуждение
+- Hot takes (короткие провокационные утверждения)
+- Карусели (серия из 3-5 постов на одну тему)
+- Конкретные цифры: выручка, клиенты, метрики
+
+**What doesn't:**
+- Кросс-пост из Telegram (длинный пост, обрезанный до 500 символов)
+- Markdown-форматирование (Threads не поддерживает)
+- Стены текста без пробелов
+- Больше 5 хештегов
+- Generic мотивация ("Верь в себя!")
+- Промо без ценности
+
+**Format tips:**
+- Max 500 символов
+- Plain text only (без bold, italic, code)
+- Одна мысль = один пост
+- Короткие предложения (5-10 слов)
+- Хештеги в конце поста (3-5 штук)
+- Эмодзи как пунктуация (1-2 максимум)
+
+**Algorithm tips:**
+- Ответы в первые 30 минут критичны
+- Отвечайте на каждый комментарий
+- Карусели получают больший охват
+- Регулярность важнее качества — ежедневный пост тренирует алгоритм
+- Вопросы в конце удваивают вовлечённость
+
+---
+
 ## Twitter/X
 
-**Best for:** Tech, media, real-time commentary, community building
-**Audience:** Tech-savvy, news-oriented, niche communities
-**Posting frequency:** 3-10x per day (including replies)
-**Best times:** Varies by audience; test and measure
+**Best for:** International bootstrapper community, building EN authority
+**Audience:** Tech-savvy founders, bootstrappers, indie hackers
+**Posting frequency:** 3-5 tweets/day, 1-2 threads/week
+**Best times:** 9am, 12pm, 5pm EST (US audience)
+**Language:** English
 
 **What works:**
 - Hot takes and opinions

@@ -1,15 +1,16 @@
 ---
 name: post-writing
-description: Writes engaging posts using top copywriting techniques (hooks, storytelling, slippery slide). Use when the user asks to write a post, draft content for social media (LinkedIn, Telegram, Blog), or "rewrite this to be more engaging".
+description: Writes engaging posts using top copywriting techniques (hooks, storytelling, slippery slide). Use when the user asks to write a post, draft content for social media (Telegram, Threads, X, LinkedIn, Blog), or "rewrite this to be more engaging".
 ---
 
 # Post Writing Skill
 
 ## When to use this skill
 
-- User asks to write a post for LinkedIn, Telegram, or Blog.
+- User asks to write a post for Telegram, Threads, X, LinkedIn, or Blog.
 - User wants to rewrite a text to be more engaging or "viral".
 - User mentions specific copywriting techniques (hooks, slippery slide, etc.).
+- User wants to write a short-form post for Threads or X.
 
 ## Workflow
 
@@ -43,6 +44,8 @@ description: Writes engaging posts using top copywriting techniques (hooks, stor
       - **Bold** for key points, *italic* for accents.
       - NO парцелляция, NO em-dashes (—).
       - NO H2/H3 headers for LinkedIn (они не рендерятся).
+      - **Threads:** max 500 символов, plain text (без markdown), 3-5 хештегов, одна мысль на пост.
+      - **X (EN):** 280 символов/твит, English only, threads для длинного формата, hook в первом твите.
       - Accessible to non-technical audience.
 
 4.  **Review** (Checklist from style-guide):
@@ -66,13 +69,13 @@ description: Writes engaging posts using top copywriting techniques (hooks, stor
 
 #### Step 1: Context Gathering
 
-If the user provides a topic (e.g., "Write about AI agents"), do NOT just write. Ask:
+If the user provides a topic (e.g., "Write about bootstrapping"), do NOT just write. Ask:
 
 > "To make this impactful, I need to know:
 >
-> 1. Who is this for? (Engineers, Founders, Investors?)
+> 1. Who is this for? (Aspiring founders, Bootstrappers, Developers turning entrepreneur?)
 > 2. What is the one thing they should remember?
-> 3. Do you have a specific story or data point to include?"
+> 3. Do you have a specific story, revenue number, or client win to include?"
 
 #### Step 2: Hook Generation
 
@@ -81,9 +84,9 @@ _Example output:_
 
 > "Here are 3 hook options regarding [Topic]:
 >
-> 1. **Story Lead**: 'I spent 3 days debugging this error. The solution took 5 minutes.'
-> 2. **Proclamation Lead**: 'Most developers are using AI agents wrong.'
-> 3. **Promise Lead**: 'How to cut your debugging time by 50% using this specific agent workflow.'
+> 1. **Story Lead**: 'I had $47 in my bank account when I signed my first client.'
+> 2. **Proclamation Lead**: 'You don't need a co-founder. You need discipline.'
+> 3. **Promise Lead**: 'How I got my first 3 paying clients in 2 weeks with zero ad budget.'
 >    Which one resonates most with the angle you want to take?"
 
 #### Step 3: Drafting
@@ -118,7 +121,7 @@ _Example output:_
 
 ## Post Templates
 
-### Published Post (Telegram / LinkedIn single-version)
+### Published Post (Telegram single-version)
 
 ```markdown
 # Заголовок поста
@@ -139,17 +142,17 @@ _DD месяц YYYY_
 ```
 
 **Примеры закрытий:**
-- `А вы бы что автоматизировали? 👇`
-- `🤓 если уже работаете с ИИ-агентами 🗿 если пока только сами`
+- `А вы как нашли своего первого клиента? 👇`
+- `🤓 если уже зарабатываете на своём 🗿 если пока в найме`
 - `👍 если да, 👎 если нет`
-- `Вопрос к вам: [открытый вопрос]? 👇`
+- `Вопрос к вам: что вас останавливает от запуска? 👇`
 
 ### Draft Post (с метаданными)
 
 ```markdown
 # Заголовок поста
 
-**Платформа:** Telegram / LinkedIn
+**Платформа:** Telegram / Threads / X / LinkedIn
 **Статус:** Черновик
 **Дата:** YYYY-MM-DD
 **Связанный проект:** [[Название проекта]]
@@ -169,15 +172,29 @@ _DD месяц YYYY_
 
 ---
 
-## Версия для LinkedIn
+## Версия для Telegram (RU)
 
-[Текст: короткие абзацы 1-2 строки, → стрелки для списков, без H2/H3 в самом тексте, без em-dashes]
+[Текст: абзацы 2-4 строки, markdown поддерживается, более неформально]
 
 ---
 
-## Версия для Telegram
+## Версия для Threads (RU)
 
-[Текст: абзацы 2-4 строки, markdown поддерживается, более неформально]
+[Текст: max 500 символов, plain text, 3-5 хештегов, одна мысль]
+
+---
+
+## Версия для X (EN)
+
+[Tweet 1: Hook — under 280 chars, English]
+[Tweet 2-N: Value delivery, one point per tweet]
+[Final tweet: Takeaway + follow CTA]
+
+---
+
+## Версия для LinkedIn (опционально)
+
+[Текст: короткие абзацы 1-2 строки, → стрелки для списков, без H2/H3, без em-dashes]
 ```
 
 ### Structured Post (секции с emoji-заголовками)
@@ -250,3 +267,5 @@ _DD месяц YYYY_
 
 - [Hooks Guide](resources/hooks-guide.md)
 - [Style Guide](resources/style-guide.md)
+- [Threads Guide](resources/threads-guide.md)
+- [X (English) Guide](resources/x-guide.md)
