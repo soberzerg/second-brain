@@ -42,6 +42,8 @@ Detailed strategies for each major social platform.
 
 ## Threads
 
+> **Detailed guide:** See [threads-guide.md](threads-guide.md) for full Threads formatting rules, post types, and examples.
+
 **Best for:** Short-form engagement, daily micro-insights, reaching new Russian-speaking audience
 **Audience:** Начинающие предприниматели, бутстрэпперы, фаундеры
 **Posting frequency:** Daily
@@ -82,6 +84,8 @@ Detailed strategies for each major social platform.
 ---
 
 ## Twitter/X
+
+> **Detailed guide:** See [x-guide.md](x-guide.md) for full X formatting rules, English voice guide, thread structure, and examples.
 
 **Best for:** International bootstrapper community, building EN authority
 **Audience:** Tech-savvy founders, bootstrappers, indie hackers
