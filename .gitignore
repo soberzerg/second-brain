@@ -27,6 +27,8 @@ pnpm-lock.yaml
 
 # Temporary directories
 .tmp/
+tiktok-marketing/
+images/
 
 # Never commit real API keys
 *_API_KEY
