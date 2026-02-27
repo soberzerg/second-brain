@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Areas/Planning/Weekly Plans/2026/Week 2 Plan - Jan 6-12, 2026.md",
+                "file": "CLAUDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 2 Plan - Jan 6-12, 2026"
+              "title": "CLAUDE"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -160,17 +160,34 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false,
+      "obsidian-importer:Open Importer": false
     }
   },
   "active": "1478d557f3450d75",
   "lastOpenFiles": [
+    "01_Projects/Clario/Roadmaps/Clario v2 RoadMap.md",
+    "01_Projects/Clario/PRDs/Meeting Transcription PRD.md",
+    "01_Projects/Clario/PRDs",
+    "01_Projects/Clario/Roadmaps/Clario v2 RoadMap.docx.md",
+    "01_Projects/Clario/Chats/Kuanysh-Sergej-Clario-77cd4c9e-53fa.md",
+    "01_Projects/Clario/Architecture/Clario Data Architecture Vision.md",
+    "01_Projects/Clario/Roadmaps",
+    "01_Projects/Clario/Research",
+    "01_Projects/Clario/README.md",
+    "01_Projects/Clario/Meeting Transcription PRD.md",
+    "01_Projects/Clario/Chats",
+    "01_Projects/Clario/Architecture",
+    "01_Projects/Clario",
+    "100_tasks/README.md",
+    "CLAUDE.md",
+    "02_Areas/Planning/Weekly Plans/2026/Week 2 Plan - Jan 6-12, 2026.md",
     "01_Projects/AISobolev - блог buildinpublic/Published Posts/2026-01-16 Мифы об ИИ-агентах.md",
     "02_Areas/Planning/Weekly Plans/2026/Week 4 Plan - Jan 20-26, 2026.md",
     "02_Areas/Planning/Weekly Syntheses/2026/Weekly Synthesis - Week 3 (Jan 13-18, 2026).md",
@@ -189,27 +206,11 @@
     "03_Resources/CustDev/100 Questions for Customer Development - B2C.md",
     "03_Resources/CustDev",
     "100_tasks/03_Task/Schema.png",
-    "100_tasks/03_Task/Не подтвержден 938434.crdownload",
-    "00_Inbox/custdev_temp/resources/sheet.css",
     "00_Inbox/custdev_temp/resources/image_900254269_0.jpg",
     "00_Inbox/custdev_temp/resources/image_0_0.jpg",
-    "00_Inbox/custdev_temp/resources",
-    "00_Inbox/custdev_temp/B2C.html",
-    "00_Inbox/custdev_temp/B2B.html",
-    "00_Inbox/custdev_temp",
     "100_tasks/03_Task/Task_3_Transcript.md",
     "100_tasks/03_Task/Case_Study_Le_Magasin.md",
     "100_tasks/03_Task/Additional_Sources.md",
-    "100_tasks/04_Task/Task_4_Pain_Points_JTBD.md",
-    "100_tasks/03_Task/Task_3_Select_Problem.md",
-    "02_Areas/Planning/Daily Reviews/2026/01-January/2026-01-12 Daily Review.md",
-    "100_tasks/02_Task/Task_2_Evaluation.md",
-    "100_tasks/02_Task/Task_2_Instructions.md",
-    "02_Areas/Planning/Weekly Plans/2026/Week 3 Plan - Jan 13-19, 2026.md",
-    "02_Areas/Planning/Weekly Syntheses/2026/Weekly Synthesis - Week 2 (Jan 5-11, 2026).md",
-    "100_tasks/01_Task/Problems_Brainstorm.md",
-    "02_Areas/Planning/Weekly Plans/2026/Week 2 Plan - Jan 6-12, 2026.md",
-    "100_tasks/02_Task/Task_2_Transcript.md",
     "OLD_VAULT/AI Assistants.canvas",
     "OLD_VAULT/Prompts/images/filming.jpeg",
     "OLD_VAULT/Prompts/images/Sales Funnel.png",
