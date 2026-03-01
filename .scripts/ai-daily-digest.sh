@@ -1,6 +1,6 @@
 #!/bin/bash
 # AI Daily Digest — automated daily AI news collection from X/Twitter and Reddit
-# Uses Grok API (X), OpenAI API (Reddit), and Anthropic API (synthesis)
+# Uses Grok API (X), Firecrawl API (Reddit), and Anthropic API (synthesis)
 #
 # Usage:
 #   .scripts/ai-daily-digest.sh              # run normally
@@ -8,7 +8,7 @@
 #   .scripts/ai-daily-digest.sh --no-claude  # skip Claude synthesis, save raw
 #   .scripts/ai-daily-digest.sh --dry-run    # show config, don't execute
 #
-# Requires: XAI_API_KEY, OPENAI_API_KEY (for data), ANTHROPIC_API_KEY (for synthesis)
+# Requires: XAI_API_KEY, FIRECRAWL_API_KEY (for data), ANTHROPIC_API_KEY (for synthesis)
 # Install: jq, curl
 
 set -euo pipefail
@@ -16,7 +16,7 @@ set -euo pipefail
 # --- Configuration ---
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 VAULT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-OUTPUT_DIR="$VAULT_DIR/03_Resources/AI Daily Digest"
+OUTPUT_DIR="$VAULT_DIR/500_Research/510_AI_Daily_Digest"
 DATE=$(date +%Y-%m-%d)
 OUTPUT_FILE="$OUTPUT_DIR/$DATE - AI Daily Digest.md"
 TOPICS_FILE="$SCRIPT_DIR/ai-daily-digest-topics.txt"
@@ -80,8 +80,8 @@ if [ -z "${XAI_API_KEY:-}" ]; then
     HAS_X=false
 fi
 
-if [ -z "${OPENAI_API_KEY:-}" ]; then
-    log "WARN" "OPENAI_API_KEY not set — skipping Reddit"
+if [ -z "${FIRECRAWL_API_KEY:-}" ]; then
+    log "WARN" "FIRECRAWL_API_KEY not set — skipping Reddit"
     HAS_REDDIT=false
 fi
 
@@ -114,7 +114,7 @@ if [ "$DRY_RUN" = true ]; then
     echo "Topics:     $TOPICS"
     echo "Output:     $OUTPUT_FILE"
     echo "X/Twitter:  $([ "$HAS_X" = true ] && echo 'YES' || echo 'NO (no XAI_API_KEY)')"
-    echo "Reddit:     $([ "$HAS_REDDIT" = true ] && echo 'YES' || echo 'NO (no OPENAI_API_KEY)')"
+    echo "Reddit:     $([ "$HAS_REDDIT" = true ] && echo 'YES' || echo 'NO (no FIRECRAWL_API_KEY)')"
     echo "Claude:     $([ "$USE_CLAUDE" = true ] && command -v claude &>/dev/null && echo 'YES' || echo 'NO')"
     echo "==============="
     exit 0
@@ -135,110 +135,203 @@ Focus on expert opinions, practitioners, and substantial discussions. Not promot
 Summarize in Russian. Keep technical terms in English.
 Provide links to the most important posts."
 
-REDDIT_PROMPT="site:reddit.com $TOPICS
+# Reddit search queries are defined inline in Phase 2 (Firecrawl)
 
-Find the most discussed Reddit posts from $FROM_DATE to $TO_DATE about AI technology, AI agents, coding with AI, and AI business automation.
-
-For each discussion include:
-- Subreddit name (r/...)
-- Post title and link
-- Summary of the discussion and top comments
-- Key practical takeaways
-
-Focus on practical insights, real experiences, and community consensus.
-Summarize in Russian. Keep technical terms in English."
-
-# --- Phase 1: X/Twitter via Grok API ---
+# --- Phase 1: X/Twitter via Grok API (python3 for Unicode safety) ---
 X_RESULTS=""
 X_URLS=""
 
 if [ "$HAS_X" = true ]; then
     log "INFO" "Fetching X/Twitter via Grok API..."
 
-    X_RAW=$(curl -s -X POST "https://api.x.ai/v1/responses" \
-        -H "Content-Type: application/json" \
-        -H "Authorization: Bearer $XAI_API_KEY" \
-        --max-time 60 \
-        -d "$(jq -n \
-            --arg prompt "$X_PROMPT" \
-            --arg from "$FROM_DATE" \
-            --arg to "$TO_DATE" \
-            '{
-                model: "grok-4-1-fast",
-                tools: [{
-                    type: "x_search",
-                    x_search: {
-                        from_date: $from,
-                        to_date: $to
-                    }
-                }],
-                input: [{role: "user", content: $prompt}]
-            }')" 2>/dev/null) || true
+    export FROM_DATE TO_DATE
+    X_PARSED=$(python3 -c "
+import json, urllib.request, sys, os
 
-    if [ -n "$X_RAW" ]; then
-        # Check for API error
-        API_ERROR=$(echo "$X_RAW" | jq -r '.error // empty' 2>/dev/null) || true
-        if [ -n "$API_ERROR" ]; then
-            log "WARN" "X/Twitter API error: $API_ERROR"
-            HAS_X=false
-        else
-            X_RESULTS=$(echo "$X_RAW" | jq -r '.output[] | select(.type == "message") | .content[] | select(.type == "text") | .text' 2>/dev/null) || true
-            X_URLS=$(echo "$X_RAW" | jq -r '.output[] | select(.type == "message") | .content[] | select(.type == "text") | .annotations[]? | select(.type == "url_citation") | .url' 2>/dev/null) || true
+api_key = os.environ.get('XAI_API_KEY', '')
+prompt = sys.stdin.read()
+from_date = os.environ.get('FROM_DATE', '')
+to_date = os.environ.get('TO_DATE', '')
 
-            if [ -n "$X_RESULTS" ]; then
-                log "INFO" "X/Twitter: Success (${#X_RESULTS} chars)"
-            else
-                log "WARN" "X/Twitter: Empty results"
-                HAS_X=false
-            fi
+payload = {
+    'model': 'grok-4-1-fast',
+    'tools': [{
+        'type': 'x_search',
+        'x_search': {
+            'from_date': from_date,
+            'to_date': to_date
+        }
+    }],
+    'input': [{'role': 'user', 'content': prompt}]
+}
+
+req = urllib.request.Request(
+    'https://api.x.ai/v1/responses',
+    data=json.dumps(payload).encode('utf-8'),
+    headers={
+        'Content-Type': 'application/json',
+        'Authorization': f'Bearer {api_key}'
+    },
+    method='POST'
+)
+
+try:
+    with urllib.request.urlopen(req, timeout=90) as resp:
+        data = json.loads(resp.read().decode('utf-8'))
+except urllib.error.HTTPError as e:
+    body = e.read().decode('utf-8', errors='replace')
+    print(f'ERROR:{body[:200]}')
+    sys.exit(0)
+except Exception as e:
+    print(f'ERROR:{e}')
+    sys.exit(0)
+
+# Check for API error
+api_error = data.get('error')
+if api_error:
+    print(f'ERROR:{api_error}')
+    sys.exit(0)
+
+text_parts = []
+urls = []
+for item in data.get('output', []):
+    if item.get('type') == 'message':
+        for content in item.get('content', []):
+            if content.get('type') == 'text':
+                text_parts.append(content.get('text', ''))
+                for ann in content.get('annotations', []):
+                    if ann.get('type') == 'url_citation':
+                        urls.append(ann.get('url', ''))
+
+text = '\n'.join(text_parts)
+if text:
+    print(f'TEXT:{text}')
+    if urls:
+        print(f'URLS:{chr(10).join(urls)}')
+else:
+    print('ERROR:Empty results')
+" <<< "$X_PROMPT" 2>/dev/null) || true
+
+    if [[ "$X_PARSED" == ERROR:* ]]; then
+        log "WARN" "X/Twitter API: ${X_PARSED#ERROR:}"
+        HAS_X=false
+    elif [[ "$X_PARSED" == TEXT:* ]]; then
+        X_RESULTS="${X_PARSED#TEXT:}"
+        if [[ "$X_RESULTS" == *"URLS:"* ]]; then
+            X_URLS="${X_RESULTS#*URLS:}"
+            X_RESULTS="${X_RESULTS%%URLS:*}"
         fi
+        log "INFO" "X/Twitter: Success (${#X_RESULTS} chars)"
     else
-        log "WARN" "X/Twitter: No response (timeout or network error)"
+        log "WARN" "X/Twitter: Empty or unexpected response"
         HAS_X=false
     fi
 fi
 
-# --- Phase 2: Reddit via OpenAI API ---
+# --- Phase 2: Reddit via Firecrawl Search API ---
 REDDIT_RESULTS=""
 REDDIT_URLS=""
 
 if [ "$HAS_REDDIT" = true ]; then
-    log "INFO" "Fetching Reddit via OpenAI API..."
+    log "INFO" "Fetching Reddit via Firecrawl Search API..."
 
-    REDDIT_RAW=$(curl -s -X POST "https://api.openai.com/v1/responses" \
-        -H "Content-Type: application/json" \
-        -H "Authorization: Bearer $OPENAI_API_KEY" \
-        --max-time 60 \
-        -d "$(jq -n \
-            --arg prompt "$REDDIT_PROMPT" \
-            '{
-                model: "gpt-4o-mini",
-                tools: [{
-                    type: "web_search_preview",
-                    search_context_size: "medium"
-                }],
-                include: ["web_search_call.action.sources"],
-                input: $prompt
-            }')" 2>/dev/null) || true
+    # Read topics into array for per-topic search
+    SEARCH_QUERIES=(
+        "AI agents multi-agent systems site:reddit.com"
+        "Claude Code Cursor AI coding tools site:reddit.com"
+        "GPT Claude Gemini AI model update site:reddit.com"
+        "MCP protocol model context protocol site:reddit.com"
+        "AI startup solopreneur site:reddit.com"
+        "AI business automation site:reddit.com"
+    )
 
-    if [ -n "$REDDIT_RAW" ]; then
-        API_ERROR=$(echo "$REDDIT_RAW" | jq -r '.error.message // empty' 2>/dev/null) || true
-        if [ -n "$API_ERROR" ]; then
-            log "WARN" "Reddit API error: $API_ERROR"
-            HAS_REDDIT=false
-        else
-            REDDIT_RESULTS=$(echo "$REDDIT_RAW" | jq -r '.output[] | select(.type == "message") | .content[] | select(.type == "output_text") | .text' 2>/dev/null) || true
-            REDDIT_URLS=$(echo "$REDDIT_RAW" | jq -r '.output[] | select(.type == "message") | .content[] | .annotations[]? | select(.type == "url_citation") | .url' 2>/dev/null) || true
+    REDDIT_PARSED=$(python3 -c "
+import json, urllib.request, sys, os
 
-            if [ -n "$REDDIT_RESULTS" ]; then
-                log "INFO" "Reddit: Success (${#REDDIT_RESULTS} chars)"
-            else
-                log "WARN" "Reddit: Empty results"
-                HAS_REDDIT=false
-            fi
+api_key = os.environ.get('FIRECRAWL_API_KEY', '')
+queries = json.loads(sys.stdin.read())
+
+all_results = []
+seen_urls = set()
+
+for query in queries:
+    payload = {
+        'query': query,
+        'limit': 5,
+        'scrapeOptions': {
+            'formats': ['markdown'],
+            'onlyMainContent': True
+        }
+    }
+
+    req = urllib.request.Request(
+        'https://api.firecrawl.dev/v1/search',
+        data=json.dumps(payload).encode('utf-8'),
+        headers={
+            'Content-Type': 'application/json',
+            'Authorization': f'Bearer {api_key}'
+        },
+        method='POST'
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+
+        for item in data.get('data', []):
+            url = item.get('url', '')
+            if url in seen_urls:
+                continue
+            if '/r/' not in url or 'developers.reddit.com' in url:
+                continue
+            seen_urls.add(url)
+            all_results.append({
+                'url': url,
+                'title': item.get('title', '').replace(' - Reddit', '').replace(' : r/', ' | r/'),
+                'description': item.get('description', ''),
+                'markdown': (item.get('markdown', '') or '')[:500]
+            })
+    except Exception:
+        continue
+
+if not all_results:
+    print('ERROR:No Reddit posts found via Firecrawl')
+    sys.exit(0)
+
+lines = []
+urls_list = []
+for r in all_results[:15]:
+    lines.append(f'### {r[\"title\"]}')
+    lines.append(f'**Link:** {r[\"url\"]}')
+    if r['description']:
+        lines.append(f'{r[\"description\"]}')
+    if r['markdown']:
+        # Take first meaningful paragraph
+        for para in r['markdown'].split(chr(10)*2):
+            para = para.strip()
+            if len(para) > 50 and not para.startswith('#') and not para.startswith('['):
+                lines.append(f'> {para[:300]}')
+                break
+    lines.append('')
+    urls_list.append(r['url'])
+
+print('TEXT:' + chr(10).join(lines))
+if urls_list:
+    print('URLS:' + chr(10).join(urls_list))
+" <<< "$(printf '%s\n' "${SEARCH_QUERIES[@]}" | jq -R . | jq -s .)" 2>/dev/null) || true
+
+    if [[ "$REDDIT_PARSED" == ERROR:* ]]; then
+        log "WARN" "Reddit: ${REDDIT_PARSED#ERROR:}"
+        HAS_REDDIT=false
+    elif [[ "$REDDIT_PARSED" == TEXT:* ]]; then
+        REDDIT_RESULTS="${REDDIT_PARSED#TEXT:}"
+        if [[ "$REDDIT_RESULTS" == *"URLS:"* ]]; then
+            REDDIT_URLS="${REDDIT_RESULTS#*URLS:}"
+            REDDIT_RESULTS="${REDDIT_RESULTS%%URLS:*}"
         fi
+        log "INFO" "Reddit: Success (${#REDDIT_RESULTS} chars)"
     else
-        log "WARN" "Reddit: No response (timeout or network error)"
+        log "WARN" "Reddit: Unexpected response"
         HAS_REDDIT=false
     fi
 fi
@@ -376,7 +469,7 @@ tags: [daily-digest, ai-news, auto-generated]
 **Период:** $FROM_DATE — $TO_DATE
 **Платформы:** $PLATFORMS
 
-> AI-синтезированный анализ через Grok API (X/Twitter) + OpenAI API (Reddit)$([ "$USE_CLAUDE" = true ] && echo " + Claude (синтез)")
+> AI-синтезированный анализ через Grok API (X/Twitter) + Firecrawl API (Reddit)$([ "$USE_CLAUDE" = true ] && echo " + Claude (синтез)")
 
 ---
 
@@ -385,7 +478,7 @@ $DIGEST_BODY
 ---
 
 *Auto-generated by ai-daily-digest.sh*
-*APIs: Grok API (X/Twitter) + OpenAI web_search (Reddit)$([ "$USE_CLAUDE" = true ] && echo " + Claude SDK (synthesis)")*
+*APIs: Grok API (X/Twitter) + Firecrawl Search (Reddit)$([ "$USE_CLAUDE" = true ] && echo " + Claude SDK (synthesis)")*
 HEREDOC
 
 log "INFO" "Digest saved: $OUTPUT_FILE"
