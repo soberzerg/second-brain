@@ -137,56 +137,48 @@ Provide links to the most important posts."
 
 # Reddit search queries are defined inline in Phase 2 (Firecrawl)
 
-# --- Phase 1: X/Twitter via Grok API (python3 for Unicode safety) ---
+# --- Phase 1: X/Twitter via Grok API (curl + python3 parser) ---
+# Note: urllib is blocked by Cloudflare (error 1010), so we use curl for HTTP
 X_RESULTS=""
 X_URLS=""
 
 if [ "$HAS_X" = true ]; then
     log "INFO" "Fetching X/Twitter via Grok API..."
 
-    export FROM_DATE TO_DATE
-    X_PARSED=$(python3 -c "
-import json, urllib.request, sys, os
-
-api_key = os.environ.get('XAI_API_KEY', '')
+    # Build JSON payload with python3 (safe Unicode handling)
+    X_PAYLOAD=$(python3 -c "
+import json, sys
 prompt = sys.stdin.read()
-from_date = os.environ.get('FROM_DATE', '')
-to_date = os.environ.get('TO_DATE', '')
-
 payload = {
     'model': 'grok-4-1-fast',
-    'tools': [{
-        'type': 'x_search',
-        'x_search': {
-            'from_date': from_date,
-            'to_date': to_date
-        }
-    }],
+    'tools': [{'type': 'x_search', 'x_search': {'from_date': '$FROM_DATE', 'to_date': '$TO_DATE'}}],
     'input': [{'role': 'user', 'content': prompt}]
 }
+print(json.dumps(payload))
+" <<< "$X_PROMPT")
 
-req = urllib.request.Request(
-    'https://api.x.ai/v1/responses',
-    data=json.dumps(payload).encode('utf-8'),
-    headers={
-        'Content-Type': 'application/json',
-        'Authorization': f'Bearer {api_key}'
-    },
-    method='POST'
-)
+    # Call API via curl (bypasses Cloudflare User-Agent block)
+    X_RAW=$(curl -s --max-time 120 \
+        -X POST https://api.x.ai/v1/responses \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer $XAI_API_KEY" \
+        -d "$X_PAYLOAD" 2>/dev/null) || true
+
+    # Parse response with python3
+    X_PARSED=$(python3 -c "
+import json, sys
+
+raw = sys.stdin.read()
+if not raw.strip():
+    print('ERROR:Empty response from API')
+    sys.exit(0)
 
 try:
-    with urllib.request.urlopen(req, timeout=90) as resp:
-        data = json.loads(resp.read().decode('utf-8'))
-except urllib.error.HTTPError as e:
-    body = e.read().decode('utf-8', errors='replace')
-    print(f'ERROR:{body[:200]}')
-    sys.exit(0)
-except Exception as e:
-    print(f'ERROR:{e}')
+    data = json.loads(raw)
+except json.JSONDecodeError:
+    print(f'ERROR:{raw[:200]}')
     sys.exit(0)
 
-# Check for API error
 api_error = data.get('error')
 if api_error:
     print(f'ERROR:{api_error}')
@@ -197,20 +189,20 @@ urls = []
 for item in data.get('output', []):
     if item.get('type') == 'message':
         for content in item.get('content', []):
-            if content.get('type') == 'text':
+            if content.get('type') == 'output_text':
                 text_parts.append(content.get('text', ''))
                 for ann in content.get('annotations', []):
                     if ann.get('type') == 'url_citation':
                         urls.append(ann.get('url', ''))
 
-text = '\n'.join(text_parts)
+text = chr(10).join(text_parts)
 if text:
     print(f'TEXT:{text}')
     if urls:
         print(f'URLS:{chr(10).join(urls)}')
 else:
     print('ERROR:Empty results')
-" <<< "$X_PROMPT" 2>/dev/null) || true
+" <<< "$X_RAW" 2>/dev/null) || true
 
     if [[ "$X_PARSED" == ERROR:* ]]; then
         log "WARN" "X/Twitter API: ${X_PARSED#ERROR:}"
