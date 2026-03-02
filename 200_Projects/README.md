@@ -1,105 +1,48 @@
-# 🎯 Projects
+# Projects
 
-Active initiatives with specific outcomes and deadlines.
+Активные проекты с конкретными целями и результатами.
 
-## Purpose
+## Проекты
 
-Projects are **time-bound efforts** with:
-- Clear objectives and deliverables
-- Defined start and end dates
-- Specific success criteria
-- Measurable outcomes
+| Папка | Проект | Тип | Статус |
+| ----- | ------ | --- | ------ |
+| [[200_Projects/210_AGIency/README\|210_AGIency]] | AGIency.pro | AI-агентство, консалтинг | Активный |
+| [[200_Projects/220_AGIents/README\|220_AGIents]] | AGIents.pro | B2B no-code платформа | Активная разработка |
+| [[200_Projects/230_Clario/README\|230_Clario]] | Clario | ИИ-аналитика продаж | Активная разработка |
+| [[200_Projects/240_MicroSaaS/README\|240_MicroSaaS]] | Микро-SaaS | Эксперименты с продуктами | Исследование |
 
-## What Belongs Here
+## Взаимосвязи проектов
 
-### Good Projects
-- "Q1 2024 Marketing Strategy" ✓
-- "Website Redesign" ✓
-- "Book Writing - AI & Creativity" ✓
-- "Conference Talk - BRXND NYC" ✓
-
-### Not Projects (These go in Areas)
-- "Health" ✗ (ongoing, no end date)
-- "Learning" ✗ (continuous activity)
-- "Team Management" ✗ (ongoing responsibility)
-
-## Project Structure
-
-Each project should have:
 ```
-Project_Name/
-├── README.md           # Project overview and status
-├── Research/          # Background materials
-├── Daily_Progress/    # Log of work sessions
-├── Drafts/           # Work in progress
-├── Resources/        # Supporting documents
-└── Output/          # Final deliverables
+AGIency.pro (агентство)
+    └── использует → AGIents.pro (платформа)
+
+Clario (аналитика продаж)
+    └── отдельный проект, командная разработка
+
+MicroSaaS (эксперименты)
+    ├── 241_AI_code_review
+    ├── 242_TG_Claude_Code_Assistant
+    ├── 243_Carousel_Maker
+    └── 249_Ideas
 ```
 
-## Claude Code Workflows
+## Структура проекта (стандарт)
 
-### Starting a Project
-```
-Create a new project called [name] in 01_Projects.
-Set it up with the standard folder structure.
-I'm in thinking mode - help me define objectives.
-```
+Каждый проект содержит подпапки по схеме `2X1`, `2X2`... где X — номер проекта:
 
-### Project Research
-```
-I'm working on [project name].
-Search my vault for relevant existing notes.
-What connections exist to my other work?
-```
+- `Roadmaps/` — дорожные карты
+- `Research/` — исследования
+- `PRDs/` — спецификации продукта
+- `Leads/` / `Clients/` — лиды и клиенты
+- `Case_Studies/` — кейсы
 
-### Daily Progress
-```
-Create a progress note for today in [project]/Daily_Progress.
-Here's what I accomplished: [summary]
-Questions that came up: [list]
-```
+---
 
-### Project Status
-```
-Review all notes in [project folder].
-What's the current status?
-What are the key insights so far?
-What's left to complete?
-```
+## Связанные разделы
 
-### Project Completion
-```
-Project [name] is complete.
-Create a retrospective covering:
-- Objectives vs outcomes
-- Key learnings
-- What to do differently next time
-Then help me archive it properly.
-```
-
-## Project Lifecycle
-
-1. **Initiation**: Define objectives, success criteria
-2. **Research**: Gather relevant information
-3. **Development**: Daily progress, iterative work
-4. **Review**: Regular status checks
-5. **Completion**: Final output, retrospective
-6. **Archive**: Move to 04_Archive with summary
-
-## Tips for Success
-
-- **Start with clear objectives** - Vague projects never end
-- **Use the template** - Consistency helps Claude Code help you
-- **Log progress daily** - Even "no progress" is worth noting
-- **Review weekly** - Keep projects on track
-- **Complete or kill** - Don't let projects linger
-
-## When to Archive
-
-Move projects to `04_Archive/` when:
-- All objectives are complete
-- The project is cancelled
-- It's been inactive for 30+ days
-- It's transformed into an Area (ongoing)
-
-Always create a summary note before archiving!
+- [[000_Inbox/README|000_Inbox]] — входящие материалы для обработки
+- [[100_Tasks/README|100_Tasks]] — методика "100 задач" для фаундеров
+- [[300_Blog/README|300_Blog]] — блог (проекты = источник контента)
+- [[400_Planning/README|400_Planning]] — планирование
+- [[500_Research/README|500_Research]] — исследования и ресурсы

@@ -259,3 +259,13 @@
 
 *Методика в процессе изучения. Материалы будут дополняться по мере прохождения.*
 *Следующее обновление: после изучения Task 2.*
+
+---
+
+## Связанные разделы
+
+- [[000_Inbox/README|000_Inbox]] — входящие материалы
+- [[200_Projects/README|200_Projects]] — активные проекты (AGIents, Clario, AGIency)
+- [[300_Blog/README|300_Blog]] — блог buildinpublic
+- [[400_Planning/README|400_Planning]] — планирование
+- [[500_Research/README|500_Research]] — исследования и ресурсы

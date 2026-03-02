@@ -1,68 +1,48 @@
-# 📥 Inbox
+# Inbox
 
-Your capture zone for new ideas, quick thoughts, and unprocessed information.
+Зона захвата для новых идей, мыслей и необработанной информации.
 
-## Purpose
+## Назначение
 
-The Inbox is a **temporary** holding area designed for:
-- Quick capture without worrying about organization
-- Daily notes and journaling
-- Web clippings and interesting finds
-- Meeting notes before processing
-- Random thoughts and ideas
+Inbox — это **временное** хранилище для:
 
-## How to Use
+- Быстрого захвата идей без заботы об организации
+- Веб-клиппингов и интересных находок
+- Заметок со встреч до обработки
+- Случайных мыслей и инсайтов
 
-### Daily Workflow
-1. **Capture first, organize later** - Don't slow down to categorize
-2. **Use daily notes** - One note per day for stream of consciousness
-3. **Dump links and quotes** - Save now, process later
-4. **Don't let it pile up** - Process weekly
+## Как использовать
 
-### Weekly Processing
-Every week, review your inbox and:
-- Move project-related notes to `01_Projects/`
-- Move ongoing topics to `02_Areas/`
-- Move reference material to `03_Resources/`
-- Archive completed items to `04_Archive/`
-- Delete what's no longer relevant
+### Принцип
 
-## Claude Code Commands
+**Захватывай сейчас, сортируй потом.** Не замедляйся, чтобы категоризировать.
 
-### Quick Capture
-```
-Create a new note in 00_Inbox called [title] 
-with these thoughts: [content]
-```
+### Обработка (еженедельно)
 
-### Process Inbox
-```
-Review all notes in 00_Inbox.
-Help me decide where each should go 
-based on the PARA method.
-```
+Каждую неделю просматривай Inbox и:
 
-### Find Connections
-```
-Look at recent notes in my inbox.
-What patterns or themes do you see?
-What existing notes might these connect to?
-```
+- Проектные заметки → [[200_Projects/README|200_Projects]]
+- Идеи для контента → [[300_Blog/README|300_Blog]]
+- Исследовательские материалы → [[500_Research/README|500_Research]]
+- Задачи для проработки → [[100_Tasks/README|100_Tasks]]
+- Неактуальное → удалить
 
-## Tips
+## Именование файлов
 
-- **Don't aim for perfection** - The inbox is meant to be messy
-- **Use descriptive filenames** - Makes processing easier
-- **Date your notes** - YYYY-MM-DD format helps with sorting
-- **Link liberally** - Even to notes that don't exist yet
-- **Review regularly** - Don't let items sit for more than 2 weeks
+| Тип | Формат | Пример |
+| --- | ------ | ------ |
+| Быстрые заметки | `YYYY-MM-DD - Тема.md` | `2026-03-02 - Встреча с клиентом.md` |
+| Веб-клипы | `YYYY-MM-DD - Заголовок - Источник.md` | `2026-03-02 - Статья про AGI - ArXiv.md` |
+| Идеи | `Idea - Описание.md` | `Idea - Автоматизация отчётов.md` |
 
-## File Naming
+> Inbox — место, где идеи начинаются, а не живут вечно. Не оставляй заметки дольше 2 недель.
 
-Suggested formats:
-- Daily notes: `2024-03-15.md`
-- Quick captures: `2024-03-15 - Meeting with Team.md`
-- Web clips: `2024-03-15 - Article Title - Source.md`
-- Ideas: `Idea - Brief Description.md`
+---
 
-Remember: The Inbox is where ideas begin, not where they live forever.
+## Связанные разделы
+
+- [[100_Tasks/README|100_Tasks]] — методика "100 задач" для фаундеров
+- [[200_Projects/README|200_Projects]] — активные проекты
+- [[300_Blog/README|300_Blog]] — блог buildinpublic
+- [[400_Planning/README|400_Planning]] — планирование
+- [[500_Research/README|500_Research]] — исследования и ресурсы
