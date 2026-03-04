@@ -35,7 +35,8 @@
     "ra": "research-assistant",
     "dr": "daily-review",
     "ws": "weekly-synthesis",
-    "yt": "youtube-summary"
+    "yt": "youtube-summary",
+    "ad": "ai-digest"
   },
   "preferences": {
     "primary_folders": ["00_Inbox", "01_Projects", "02_Areas", "03_Resources"],
