@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "USER.md",
+                "file": "500_Research/510_AI_Daily_Digest/2026-02-28 - AI Daily Digest.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "USER"
+              "title": "2026-02-28 - AI Daily Digest"
             }
           }
         ]
@@ -172,6 +172,15 @@
   },
   "active": "1478d557f3450d75",
   "lastOpenFiles": [
+    "200_Projects/210_AGIency/215_Case_Studies/Кейс Amaks.md",
+    "400_Planning/Годовой план 2026.md",
+    "500_Research/550_AI/551_Agents/Создание субагентов - полное руководство 2026.md",
+    "200_Projects/220_AGIents/222_Research/Deep Research Query - Competitive Analysis.md",
+    "500_Research/510_AI_Daily_Digest/2026-03-08 - AI Daily Digest.md",
+    "500_Research/510_AI_Daily_Digest/2026-02-28 - AI Daily Digest.md",
+    "README.md",
+    "CLAUDE.md",
+    "USER.md",
     "agents/skills/seo-audit/references/ai-writing-detection.md",
     "agents/skills/seo-audit/references/aeo-geo-patterns.md",
     "agents/skills/schema-markup/references/schema-examples.md",
@@ -189,15 +198,6 @@
     "agents/skills/onboarding-cro/references/experiments.md",
     "agents/skills/marketing-ideas/references/ideas-by-category.md",
     "agents/skills/free-tool-strategy/references/tool-types.md",
-    "agents/skills/email-sequence/references/sequence-templates.md",
-    "agents/skills/email-sequence/references/email-types.md",
-    "agents/skills/email-sequence/references/copy-guidelines.md",
-    "agents/skills/copywriting/references/natural-transitions.md",
-    "agents/skills/copywriting/references/copy-frameworks.md",
-    "agents/skills/copy-editing/references/plain-english-alternatives.md",
-    "agents/skills/competitor-alternatives/references/templates.md",
-    "agents/skills/competitor-alternatives/references/content-architecture.md",
-    "agents/skills/analytics-tracking/references/gtm-implementation.md",
     "agents/skills/seo-audit/references",
     "agents/skills/schema-markup/references",
     "agents/skills/referral-program/references",

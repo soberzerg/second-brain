@@ -7,7 +7,7 @@ echo "=== Vault Statistics ==="
 echo ""
 
 echo "📝 Note Counts:"
-echo "  Inbox:     $(find 00_Inbox -name "*.md" 2>/dev/null | wc -l)"
+echo "  Inbox:     $(find 000_Inbox -name "*.md" 2>/dev/null | wc -l)"
 echo "  Projects:  $(find 01_Projects -name "*.md" 2>/dev/null | wc -l)"
 echo "  Areas:     $(find 02_Areas -name "*.md" 2>/dev/null | wc -l)"
 echo "  Resources: $(find 03_Resources -name "*.md" 2>/dev/null | wc -l)"

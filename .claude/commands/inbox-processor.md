@@ -1,14 +1,14 @@
 # Inbox Processor
 
-Help organize and process items in the 00_Inbox folder according to the PARA
+Help organize and process items in the 000_Inbox folder according to the PARA
 method.
 
 ## Task
 
-Review all notes in `00_Inbox/` and help categorize them:
+Review all notes in `000_Inbox/` and help categorize them:
 
 1. **Scan the Inbox**
-   - List all files currently in 00_Inbox
+   - List all files currently in 000_Inbox
    - Exclude README.md and Welcome.md
 
 2. **Analyze Each Item**
