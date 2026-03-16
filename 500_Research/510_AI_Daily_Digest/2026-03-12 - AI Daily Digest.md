@@ -1,0 +1,71 @@
+---
+type: ai-daily-digest
+date: 2026-03-12
+platforms: [X/Twitter]
+period: 2026-03-11 — 2026-03-12
+status: completed
+tags: [daily-digest, ai-news, auto-generated]
+---
+
+# AI Daily Digest — 2026-03-12
+
+**Период:** 2026-03-11 — 2026-03-12
+**Платформы:** X/Twitter
+
+> AI-синтезированный анализ через Grok API (X/Twitter) + Firecrawl API (Reddit) + Claude (синтез)
+
+---
+
+## X/Twitter Highlights
+
+### Ключевые новости и обсуждения по AI за 11–12 марта 2026
+
+За указанный период доминируют обсуждения вокруг **Claude Code**, **MCP protocol** (Model Context Protocol), **tool use** и **function calling** в экосистеме Anthropic. Значимых обновлений по GPT, Gemini или новым моделям не зафиксировано. Фокус на критике и защите MCP как стандарта для подключения AI agents к внешним инструментам, а также новое фича Claude для интерактивных диаграмм. Выбраны посты с высокой вовлеченностью (от 800+ лайков), от экспертов (Anthropic, YC, AI-разработчики).[[1]](https://x.com/i/status/2032124273587077133)[[2]](https://x.com/i/status/2032110850853487096)[[3]](https://x.com/i/status/2031887459085377887)
+
+- **@claudeai**  
+  Ключевой пост: "Claude can now build interactive charts and diagrams, directly in the chat. Available today in beta on all plans, including free." (Видео-демо).  
+  Почему notable: Официальное обновление Claude — улучшение **tool use** для визуализации данных в чате, ускоряет data exploration и AI coding tools. 1100+ лайков, 26000+ просмотров, 145 реплаев.  
+  Ссылка: [https://x.com/claudeai/status/2032124273587077133](https://x.com/claudeai/status/2032124273587077133)[[1]](https://x.com/i/status/2032124273587077133)
+
+- **@garrytan** (президент Y Combinator)  
+  Ключевой пост: "MCP sucks honestly. It eats too much context window and you have to toggle it on and off and the auth sucks. I got sick of Claude in Chrome via MCP and vibe coded a CLI wrapper for Playwright..."  
+  Почему notable: Критика **MCP protocol** от топ-инвестора в AI startups (3000+ лайков, 900k просмотров). Подчеркивает проблемы auth, context bloat; упоминает **vibe coding** как альтернативу для **autonomous AI**. Запустил дискуссию о CLI vs MCP.[[4]](https://x.com/i/status/2032128000918241432)  
+  Ссылка: [https://x.com/garrytan/status/2031910564344262988](https://x.com/garrytan/status/2031910564344262988)
+
+- **@RhysSullivan** (разработчик agents @opencode)  
+  Ключевой пост: "MCP sucking is a harness problem, not an MCP problem. MCP unlocks behavior that is fundamentally impossible to get via CLI or APIs... your agent writes code to progressively discover and call tools." (Тред с видео).  
+  Почему notable: Защита MCP как протокола для **multi-agent** и **tool use**; 1000+ лайков, дискуссия с экспертами (@thdxr, @mitsuhiko из xAI/Meta). Уникальный взгляд на execution layer для function calling. 236k просмотров.[[5]](https://x.com/i/status/2032047284230209579)  
+  Ссылка: [https://x.com/RhysSullivan/status/2031928761369931981](https://x.com/RhysSullivan/status/2031928761369931981)
+
+- **@dsp_** (Technical Staff @AnthropicAI)  
+  Ключевой пост: "Claude Cowork works because it’s connects to your services via MCP. Your Slack Claude Code plugin works because of MCP. A common auth standard is hugely valuable..." (Цитирует @RhysSullivan).  
+  Почему notable: Эксперт Anthropic подтверждает роль MCP в **Claude Code** и **AI business automation** (auth standard). 139 лайков, контекст из внутренней практики.  
+  Ссылка: [https://x.com/dsp_/status/2032047284230209579](https://x.com/dsp_/status/2032047284230209579)
+
+- **@enesakar** (cofounder @context7ai, @upstash)  
+  Ключевой пост: "Announcing Context7 CLI! MCP isn't the only way anymore. Now any AI agent can pull docs with Context7 — just the CLI and the find-docs skill." (Демо-видео).  
+  Почему notable: Альтернатива MCP для **AI agents** и docs retrieval; 800+ лайков от practitioners. Показывает эволюцию **tool use** за пределы MCP.  
+  Ссылка: [https://x.com/enesakar/status/2031887459085377887](https://x.com/enesakar/status/2031887459085377887)[[3]](https://x.com/i/status/2031887459085377887)
+
+### Общий тренд
+MCP под огнем: критика за security, context usage (Perplexity отходит), но ценится для **autonomous AI systems** и integrations (CRM, Slack). **Claude Code** — ключевой инструмент для **AI coding tools** и **solopreneur** workflows. Нет упоминаний **no-code AI platforms** или bootstrapping specifics. Обсуждения фокусируются на production readiness **function calling**.[[6]](https://x.com/i/status/2032103214561034676)
+
+
+### Источники X
+- https://x.com/i/status/2032124273587077133
+- https://x.com/i/status/2032110850853487096
+- https://x.com/i/status/2031887459085377887
+- https://x.com/i/status/2032124273587077133
+- https://x.com/i/status/2032128000918241432
+- https://x.com/i/status/2032047284230209579
+- https://x.com/i/status/2031887459085377887
+- https://x.com/i/status/2032103214561034676
+
+---
+
+
+
+---
+
+*Auto-generated by ai-daily-digest.sh*
+*APIs: Grok API (X/Twitter) + Firecrawl Search (Reddit) + Claude SDK (synthesis)*
