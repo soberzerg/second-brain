@@ -21,7 +21,7 @@ Anthropic выпустили Anthropic Academy: Claude Code in Action, MCP Proto
 
 Кто освоит сейчас, будет строить инфраструктуру. Остальные будут пользоваться чужой.
 
-anthropic.com/learn
+[anthropic.com/learn](https://anthropic.skilljar.com/)
 
 #ai #mcp #claudecode #агенты #anthropic
 
