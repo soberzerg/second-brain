@@ -2,7 +2,7 @@
 type: post
 date: 2026-03-10
 platform: telegram
-status: draft
+status: published
 series: "Вайб-кодинг для бизнеса"
 funnel_role: прогрев к консалтингу
 tags: [вайб-кодинг, claude-code, бенчмарки, инструменты]
