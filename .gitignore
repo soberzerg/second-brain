@@ -39,3 +39,6 @@ images/
 *.mp4
 *.mov
 *.avi
+
+slidev/
+generated_imgs/
