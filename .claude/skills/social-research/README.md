@@ -68,8 +68,8 @@
 
 ### Пути
 
-- **По умолчанию:** `03_Resources/Social Research/`
-- **Проектные:** `01_Projects/[Проект]/Research/`
+- **По умолчанию:** `500_Research/520_Social_Research/`
+- **Проектные:** `200_Projects/[Проект]/Research/`
 
 ### Naming Convention
 

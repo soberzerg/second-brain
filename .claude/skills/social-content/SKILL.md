@@ -122,15 +122,16 @@ _Example output:_
 
 Build content around 3-5 pillars aligned with expertise and audience:
 
-| Pillar | % of Content | Topics |
-|--------|--------------|--------|
-| Industry insights | 30% | Trends, data, predictions |
-| Behind-the-scenes | 25% | Building the company, lessons learned |
-| Educational | 25% | How-tos, frameworks, tips |
-| Personal | 15% | Stories, values, hot takes |
-| Promotional | 5% | Product updates, offers |
+| Pillar            | % of Content | Topics                                |
+| ----------------- | ------------ | ------------------------------------- |
+| Industry insights | 30%          | Trends, data, predictions             |
+| Behind-the-scenes | 25%          | Building the company, lessons learned |
+| Educational       | 25%          | How-tos, frameworks, tips             |
+| Personal          | 15%          | Stories, values, hot takes            |
+| Promotional       | 5%           | Product updates, offers               |
 
 For each pillar, ask:
+
 1. What unique perspective do you have?
 2. What questions does your audience ask?
 3. What content has performed well before?
@@ -139,15 +140,16 @@ For each pillar, ask:
 
 ### Content Calendar Structure
 
-| Day | Telegram | Threads | X (EN) | LinkedIn |
-|-----|----------|---------|--------|----------|
-| Mon | Industry insight | Micro-insight | Thread | — |
-| Tue | Behind-scenes | Hot take | Engagement | — |
-| Wed | Educational | Question | Tips tweet | Best of week |
-| Thu | Story post | Behind-scenes | Thread | — |
-| Fri | Hot take | Data point | Engagement | — |
+| Day | Telegram         | Threads       | X (EN)     | LinkedIn     |
+| --- | ---------------- | ------------- | ---------- | ------------ |
+| Mon | Industry insight | Micro-insight | Thread     | —            |
+| Tue | Behind-scenes    | Hot take      | Engagement | —            |
+| Wed | Educational      | Question      | Tips tweet | Best of week |
+| Thu | Story post       | Behind-scenes | Thread     | —            |
+| Fri | Hot take         | Data point    | Engagement | —            |
 
 **Batching Strategy (2-3 hours weekly):**
+
 1. Review content pillar topics
 2. Write 3-5 Telegram posts
 3. Write daily Threads posts
@@ -159,15 +161,16 @@ For each pillar, ask:
 
 Turn one piece of content into many:
 
-| Source | → Platform | Format |
-|--------|-----------|--------|
-| Telegram post | → Threads | Extract one key insight, 500 chars |
-| Telegram post | → X (EN) | Rewrite as thread or hot take |
+| Source        | → Platform | Format                                        |
+| ------------- | ---------- | --------------------------------------------- |
+| Telegram post | → Threads  | Extract one key insight, 500 chars            |
+| Telegram post | → X (EN)   | Rewrite as thread or hot take                 |
 | Telegram post | → LinkedIn | Adapt formatting (→ arrows, short paragraphs) |
-| Blog article | → Telegram | Key insight + personal take |
-| Blog article | → X | Thread of key takeaways |
+| Blog article  | → Telegram | Key insight + personal take                   |
+| Blog article  | → X        | Thread of key takeaways                       |
 
 **Workflow:**
+
 1. Create pillar content (Telegram deep post or blog)
 2. Extract 3-5 key insights
 3. Adapt to each platform (format and tone)
@@ -209,12 +212,14 @@ Turn one piece of content into many:
 ### Optimization Actions
 
 **If engagement is low:**
+
 - Test new hooks (see resources/hooks-guide.md)
 - Post at different times
 - Try different formats
 - Increase engagement with others
 
 **If reach is declining:**
+
 - Avoid external links in post body
 - Increase posting frequency
 - Engage more in comments
@@ -253,10 +258,10 @@ Instead of guessing, analyze what's working:
 
 ### Paths
 
-- **Drafts RU:** `01_Projects/AISobolev - блог buildinpublic/Draft Posts/RU/`
-- **Drafts EN:** `01_Projects/AISobolev - блог buildinpublic/Draft Posts/EN/`
-- **Published RU:** `01_Projects/AISobolev - блог buildinpublic/Published Posts/RU/`
-- **Published EN:** `01_Projects/AISobolev - блог buildinpublic/Published Posts/EN/`
+- **Drafts RU:** `300_Blog/350_Draft_Posts/351_RU`
+- **Drafts EN:** `300_Blog/350_Draft_Posts/352_EN`
+- **Published RU:** `300_Blog/360_Published_Posts/361_RU/`
+- **Published EN:** `300_Blog/360_Published_Posts/362_EN/`
 
 ### When saving the post
 
@@ -286,6 +291,7 @@ _DD месяц YYYY_
 ```
 
 **Примеры закрытий:**
+
 - `А вы как нашли своего первого клиента? 👇`
 - `🤓 если уже зарабатываете на своём 🗿 если пока в найме`
 - `👍 если да, 👎 если нет`
@@ -411,6 +417,7 @@ funnel_role: прогрев к лид-магниту / услуге
 ```
 
 **Ключевые правила:**
+
 - Пост диагностирует, а НЕ лечит (не давай готовое решение)
 - Покажи результат, но не раскрывай процесс
 - CTA сегментирует аудиторию (реакции вместо "напишите в личку")
