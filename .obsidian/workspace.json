@@ -16,8 +16,21 @@
               "icon": "lucide-git-fork",
               "title": "Граф"
             }
+          },
+          {
+            "id": "a3dbb75504b031c0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "примечания к выпуску 1.12.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,7 +103,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_Areas/Planning/Weekly Plans/2026/Week 2 Plan - Jan 6-12, 2026.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +112,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Week 2 Plan - Jan 6-12, 2026"
+              "title": "Обратные ссылки"
             }
           },
           {
@@ -109,12 +121,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_Areas/Planning/Weekly Plans/2026/Week 2 Plan - Jan 6-12, 2026.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Week 2 Plan - Jan 6-12, 2026"
+              "title": "Исходящие ссылки"
             }
           },
           {
@@ -124,12 +135,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
+                "useHierarchy": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Теги"
             }
           },
           {
@@ -138,13 +149,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_Areas/Planning/Weekly Plans/2026/Week 2 Plan - Jan 6-12, 2026.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Week 2 Plan - Jan 6-12, 2026"
+              "title": "Структура"
             }
           }
         ]
@@ -166,54 +176,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "1478d557f3450d75",
+  "active": "a3dbb75504b031c0",
   "lastOpenFiles": [
-    "300_Blog/350_Draft_Posts/351_RU/claude-code-folder-guide.md",
-    "300_Blog/360_Published_Posts/361_RU/2026-03-23 GSD + ECC - собери свой пайплайн.md",
-    "500_Research/580_Web_Research",
-    "500_Research/510_AI_Daily_Digest/2026-03-20 - AI Daily Digest.md",
-    "500_Research/510_AI_Daily_Digest/2026-03-19 - AI Daily Digest.md",
-    "500_Research/510_AI_Daily_Digest/2026-03-18 - AI Daily Digest.md",
-    "300_Blog/350_Draft_Posts/351_RU/2026-03-20 Claude Code Channels из Telegram.md",
-    "500_Research/520_Social_Research/2026-03-23 - X Twitter Authors Research for AISobolev.md",
-    "500_Research/530_YouTube/2026-03-02 - The ULTIMATE Claude Code Tutorial - 27 Co....md",
-    "300_Blog/350_Draft_Posts/351_RU/2026-03-23 GSD + ECC - собери свой пайплайн.md",
-    "500_Research/510_AI_Daily_Digest/2026-02-28 - AI Daily Digest.md",
-    "200_Projects/210_AGIency/215_Case_Studies/Кейс Amaks.md",
-    "400_Planning/Годовой план 2026.md",
-    "500_Research/550_AI/551_Agents/Создание субагентов - полное руководство 2026.md",
-    "200_Projects/220_AGIents/222_Research/Deep Research Query - Competitive Analysis.md",
-    "500_Research/510_AI_Daily_Digest/2026-03-08 - AI Daily Digest.md",
     "README.md",
     "CLAUDE.md",
-    "USER.md",
-    "agents/skills/seo-audit/references/ai-writing-detection.md",
-    "agents/skills/seo-audit/references/aeo-geo-patterns.md",
-    "agents/skills/schema-markup/references/schema-examples.md",
-    "agents/skills/referral-program/references/program-examples.md",
-    "agents/skills/referral-program/references/affiliate-programs.md",
-    "agents/skills/programmatic-seo/references/playbooks.md",
-    "agents/skills/pricing-strategy/references/tier-structure.md",
-    "agents/skills/pricing-strategy/references/research-methods.md",
-    "agents/skills/seo-audit/references",
-    "agents/skills/schema-markup/references",
-    "agents/skills/referral-program/references",
-    "agents/skills/programmatic-seo/references",
-    "agents/skills/pricing-strategy/references",
-    "agents/skills/prd/resources",
-    "agents/skills/paywall-upgrade-cro/references",
-    "agents/skills/paid-ads/references",
-    "agents/skills/page-cro/references",
-    "100_Tasks/003_Task/Schema.png",
-    "100_Tasks/103_Task/Schema.png",
-    "100_tasks/103_Task/Schema.png",
-    "300_Blog/390_Images/lobster_ai_agent_1772211924832.png",
-    "300_Blog/390_Images/ai_agent_tiktok_viral_1772211743985.png",
-    "300_AISobolev/390_Images/lobster_ai_agent_1772211924832.png",
-    "300_AISobolev/390_Images/ai_agent_tiktok_viral_1772211743985.png",
-    "300_AISobolev/190_Images/lobster_ai_agent_1772211924832.png",
-    "300_AISobolev/190_Images/ai_agent_tiktok_viral_1772211743985.png",
-    "100_AISobolev/190_Images/ai_agent_tiktok_viral_1772211743985.png",
-    "OLD_VAULT/AI Assistants.canvas"
+    "USER.md"
   ]
 }

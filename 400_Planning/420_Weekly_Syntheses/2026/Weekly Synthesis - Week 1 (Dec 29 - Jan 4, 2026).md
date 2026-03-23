@@ -554,7 +554,7 @@ AGIents users → Больше кейсов
 
 ### Orphaned Notes
 - **None identified** - PARA структура работает хорошо
-- Все материалы в соответствующих папках (01_Projects, 02_Areas, 03_Resources)
+- Все материалы в соответствующих папках (200_Projects, 400_Planning, 500_Research)
 
 **Action:** Continue PARA discipline
 

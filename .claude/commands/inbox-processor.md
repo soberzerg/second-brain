@@ -17,10 +17,11 @@ Review all notes in `000_Inbox/` and help categorize them:
    - Suggest appropriate destination
 
 3. **Categorization Rules**
-   - **→ 01_Projects**: Has deadline, specific outcome
-   - **→ 02_Areas**: Ongoing responsibility, no end date
-   - **→ 03_Resources**: Reference material, knowledge
-   - **→ 04_Archive**: Old/completed, no longer active
+   - **→ 200_Projects**: Has deadline, specific outcome
+   - **→ 100_Tasks**: Actionable task with clear outcome
+   - **→ 500_Research**: Reference material, knowledge
+   - **→ 300_Blog**: Content ideas, drafts, research for blog
+   - **→ 400_Planning**: Plans, syntheses, daily notes
    - **→ Delete**: No value, redundant, or temporary
 
 4. **Suggest Actions**

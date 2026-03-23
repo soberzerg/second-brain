@@ -33,7 +33,7 @@ from pathlib import Path
 FIRECRAWL_API_URL = "https://api.firecrawl.dev/v1/scrape"
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent
-OUTPUT_DIR = PROJECT_DIR / "01_Projects" / "AGIency.pro - ИИ-автоматизация агентство" / "Prospecting"
+OUTPUT_DIR = PROJECT_DIR / "200_Projects" / "210_AGIency" / "Prospecting"
 CSV_FILE = OUTPUT_DIR / "sanatoriums_russia.csv"
 PROGRESS_FILE = SCRIPT_DIR / ".scrape-sanatoriums-progress.json"
 
