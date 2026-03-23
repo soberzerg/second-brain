@@ -9,8 +9,8 @@
 
 - ✓ **Inbox полностью очищен** - все 4 элемента обработаны и распределены
 - ✓ **Clario v2 документация организована**
-  - Data Architecture Vision → `01_Projects/Clario/Architecture/`
-  - v2 RoadMap → `01_Projects/Clario/Roadmaps/`
+  - Data Architecture Vision → `200_Projects/230_Clario/Architecture/`
+  - v2 RoadMap → `200_Projects/230_Clario/Roadmaps/`
 - ✓ **Dogovor24 security audit** (authorization-service) добавлен в коллекцию
 - ✓ **Структура папок проектов** улучшена (новые папки Architecture, Roadmaps)
 - ✓ **Amaks фиксы выполнены** - issues в 4 санаториях исправлены

@@ -76,8 +76,8 @@ video_title: "Build Your First AI Marketing Team (Claude Skills Tutorial)"
 
 ## Связанные темы
 
-- [[01_Projects/AGIents.pro]] - применить подход Skills Library для экспертизы агентов
-- [[01_Projects/AGIency.pro]] - упаковка клиентских навыков в плагины для быстрого развёртывания
+- [[200_Projects/220_AGIents]] - применить подход Skills Library для экспертизы агентов
+- [[200_Projects/210_AGIency]] - упаковка клиентских навыков в плагины для быстрого развёртывания
 
 ## Заметки
 

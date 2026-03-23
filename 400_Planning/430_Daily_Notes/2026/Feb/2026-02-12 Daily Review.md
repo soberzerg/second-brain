@@ -116,5 +116,5 @@ extra_wins: 2
 ## Related Notes
 
 - [[Week 7 Plan - Feb 10-16, 2026]]
-- [[01_Projects/AGIency.pro - ИИ-автоматизация агентство/Prospecting/sanatoriums_russia.csv]]
-- [[02_Areas/Клиенты/Денис Сорокин/README.md]]
+- [[200_Projects/210_AGIency/Prospecting/sanatoriums_russia.csv]]
+- [[200_Projects/210_AGIency/216_Clients/Денис Сорокин/README.md]]

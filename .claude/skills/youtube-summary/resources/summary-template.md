@@ -190,8 +190,8 @@ video_title: "Building AI Agents with Claude MCP"
 
 ## Связанные темы
 
-- [[01_Projects/AGIents.pro/README.md]] - применить MCP архитектуру
-- [[03_Resources/ИИ-технологии/RAG-системы]] - упоминается в контексте knowledge base для агентов
+- [[200_Projects/220_AGIents/README.md]] - применить MCP архитектуру
+- [[500_Research/550_AI/RAG-системы]] - упоминается в контексте knowledge base для агентов
 
 ---
 

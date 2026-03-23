@@ -96,7 +96,7 @@
 
 **Шаг 1: Использовать Niche Navigator промпт (1 час)**
 
-1. Открыть `/03_Resources/Бизнес-модели/StartUP.md`
+1. Открыть `/500_Research/560_Business_Models/StartUP.md`
 2. Найти промпт "Niche Navigator"
 3. Запустить с вашими навыками:
    ```
@@ -198,7 +198,7 @@
 
 **Результат:** Первый контент опубликован, начинается тестирование Blog Traffic tracking
 
-**Файл:** `/01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md`
+**Файл:** `/300_Blog/350_Draft_Posts/2026-01-02 Claudesidian - Claude Code + Obsidian.md`
 
 ---
 
@@ -218,7 +218,7 @@
    - Готовы ли платить за платформу?
 3. Начать outreach (цель: 10 интервью в январе)
 
-**Связанный файл:** `/03_Resources/Бизнес-модели/Применение GIST к AGIents.md` (Week 1 Tasks)
+**Связанный файл:** `/500_Research/560_Business_Models/Применение GIST к AGIents.md` (Week 1 Tasks)
 
 ---
 
@@ -236,7 +236,7 @@
 
 **Цель Q1:** 2 поста/неделю
 
-**Файл:** `/01_Projects/AISobolev - блог buildinpublic/Draft Posts/2026-01-02 Обо мне.md`
+**Файл:** `/300_Blog/350_Draft_Posts/2026-01-02 Обо мне.md`
 
 ---
 

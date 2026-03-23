@@ -4,13 +4,6 @@ Helper scripts for vault automation and web content capture.
 
 ## Available Scripts
 
-### Attachment Management
-
-These are primarily called via npm/pnpm commands in package.json:
-
-- `update-attachment-links.js` - Updates note links after moving attachments
-- `fix-renamed-links.js` - Fixes links after renaming files
-
 ### Web Content Capture
 
 **Note**: These scripts require API keys to function:
@@ -35,8 +28,8 @@ Scrapes multiple URLs and auto-generates filenames.
 .scripts/firecrawl-batch.sh <url1> <url2> <url3>
 
 # Custom output directory
-.scripts/firecrawl-batch.sh -o 01_Projects/Research/ <url1> <url2>
-.scripts/firecrawl-batch.sh --output-dir 03_Resources/Articles/ <url1> <url2>
+.scripts/firecrawl-batch.sh -o 200_Projects/Research/ <url1> <url2>
+.scripts/firecrawl-batch.sh --output-dir 500_Research/ <url1> <url2>
 ```
 
 ### Transcript Extraction
@@ -50,24 +43,28 @@ Extracts transcripts from YouTube videos.
 .scripts/transcript-extract.sh <youtube-url>
 
 # Custom output directory
-.scripts/transcript-extract.sh <youtube-url> 01_Projects/Research/
+.scripts/transcript-extract.sh <youtube-url> 500_Research/540_Transcriptions/
+```
+
+### Vault Statistics
+
+#### vault-stats.sh
+
+Shows basic stats about your Obsidian vault.
+
+```bash
+pnpm vault:stats
 ```
 
 ## NPM Scripts
 
 Run these from the vault root with `pnpm`:
 
-| Command                        | Description                           |
-| ------------------------------ | ------------------------------------- |
-| `attachments:list`             | Show first 20 unprocessed attachments |
-| `attachments:count`            | Count unprocessed attachments         |
-| `attachments:organized`        | Count files in Organized folder       |
-| `attachments:unprocessed`      | Same as count                         |
-| `attachments:refs <file>`      | Find references to a specific file    |
-| `attachments:sizes`            | Show 20 largest attachment files      |
-| `attachments:orphans`          | Find unreferenced attachments         |
-| `attachments:recent`           | Show files added in last 7 days       |
-| `attachments:create-organized` | Create the Organized subfolder        |
+| Command          | Description                          |
+| ---------------- | ------------------------------------ |
+| `vault:stats`    | Show vault statistics                |
+| `digest:daily`   | Run AI daily digest                  |
+| `digest:today`   | Force run today's AI digest          |
 
 ## Setup Requirements
 

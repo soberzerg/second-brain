@@ -117,9 +117,9 @@ Claude Code нативно интегрирован с Git для:
 
 ## Связанные материалы
 
-- [[03_Resources/ИИ-технологии/Boris Cherny - Claude Code Development Workflow.md]] - та же философия минимализма
-- [[01_Projects/TG Claude Code Assistant/masterplan.md]] - применить per-model routing
-- [[01_Projects/AGIents.pro - ИИ-агенты платформа/README.md]] - концепция task-to-model маппинга
+- [[500_Research/550_AI/Boris Cherny - Claude Code Development Workflow.md]] - та же философия минимализма
+- [[200_Projects/240_MicroSaaS/242_TG_Claude_Code_Assistant/masterplan.md]] - применить per-model routing
+- [[200_Projects/220_AGIents/README.md]] - концепция task-to-model маппинга
 
 ---
 

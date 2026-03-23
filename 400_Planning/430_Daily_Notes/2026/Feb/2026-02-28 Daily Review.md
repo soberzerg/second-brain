@@ -110,7 +110,7 @@ focus: "Выйти с 0 на 300/мес на своём продукте"
 
 ## Related Notes
 
-- [[01_Projects/AGIency.pro - ИИ-автоматизация агентство/]]
-- [[01_Projects/Clario - ИИ-аналитика продаж/]]
-- [[01_Projects/Dogovor24 - консалтинг клиента/]]
-- [[01_Projects/AISobolev - блог buildinpublic/]]
+- [[200_Projects/210_AGIency/]]
+- [[200_Projects/230_Clario/]]
+- [[200_Projects/210_AGIency/211_Консалтинг/]]
+- [[300_Blog/]]

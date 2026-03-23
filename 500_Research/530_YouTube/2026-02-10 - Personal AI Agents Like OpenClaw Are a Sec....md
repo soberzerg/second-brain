@@ -88,9 +88,9 @@ video_title: "Personal AI Agents Like OpenClaw Are a Security Nightmare"
 
 > Ссылки на другие заметки в vault
 
-- [[01_Projects/AGIents.pro - ИИ-агенты платформа/README.md]] - критически важно учесть уроки безопасности при разработке платформы агентов
-- [[01_Projects/TG Claude Code Assistant/masterplan.md]] - применить best practices безопасности для API-ключей и навыков
-- [[03_Resources/ИИ-технологии/Boris Cherny - Claude Code Development Workflow.md]] - сравнить подход к безопасности в Claude Code vs OpenClaw
+- [[200_Projects/220_AGIents/README.md]] - критически важно учесть уроки безопасности при разработке платформы агентов
+- [[200_Projects/240_MicroSaaS/242_TG_Claude_Code_Assistant/masterplan.md]] - применить best practices безопасности для API-ключей и навыков
+- [[500_Research/550_AI/Boris Cherny - Claude Code Development Workflow.md]] - сравнить подход к безопасности в Claude Code vs OpenClaw
 
 ## Заметки
 

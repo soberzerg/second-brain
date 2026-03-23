@@ -23,7 +23,7 @@
 
 1. Найдёт топ-5 источников через Firecrawl
 2. Извлечёт ключевые моменты
-3. Сохранит в `03_Resources/Web Research/`
+3. Сохранит в `500_Research/580_Web_Research/`
 4. Предложит углубиться в конкретный источник
 
 ### Парсинг страницы
@@ -96,10 +96,10 @@
 
 ### Пути
 
-- **Общие исследования**: `03_Resources/Web Research/`
-- **Проектные исследования**: `01_Projects/[Проект]/Research/`
-- **Конкуренты**: `01_Projects/[Проект]/Research/Competitors/`
-- **Кейсы**: `03_Resources/Web Research/Case Studies/`
+- **Общие исследования**: `500_Research/580_Web_Research/`
+- **Проектные исследования**: `200_Projects/[Проект]/Research/`
+- **Конкуренты**: `200_Projects/[Проект]/Research/Competitors/`
+- **Кейсы**: `500_Research/580_Web_Research/Case Studies/`
 
 ### Naming Convention
 
@@ -183,7 +183,7 @@ projects: [[связанный проект]]
 - Ключевые разделы docs
 - Community best practices
 - Комплексный research документ
-- Сохранено в `01_Projects/AGIents.pro/Research/`
+- Сохранено в `200_Projects/220_AGIents/Research/`
 
 ### 2. Конкурентный анализ
 
@@ -199,7 +199,7 @@ projects: [[связанный проект]]
 - Сравнительная таблица
 - Gaps & opportunities
 - Рекомендации по позиционированию
-- Сохранено в `01_Projects/AGIents.pro/Research/Competitors/`
+- Сохранено в `200_Projects/220_AGIents/Research/Competitors/`
 
 ### 3. Сбор кейсов для блога
 
@@ -231,7 +231,7 @@ projects: [[связанный проект]]
 - Новые инструменты
 - Интересные статьи
 - Применимость для проектов
-- Сохранено в `03_Resources/Web Research/Weekly Trends/`
+- Сохранено в `500_Research/580_Web_Research/Weekly Trends/`
 
 ## Tool Selection
 
@@ -344,8 +344,8 @@ projects: [[связанный проект]]
 
 ### Куда сохраняются результаты?
 
-- По умолчанию: `03_Resources/Web Research/`
-- Если связано с проектом: `01_Projects/[Проект]/Research/`
+- По умолчанию: `500_Research/580_Web_Research/`
+- Если связано с проектом: `200_Projects/[Проект]/Research/`
 - Автоматически определяется из контекста
 
 ### Можно ли использовать без команды?

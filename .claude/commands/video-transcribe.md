@@ -1,6 +1,6 @@
 ---
 description: Транскрибировать локальное видео и создать заметку с расшифровкой и анализом
-argument-hint: <путь к видеофайлу или пустое для поиска в 05_Attachments/>
+argument-hint: <путь к видеофайлу или пустое для поиска в 000_Inbox/>
 allowed-tools: Bash, Write, Glob, Read, AskUserQuestion
 ---
 
@@ -24,14 +24,14 @@ allowed-tools: Bash, Write, Glob, Read, AskUserQuestion
 3. Если файл не найден или формат не поддерживается — сообщи об ошибке с указанием поддерживаемых форматов
 
 **Если $ARGUMENTS пустой:**
-1. Найди видеофайлы в `05_Attachments/` используя Glob:
-   - `05_Attachments/**/*.mp4`
-   - `05_Attachments/**/*.mov`
-   - `05_Attachments/**/*.avi`
-   - `05_Attachments/**/*.mkv`
-   - `05_Attachments/**/*.webm`
-   - `05_Attachments/**/*.m4v`
-   - `05_Attachments/**/*.flv`
+1. Найди видеофайлы в `000_Inbox/` используя Glob:
+   - `000_Inbox/**/*.mp4`
+   - `000_Inbox/**/*.mov`
+   - `000_Inbox/**/*.avi`
+   - `000_Inbox/**/*.mkv`
+   - `000_Inbox/**/*.webm`
+   - `000_Inbox/**/*.m4v`
+   - `000_Inbox/**/*.flv`
 2. Если найден **один файл** — используй его
 3. Если найдено **несколько** — покажи список через `AskUserQuestion` с именами и размерами файлов, дай выбрать
 4. Если **ни одного** — попроси пользователя указать путь вручную
@@ -246,8 +246,8 @@ duration: "[HH:MM:SS]"
 ```
 
 Сохрани файл:
-1. Проверь существует ли папка `03_Resources/Transcriptions/` (используй Glob)
-2. Имя файла: `03_Resources/Transcriptions/YYYY-MM-DD - [Название].md`
+1. Проверь существует ли папка `500_Research/540_Transcriptions/` (используй Glob)
+2. Имя файла: `500_Research/540_Transcriptions/YYYY-MM-DD - [Название].md`
    - Название: описательное, на основе содержимого (или из имени видеофайла)
    - Очисти от спецсимволов: `/ \ : * ? " < > |`
    - Максимум 50 символов, если длиннее — обрежь и добавь `...`

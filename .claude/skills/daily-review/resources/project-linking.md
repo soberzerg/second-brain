@@ -15,32 +15,28 @@
 ### Priority Projects
 
 1. **[[AGIents.pro]]** - B2B no-code платформа для ИИ-агентов
-   - Path: `01_Projects/AGIents.pro/`
+   - Path: `200_Projects/220_AGIents/`
    - Key areas: API Development, MVP, Client Integration
 
 2. **[[Clario]]** - B2B ИИ-аналитика продаж
-   - Path: `01_Projects/Clario/`
+   - Path: `200_Projects/230_Clario/`
    - Key areas: Analytics Module, Team Coordination, Architecture
 
 3. **[[AGIency.pro]]** - Агентство ИИ-автоматизации
-   - Path: `01_Projects/AGIency.pro/`
+   - Path: `200_Projects/210_AGIency/`
    - Key areas: Client Projects (Amaks), Automation Implementations
 
 4. **[[AI-код-ревью система]]** - Кастомная система код-ревью
-   - Path: `01_Projects/AI-код-ревью система/`
+   - Path: `200_Projects/240_MicroSaaS/241_AI_code_review/`
    - Key areas: PHP Review, System Improvements, Dogovor24 Integration
 
 5. **[[AISobolev - блог buildinpublic]]** - Личный блог
-   - Path: `01_Projects/AISobolev - блог buildinpublic/`
+   - Path: `300_Blog/`
    - Key areas: Draft Posts, Published Posts, Content Ideas
 
 6. **[[Express Security Audit]]** - Продуктизация AI-код-ревью
-   - Path: `01_Projects/Express Security Audit/`
+   - Path: `200_Projects/210_AGIency/212_Express_Security_Audit/`
    - Key areas: Landing Page, Validation, Marketing
-
-7. **[[TG Claude Code Assistant]]** - Telegram бот для Claude Code
-   - Path: `01_Projects/TG Claude Code Assistant/`
-   - Key areas: Architecture, MVP Development, Integration
 
 ## Linking Strategy
 
@@ -156,10 +152,10 @@
 
 ```bash
 # Find all notes in project directory
-ls -la "01_Projects/[Project Name]/"
+ls -la "200_Projects/[Project Name]/"
 
 # Search for mentions in project notes
-grep -r "keyword" "01_Projects/[Project Name]/"
+grep -r "keyword" "200_Projects/[Project Name]/"
 ```
 
 ### By Date
@@ -177,7 +173,7 @@ find . -name "*.md" -mtime -7
 Use Obsidian search or Grep tool:
 ```
 pattern: "API endpoints"
-path: 01_Projects/AGIents.pro/
+path: 200_Projects/220_AGIents/
 ```
 
 ## Frontmatter Integration

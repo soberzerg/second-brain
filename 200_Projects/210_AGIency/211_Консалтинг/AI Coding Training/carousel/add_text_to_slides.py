@@ -5,7 +5,7 @@ import textwrap
 import math
 
 # Paths
-PROJECT_DIR = "/Users/sergeisobolev/Brains/second-brain/01_Projects/Dogovor24 - консалтинг клиента/AI Coding Training"
+PROJECT_DIR = "/Users/sergeisobolev/Brains/second-brain/200_Projects/210_AGIency/211_Консалтинг/AI Coding Training"
 
 # Text Content Mapping (from Presentation MD)
 SLIDE_TEXTS = {

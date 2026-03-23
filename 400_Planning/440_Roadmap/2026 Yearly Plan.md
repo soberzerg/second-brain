@@ -47,9 +47,9 @@ AGIents платформа → Создает кейсы для блога
 **Недели 1-2:**
 - Конкурентный анализ (использовать промпт "Niche Navigator" из [[StartUP]])
 - Миграция материалов:
-  - [[AI Agents From Scratch]] → `/03_Resources/Агенты/`
-  - [[RAG from basics to advanced]] → `/03_Resources/RAG-системы/`
-  - [[Product development framework]] → `/03_Resources/Бизнес-модели/`
+  - [[AI Agents From Scratch]] → `/500_Research/550_AI/551_Agents/`
+  - [[RAG from basics to advanced]] → `/500_Research/550_AI/`
+  - [[Product development framework]] → `/500_Research/560_Business_Models/`
 
 **Недели 3-4:**
 - Определить MVP функционал через **GIST Framework**
@@ -469,9 +469,9 @@ AGIents платформа → Создает кейсы для блога
 ## 📁 Связанные материалы
 
 ### Проекты
-- [[AGIents.pro - ИИ-агенты платформа/README|AGIents.pro README]]
-- [[AISobolev - блог buildinpublic/STYLE_GUIDE|Блог Style Guide]]
-- [[AISobolev - блог buildinpublic/Content Ideas/Первые идеи постов|Content Ideas]]
+- [[200_Projects/220_AGIents/README|AGIents.pro README]]
+- [[300_Blog/STYLE_GUIDE|Блог Style Guide]]
+- [[300_Blog/310_Content_Ideas/Первые идеи постов|Content Ideas]]
 
 ### Материалы из OLD_VAULT
 - [[Product development framework]] - GIST Framework

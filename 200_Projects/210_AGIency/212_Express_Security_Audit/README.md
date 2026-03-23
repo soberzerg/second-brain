@@ -200,8 +200,8 @@ AI-анализ + экспертная проверка.
 
 - [[100_tasks/01_Task/Problems_Brainstorm]] — источник идеи
 - [[100_tasks/02_Task/Task_2_Evaluation]] — оценка проблемы #7
-- [[01_Projects/AI-код-ревью система/README]] — базовый инструмент
-- [[01_Projects/Dogovor24 - консалтинг клиента/README]] — proof of concept
+- [[200_Projects/240_MicroSaaS/241_AI_code_review/README]] — базовый инструмент
+- [[200_Projects/210_AGIency/211_Консалтинг/README]] — proof of concept
 
 ---
 

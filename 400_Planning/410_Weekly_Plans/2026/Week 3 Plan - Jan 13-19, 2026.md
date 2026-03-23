@@ -129,7 +129,7 @@
 - 5 min: wrap-up, next steps
 
 **После каждого интервью:**
-- [ ] Заметки в `01_Projects/AGIents.pro/Customer Development/Interview_[Name].md`
+- [ ] Заметки в `200_Projects/220_AGIents/Customer Development/Interview_[Name].md`
 - [ ] Key insights выделены
 - [ ] Quotes записаны дословно
 

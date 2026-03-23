@@ -133,11 +133,11 @@ system_prompt: |
      - Внутренние ссылки [[]]
      - Теги #
 
-  Структура PARA:
-  - 01_Projects/ - активные проекты с дедлайнами
-  - 02_Areas/ - долгосрочные зоны ответственности
-  - 03_Resources/ - справочная информация
-  - 04_Archive/ - завершённые проекты
+  Структура:
+  - 200_Projects/ - активные проекты с дедлайнами
+  - 400_Planning/ - планирование и зоны ответственности
+  - 500_Research/ - справочная информация и исследования
+  - 300_Blog/ - блог и контент
 ---
 ```
 
@@ -245,7 +245,7 @@ Main Orchestrator (Sonnet 4.5)
 2. Main Orchestrator → Knowledge Organizer Agent
    ↓
 3. Knowledge Organizer:
-   - Читает /02_Areas/Inbox/
+   - Читает /000_Inbox/
    - Для каждого элемента:
      * Определяет категорию (Project/Area/Resource)
      * Добавляет frontmatter + tags
@@ -337,7 +337,7 @@ Main Orchestrator (Sonnet 4.5)
       - Real production metrics (90.2% improvement)
    ↓
 4. Content Research Agent → Main Orchestrator:
-   "Research complete. Created: 03_Resources/ИИ-технологии/AI Agents in Production - Research 2026.md"
+   "Research complete. Created: 500_Research/550_AI/AI Agents in Production - Research 2026.md"
    ↓
 5. Main Orchestrator → User:
    "✅ Исследование готово.
@@ -476,7 +476,7 @@ Main Orchestrator (Sonnet 4.5)
 Name: inbox-processor-2026-02-13
 Type: single-use
 Model: haiku-4-5
-Task: Process /02_Areas/Inbox/ - categorize, add frontmatter, create links
+Task: Process /000_Inbox/ - categorize, add frontmatter, create links
 ```
 
 **Преимущества:**

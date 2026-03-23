@@ -152,7 +152,7 @@
   - Дедлайн
 
 - [ ] **Документация требований** (1h)
-  - Создать `01_Projects/AGIents.pro/Clients/Denis_Sorokin/Requirements.md`
+  - Создать `200_Projects/220_AGIents/Clients/Denis_Sorokin/Requirements.md`
 
 #### 4.2 Архитектура (пока ждём материалы)
 

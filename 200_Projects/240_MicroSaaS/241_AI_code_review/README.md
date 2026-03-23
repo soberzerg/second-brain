@@ -36,7 +36,7 @@
 - **Статус:** Validation Phase (с января 2026)
 - Разовая услуга за $200
 - Lean validation через лендинг + трафик
-- См. [[01_Projects/Express Security Audit/README]]
+- См. [[200_Projects/210_AGIency/212_Express_Security_Audit/README]]
 
 ## Связанные папки
 - `Research/` - исследования по анализу кода

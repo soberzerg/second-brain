@@ -190,8 +190,8 @@ projects: [[связанный проект]]
 
 ## Save Paths
 
-- По умолчанию: `03_Resources/Social Research/`
-- AGIents.pro: `01_Projects/AGIents.pro - ИИ-агенты платформа/Research/`
-- Clario: `01_Projects/Clario - ИИ-аналитика продаж/Research/`
-- AISobolev блог: `01_Projects/AISobolev - блог buildinpublic/Research/`
-- Общее: `03_Resources/Social Research/`
+- По умолчанию: `500_Research/520_Social_Research/`
+- AGIents.pro: `200_Projects/220_AGIents/Research/`
+- Clario: `200_Projects/230_Clario/Research/`
+- AISobolev блог: `300_Blog/330_Research/`
+- Общее: `500_Research/520_Social_Research/`

@@ -58,14 +58,14 @@ Once configured, these commands become available in Claude Code:
 **Analyze Screenshot**
 
 ```
-Analyze the image at 05_Attachments/screenshot.png
+Analyze the image at 000_Inbox/screenshot.png
 and tell me what it contains.
 ```
 
 **Process Multiple Images**
 
 ```
-Compare all images in 05_Attachments/Organized/
+Compare all images in 000_Inbox/
 and identify common themes.
 ```
 
@@ -73,14 +73,14 @@ and identify common themes.
 
 ```
 Extract all text from the PDF at
-05_Attachments/document.pdf
+000_Inbox/document.pdf
 ```
 
 **Rename Images**
 
 ```
 Suggest better names for all images
-in 05_Attachments/ based on their content.
+in 000_Inbox/ based on their content.
 ```
 
 ### Troubleshooting
