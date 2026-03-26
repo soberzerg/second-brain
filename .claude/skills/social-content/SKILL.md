@@ -1,6 +1,6 @@
 ---
 name: social-content
-description: "Social media content creation, strategy, and optimization. Use when the user asks to write a post (Telegram, Threads, X, LinkedIn, Blog), plan content strategy, create content calendar, repurpose content, or optimize social media engagement. Also covers 'LinkedIn post,' 'Twitter thread,' 'viral content,' 'content calendar,' 'social scheduling,' 'rewrite this to be more engaging.'"
+description: "Social media content creation, strategy, and optimization. Use when the user asks to write a post (Telegram, Threads, X, LinkedIn, Blog), plan content strategy, create content calendar, repurpose content, or optimize social media engagement. Also covers 'LinkedIn', 'Twitter', 'Threads', 'viral content,' 'content calendar,' 'social scheduling,' 'rewrite this to be more engaging.'"
 ---
 
 # Social Content
