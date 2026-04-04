@@ -2,7 +2,7 @@
 type: post
 date: 2026-03-24
 project: AGIency
-status: draft
+status: published
 tags: [claude-code, ai-tools, developer-tools, vibe-coding, threads]
 ---
 

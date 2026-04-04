@@ -4,7 +4,7 @@ date: 2026-03-23
 source: https://x.com/akshay_pachaar/status/2035341800739877091
 author: Akshay Pachaar (@akshay_pachaar)
 project: AGIency
-status: draft
+status: published
 tags: [claude-code, ai-tools, developer-tools, vibe-coding]
 ---
 
