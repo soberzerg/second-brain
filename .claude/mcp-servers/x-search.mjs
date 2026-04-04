@@ -67,7 +67,7 @@ function parseGrokResponse(data) {
 
   for (const msg of messages) {
     for (const block of msg.content ?? []) {
-      if (block.type === 'text') {
+      if (block.type === 'text' || block.type === 'output_text') {
         text += block.text
         for (const ann of block.annotations ?? []) {
           if (ann.type === 'url_citation' && ann.url) {
