@@ -590,3 +590,15 @@ mcp__firecrawl__firecrawl_extract({
 - Интегрироваться с проектами из CLAUDE.md
 - Для динамических страниц использовать Playwright как fallback
 - Playwright MCP доступен через `mcp__playwright__*` инструменты
+
+### Final Step: Wiki Bookkeeping
+
+После создания файла:
+
+1. Обновить `index.md` — добавить запись в соответствующую секцию
+2. Обновить `log.md` — добавить запись:
+
+   ```markdown
+   ## [YYYY-MM-DD] create | <Title>
+   - Files created: <список>
+   ```

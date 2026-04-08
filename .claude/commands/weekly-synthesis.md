@@ -9,19 +9,24 @@ Create a comprehensive synthesis of the week's work and thinking.
    - All notes modified this week
    - Projects that saw activity
 
-2. **Identify Patterns**
+2. **Wiki Health Check**
+   - Run `/wiki-lint` checks (missing frontmatter, broken links, orphans, stale inbox, index drift)
+   - Include summary of findings in "To Process" section below
+   - Fix critical issues (broken links, missing frontmatter) before continuing
+
+3. **Identify Patterns**
    - Recurring themes
    - Common challenges
    - Breakthrough moments
    - Energy patterns (what energized vs drained)
 
-3. **Synthesize Learning**
+4. **Synthesize Learning**
    - Key insights that emerged
    - How thinking evolved
    - Connections discovered
    - Questions answered and raised
 
-4. **Assess Progress**
+5. **Assess Progress**
    - Projects advanced
    - Areas maintained
    - Resources added

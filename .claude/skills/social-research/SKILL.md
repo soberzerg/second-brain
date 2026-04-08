@@ -175,3 +175,15 @@ description: Поиск и анализ контента из X/Twitter и Reddi
 ## Resources
 
 - [Social Research Template](resources/social-research-template.md) — шаблон для сохранения
+
+### Final Step: Wiki Bookkeeping
+
+После создания файла:
+
+1. Обновить `index.md` — добавить запись в соответствующую секцию
+2. Обновить `log.md` — добавить запись:
+
+   ```markdown
+   ## [YYYY-MM-DD] create | <Title>
+   - Files created: <список>
+   ```

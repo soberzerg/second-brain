@@ -102,3 +102,15 @@ description: AI Daily Digest — сокращённая сводка AI-ново
 - **daily-review**: Дайджест может быть частью утреннего ритуала перед daily review
 - **social-content**: Тренды из дайджеста → идеи для постов
 - **brainstorming**: Новости как стартовая точка для brainstorm-сессий
+
+### Final Step: Wiki Bookkeeping
+
+После создания файла:
+
+1. Обновить `index.md` — добавить запись в соответствующую секцию
+2. Обновить `log.md` — добавить запись:
+
+   ```markdown
+   ## [YYYY-MM-DD] create | <Title>
+   - Files created: <список>
+   ```
