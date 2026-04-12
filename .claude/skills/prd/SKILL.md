@@ -1,6 +1,6 @@
 ---
 name: prd
-description: Создание PRD (Product Requirements Document) через интерактивный диалог
+description: Creates PRD (Product Requirements Document) through an interactive dialogue. Triggers on words: "prd", "техзадание", "masterplan", "blueprint".
 ---
 
 # PRD Generator Skill

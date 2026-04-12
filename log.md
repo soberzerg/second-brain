@@ -11,6 +11,26 @@ status: active
 > Формат: `## [YYYY-MM-DD] <operation> | <Title>` — grep-parseable.
 > Операции: ingest, create, update, lint, query.
 
+## [2026-04-12] create | Dogovor24 AI Legal Assistant PRD
+
+- Files created: 200_Projects/230_Clario/233_PRDs/Dogovor24-AI-Legal-Assistant-PRD.md
+- Files updated: index.md, log.md
+- Details: PRD для КП клиенту Dogovor24 — мультиагентная AI-система юридических консультаций: Router Agent + специализированные агенты по областям права + RAG по НПА РК + интеграция с amicus-service + workflow модерации + 3-фазный переход к автоматизации
+
+## [2026-04-09] create | Bazis Call Center Automation PRD
+
+- Files created: 200_Projects/230_Clario/233_PRDs/Bazis-Call-Center-Automation-PRD.md
+- Files updated: index.md, log.md
+- Details: PRD для КП клиенту Базис — автоматизация колл-центра: голосовой ИИ-ассистент, чат-боты WhatsApp+Telegram, CRM-интеграция, гибрид Phase 1 → полная автоматизация Phase 3
+
+## [2026-04-09] ingest | Discovery Bazis Call Center
+
+- Source: 000_Inbox/-Orchid-lab-Bazis-3b30f7b5-bd6c.md
+- Destination: 200_Projects/230_Clario/234_Chats/2026-04-08-Discovery-Bazis-Call-Center.md
+- Files created: 2026-04-08-Discovery-Bazis-Call-Center.md
+- Files updated: index.md, log.md
+- Details: Транскрипт discovery-звонка с Никитой Сложеникиным (CMO Базис) — автоматизация колл-центра застройщика, ~200 звонков/день, запрос на единую систему голосовых и чат-ботов
+
 ## [2026-04-08] create | Wiki Infrastructure
 
 - Files created: log.md, index.md

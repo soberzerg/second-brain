@@ -171,10 +171,13 @@ status: active
 
 - [[Meeting Transcription PRD]](200_Projects/230_Clario/233_PRDs/Meeting%20Transcription%20PRD.md) — PRD: сервис транскрибации видео-звонков Google Meet
 - [[Yandex Speech Integration PRD]](200_Projects/230_Clario/233_PRDs/Yandex%20Speech%20Integration%20PRD.md) — PRD: интеграция Yandex.Speech для STT
+- [[Bazis Call Center Automation PRD]](200_Projects/230_Clario/233_PRDs/Bazis-Call-Center-Automation-PRD.md) — PRD: автоматизация колл-центра Базис (голосовой бот + чат-боты + CRM)
+- [[Dogovor24 AI Legal Assistant PRD]](200_Projects/230_Clario/233_PRDs/Dogovor24-AI-Legal-Assistant-PRD.md) — PRD: мультиагентная AI-система юридических консультаций для Dogovor24 (роутер + специализированные агенты + модерация + НПА РК)
 
 #### 234 Chats
 
 - [[Kuanysh-Sergej-Clario]](200_Projects/230_Clario/234_Chats/Kuanysh-Sergej-Clario-77cd4c9e-53fa.md) — транскрипт встречи с Куанышем по статусу Clario и оплатам
+- [[Discovery Bazis Call Center]](200_Projects/230_Clario/234_Chats/2026-04-08-Discovery-Bazis-Call-Center.md) — discovery-звонок с Базис: автоматизация колл-центра застройщика (Казахстан)
 
 ### 240 MicroSaaS
 
