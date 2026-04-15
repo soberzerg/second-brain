@@ -173,6 +173,9 @@ status: active
 - [[Yandex Speech Integration PRD]](200_Projects/230_Clario/233_PRDs/Yandex%20Speech%20Integration%20PRD.md) — PRD: интеграция Yandex.Speech для STT
 - [[Bazis Call Center Automation PRD]](200_Projects/230_Clario/233_PRDs/Bazis-Call-Center-Automation-PRD.md) — PRD: автоматизация колл-центра Базис (голосовой бот + чат-боты + CRM)
 - [[Dogovor24 AI Legal Assistant PRD]](200_Projects/230_Clario/233_PRDs/Dogovor24-AI-Legal-Assistant-PRD.md) — PRD: мультиагентная AI-система юридических консультаций для Dogovor24 (роутер + специализированные агенты + модерация + НПА РК)
+- [[Dogovor24 AI Document Assistant PRD]](200_Projects/230_Clario/233_PRDs/Dogovor24-AI-Document-Assistant-PRD.md) — PRD: AI-ассистент по созданию юридических документов через чат-интерфейс (графовая БД клауз + проверка рисков + ЭДО)
+- [[Dogovor24 AI Legal Estimate]](200_Projects/230_Clario/233_PRDs/Dogovor24-AI-Legal-Estimate.md) — оценка трудозатрат юридического ассистента в часах
+- [[Dogovor24 AI Document Estimate]](200_Projects/230_Clario/233_PRDs/Dogovor24-AI-Document-Estimate.md) — оценка трудозатрат документ-ассистента в часах
 
 #### 234 Chats
 

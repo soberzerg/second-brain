@@ -11,6 +11,18 @@ status: active
 > Формат: `## [YYYY-MM-DD] <operation> | <Title>` — grep-parseable.
 > Операции: ingest, create, update, lint, query.
 
+## [2026-04-13] create | Dogovor24 AI Document Estimate
+
+- Files created: 200_Projects/230_Clario/233_PRDs/Dogovor24-AI-Document-Estimate.md
+- Files updated: index.md, log.md
+- Details: Оценка трудозатрат документ-ассистента — 1684 часа (Phase 1: 768ч, Phase 2: 616ч, Phase 3: 300ч), команда 4 чел. (Backend Go + AI/ML + Frontend React + DevOps)
+
+## [2026-04-13] create | Dogovor24 AI Document Assistant PRD
+
+- Files created: 200_Projects/230_Clario/233_PRDs/Dogovor24-AI-Document-Assistant-PRD.md
+- Files updated: index.md, log.md
+- Details: PRD для КП клиенту Dogovor24 — AI-ассистент по созданию юридических документов: чат-интерфейс по типу ChatGPT, графовая БД шаблонов/клауз/рисков из конструктора D24, Dialogue Agent + Graph Query Engine + Document Composer, интеграция с AI Legal Gateway (проверка рисков) и ЭДО D24 (подписание ЭЦП), стек Go Kratos + Ent
+
 ## [2026-04-12] create | Dogovor24 AI Legal Assistant PRD
 
 - Files created: 200_Projects/230_Clario/233_PRDs/Dogovor24-AI-Legal-Assistant-PRD.md
