@@ -117,6 +117,10 @@ status: active
 - [[PRD-2-AI-ROP]](200_Projects/210_AGIency/216_Clients/Molin%20Redich/PRD-2-AI-ROP.md) — PRD: AI РОП для контроля качества коммуникации сейлзов
 - [[PRD-3-AI-Sales-Assistant]](200_Projects/210_AGIency/216_Clients/Molin%20Redich/PRD-3-AI-Sales-Assistant.md) — PRD: AI-помощник для сейлзов
 
+**Krytex:**
+
+- [[Discovery Call 2026-04-16]](200_Projects/210_AGIency/216_Clients/Krytex/Discovery%20Call%202026-04-16.md) — discovery/демо-звонок: AI чат-бот для автохимии, Q&A по продукции, каналы Telegram/VK/Instagram
+
 #### 219 HR
 
 - [[vacancy-business-assistant]](200_Projects/210_AGIency/219_HR/vacancy-business-assistant.md) — вакансия: бизнес-ассистент (удалённо, 15-20 ч/нед)
@@ -205,6 +209,10 @@ status: active
 
 - [[prd]](200_Projects/240_MicroSaaS/244_Polymarket_Signal_Agent/prd.md) — PRD: PolySignal — AI-агент для анализа prediction markets
 
+#### 245 AgentOS
+
+- [[prd]](200_Projects/240_MicroSaaS/245_AgentOS/prd.md) — PRD: AgentOS — серверная ОС для AI-агентов на Claude Code, Telegram-управление + веб-дашборд, Go Kratos + React
+
 #### 249 Ideas
 
 - [[Autonomous Coding Agent System]](200_Projects/240_MicroSaaS/249_Ideas/Autonomous%20Coding%20Agent%20System.md) — идея: мультиагентная система автономного кодинга 24/7
@@ -256,6 +264,8 @@ status: active
 - [[2026-01-16 Что может ИИ-агент а что не может]](300_Blog/350_Draft_Posts/351_RU/2026-01-16%20Что%20может%20ИИ-агент%20а%20что%20не%20может.md) — черновик: возможности и ограничения ИИ-агентов
 - [[2026-02-05 Создатель Claude Code - 5 PR в день]](300_Blog/350_Draft_Posts/351_RU/2026-02-05%20Создатель%20Claude%20Code%20-%205%20PR%20в%20день.md) — черновик: workflow Бориса Черного из Anthropic
 - [[2026-02-05 Навайбкодил мобильный Claude Code за вечер]](300_Blog/350_Draft_Posts/351_RU/2026-02-05%20Навайбкодил%20мобильный%20Claude%20Code%20за%20вечер.md) — черновик: создание мобильного Claude Code за вечер
+- [[2026-04-16 Harness важнее модели - Threads]](300_Blog/350_Draft_Posts/351_RU/2026-04-16%20Harness%20важнее%20модели%20-%20Threads.md) — тред для Threads: harness из OpenClaw применили в Clario для контроля менеджеров
+- [[2026-04-16 CLAUDE.md по принципам Karpathy - Threads]](300_Blog/350_Draft_Posts/351_RU/2026-04-16%20CLAUDE.md%20по%20принципам%20Karpathy%20-%20Threads.md) — тред для Threads: один файл снижает ошибки ИИ с 40% до 3% (принципы Karpathy)
 - [[2026-02-09 Разработка становится коммодити (SHORT)]](300_Blog/350_Draft_Posts/351_RU/2026-02-09%20Разработка%20становится%20коммодити%20(SHORT).md) — черновик: тезис о коммодитизации разработки
 - [[2026-02-10 Все — продакты]](300_Blog/350_Draft_Posts/351_RU/2026-02-10%20Все%20—%20продакты.md) — черновик: каждый становится продакт-менеджером
 - [[2026-02-22 OpenClaw]](300_Blog/350_Draft_Posts/351_RU/2026-02-22%20OpenClaw%20—%20агент%20который%20работает%20пока%20ты%20спишь.md) — черновик: OpenClaw как автономный контент-агент
@@ -371,6 +381,7 @@ status: active
 - [[2026-03-17 - How to Scrape Threads]](500_Research/520_Social_Research/2026-03-17%20-%20How%20to%20Scrape%20Threads.md) — техническое исследование: парсинг Threads
 - [[2026-03-23 - X Twitter Authors Research]](500_Research/520_Social_Research/2026-03-23%20-%20X%20Twitter%20Authors%20Research%20for%20AISobolev.md) — исследование топ-авторов X/Twitter для контент-стратегии
 - [[2026-04-05 - CRM for Solo Founders]](500_Research/520_Social_Research/2026-04-05%20-%20CRM%20for%20Solo%20Founders%20-%20Social%20Research.md) — исследование: есть ли запрос на CRM для соло-фаундеров
+- [[2026-04-13 - Google Engineer Automates 80% with Claude Code]](500_Research/520_Social_Research/2026-04-13%20-%20Google%20Engineer%20Automates%2080%25%20with%20Claude%20Code.md) — вирусный пост X: автоматизация 80% работы через Claude Code, CLAUDE.md, Everything Claude Code
 
 ### 530 YouTube
 
@@ -392,6 +403,11 @@ status: active
 - [[2026-02-20 - Как я использую Claude Code для кодинга больших проектов]](500_Research/530_YouTube/2026-02-20%20-%20Как%20я%20использую%20Claude%20Code%20для%20кодинга%20больших%20проектов.md) — выжимка: Claude Code для крупных проектов
 - [[2026-02-23 - Build Your First AI Marketing Team]](500_Research/530_YouTube/2026-02-23%20-%20Build%20Your%20First%20AI%20Marketing%20Team%20(Claude%20Skills%20Tutorial).md) — выжимка: построение AI-маркетинг-команды
 - [[2026-03-02 - The ULTIMATE Claude Code Tutorial]](500_Research/530_YouTube/2026-03-02%20-%20The%20ULTIMATE%20Claude%20Code%20Tutorial%20-%2027%20Co....md) — выжимка: полный туториал по Claude Code
+- [[2026-04-16 - How We Sign a New High-Ticket Client Every 16 Hours]](500_Research/530_YouTube/2026-04-16%20-%20How%20We%20Sign%20a%20New%20High-Ticket%20Client%20Every%2016%20Hours.md) — выжимка: продажа high-ticket без sales calls через Offer Doc + контент + дедлайны
+- [[2026-04-16 - How I went PRO with content]](500_Research/530_YouTube/2026-04-16%20-%20How%20I%20went%20PRO%20with%20content.md) — выжимка: Influential vs Influencer, 3P-фреймворк, цикл See-Connect-Say для контент-стратегии
+- [[2026-04-16 - Lead Magnets are Dead - MicroMagnets]](500_Research/530_YouTube/2026-04-16%20-%20Lead%20Magnets%20are%20Dead%20-%20MicroMagnets.md) — выжимка: микро-магниты вместо лид-магнитов, матрица Hot/Safe, формула Leo Burnett, воронка "лёгких да"
+- [[2026-04-16 - What Is OpenClaw - The AI That Actually Does Things]](500_Research/530_YouTube/2026-04-16%20-%20What%20Is%20OpenClaw%20-%20The%20AI%20That%20Actually%20Does%20Things.md) — выжимка: OpenClaw — self-hosted AI-ассистент, навыки + Cron Jobs, безопасность, VPS-развёртывание
+- [[2026-04-16 - ClaudeClaw The Sequel - Build Your AI As...]](500_Research/530_YouTube/2026-04-16%20-%20ClaudeClaw%20The%20Sequel%20-%20Build%20Your%20AI%20As....md) — выжимка: ClaudeClaw — персональная ОС для AI-агентов на Agent SDK, War Room, Hive Mind, многослойная безопасность
 
 ### 540 Transcriptions
 
@@ -414,6 +430,7 @@ status: active
 - [[Субагенты для Second Brain - рекомендации]](500_Research/550_AI/551_Agents/Субагенты%20для%20Second%20Brain%20-%20рекомендации.md) — архитектурные рекомендации: субагенты для Obsidian Second Brain
 - [[Open-Source альтернативы Claude Code]](500_Research/550_AI/551_Agents/Open-Source%20альтернативы%20Claude%20Code%20-%20исследование%202026.md) — исследование open-source альтернатив для сервиса Second Brain
 - [[OpenClaw - автоматизация TikTok контента]](500_Research/550_AI/551_Agents/OpenClaw%20-%20автоматизация%20TikTok%20контента%20через%20ИИ-агента.md) — гайд: автоматизация TikTok-контента через OpenClaw
+- [[OpenClaw - обзор платформы]](500_Research/550_AI/551_Agents/OpenClaw%20-%20обзор%20платформы.md) — полный обзор OpenClaw: архитектура agent harness, 5 слоёв, возможности, бенчмарки, конкуренты
 
 **552 RAG:**
 

@@ -11,6 +11,75 @@ status: active
 > Формат: `## [YYYY-MM-DD] <operation> | <Title>` — grep-parseable.
 > Операции: ingest, create, update, lint, query.
 
+## [2026-04-16] create | CLAUDE.md по принципам Karpathy - Threads тред
+
+- Source: 500_Research/520_Social_Research/2026-04-13 - Google Engineer Automates 80% with Claude Code.md (Part 1)
+- Files created: 300_Blog/350_Draft_Posts/351_RU/2026-04-16 CLAUDE.md по принципам Karpathy - Threads.md
+- Files updated: index.md, log.md
+- Details: Тред из 7 постов для Threads: CLAUDE.md по принципам Karpathy — один файл с правилами снижает ошибки ИИ с 40% до 3%, четыре принципа, 15K звёзд за неделю, ИИ может сам сгенерировать правила под проект
+
+## [2026-04-16] ingest | Krytex Discovery Call
+
+- Source: 000_Inbox/krytex-call-ts.md
+- Destination: 200_Projects/210_AGIency/216_Clients/Krytex/Discovery Call 2026-04-16.md
+- Files created: 200_Projects/210_AGIency/216_Clients/Krytex/Discovery Call 2026-04-16.md
+- Files updated: index.md, log.md
+- Details: Транскрипт discovery/демо-звонка с Krytex (автохимия). AI чат-бот на таблице Q&A, обсуждение расширения базы знаний, каналов (Telegram/VK/Instagram/сайт), интеграции с маркетплейсами (Ozon/WB), стоимости. Следующий шаг — КП.
+
+## [2026-04-16] create | AgentOS PRD
+
+- Files created: 200_Projects/240_MicroSaaS/245_AgentOS/prd.md
+- Files updated: index.md, log.md
+- Details: PRD для MVP AgentOS — серверная платформа оркестрации AI-агентов на Claude Code CLI (subprocess + --resume), Go Kratos + Ent + PG + NATS + Redis, Telegram-боты для управления + React-дашборд для конфигурации, модель доступа для команды
+
+## [2026-04-16] create | ClaudeClaw The Sequel - Build Your AI Assistant
+
+- Files created: 500_Research/530_YouTube/2026-04-16 - ClaudeClaw The Sequel - Build Your AI As....md
+- Files updated: index.md, log.md
+- Details: Выжимка YouTube-видео: ClaudeClaw — персональная ОС для AI-агентов на Anthropic Agent SDK, War Room (голосовой совет 5 агентов), Hive Mind (коллективная память), многослойная безопасность, PipeCat для голосового I/O
+
+## [2026-04-16] create | OpenClaw - обзор платформы
+
+- Files created: 500_Research/550_AI/551_Agents/OpenClaw - обзор платформы.md
+- Files updated: index.md, log.md
+- Details: Полный обзор OpenClaw: что это, пятислойная архитектура agent harness, возможности (браузер, система, скиллы, память, каналы), бенчмарки (79.6% с Sonnet 4.6), конкурентный ландшафт, ограничения
+
+## [2026-04-16] create | What Is OpenClaw - The AI That Actually Does Things
+
+- Files created: 500_Research/530_YouTube/2026-04-16 - What Is OpenClaw - The AI That Actually Does Things.md
+- Files updated: index.md, log.md
+- Details: Выжимка YouTube-видео: OpenClaw — self-hosted open-source AI-ассистент с навыками (Skills), заданиями (Cron Jobs), автономной работой 24/7, VPS-развёртыванием и рисками безопасности вредоносных навыков
+
+## [2026-04-16] create | Harness важнее модели - Threads тред
+
+- Files created: 300_Blog/350_Draft_Posts/351_RU/2026-04-16 Harness важнее модели - Threads.md
+- Files updated: index.md, log.md
+- Details: Тред из 7 постов для Threads: концепция harness из OpenClaw (Anthropic) применена в Clario — ИИ-ассистент РОПа перешёл от рекомендаций к замкнутому циклу контроля менеджеров
+
+## [2026-04-16] create | Lead Magnets are Dead - MicroMagnets
+
+- Files created: 500_Research/530_YouTube/2026-04-16 - Lead Magnets are Dead - MicroMagnets.md
+- Files updated: index.md, log.md
+- Details: Выжимка YouTube-видео: микро-магниты вместо традиционных лид-магнитов — матрица Hot/Safe, трёхэтапное создание (занозы → название-инструмент → чит-код), формула Leo Burnett, воронка "лёгких да"
+
+## [2026-04-16] create | How I went PRO with content
+
+- Files created: 500_Research/530_YouTube/2026-04-16 - How I went PRO with content.md
+- Files updated: index.md, log.md
+- Details: Выжимка YouTube-видео: Influential vs Influencer контент-стратегия — 3P-фреймворк (Problem/Proof/Position), цикл See-Connect-Say, продуктивность + опасность = доход
+
+## [2026-04-16] create | How We Sign a New High-Ticket Client Every 16 Hours
+
+- Files created: 500_Research/530_YouTube/2026-04-16 - How We Sign a New High-Ticket Client Every 16 Hours.md
+- Files updated: index.md, log.md
+- Details: Выжимка YouTube-видео: продажа high-ticket коучинга без sales calls — Offer Doc + Sold Out Sequence + Brandwidth контент-стратегия
+
+## [2026-04-15] ingest | Google Engineer Automates 80% with Claude Code
+
+- Files created: 500_Research/520_Social_Research/2026-04-13 - Google Engineer Automates 80% with Claude Code.md
+- Files updated: index.md, log.md
+- Details: Сохранён вирусный пост X (@noisyb0y1, ~3M просмотров): Google-инженер автоматизировал 80% работы с Claude Code, CLAUDE.md (15K звёзд), Everything Claude Code (153K звёзд), экономия $3-12K/мес
+
 ## [2026-04-13] create | Dogovor24 AI Document Estimate
 
 - Files created: 200_Projects/230_Clario/233_PRDs/Dogovor24-AI-Document-Estimate.md
