@@ -237,57 +237,71 @@ if [ "$HAS_REDDIT" = true ]; then
         "AI business automation site:reddit.com"
     )
 
-    REDDIT_PARSED=$(python3 -c "
-import json, urllib.request, sys, os
+    # Note: urllib is blocked by Firecrawl/Cloudflare (401), so we use curl for HTTP
+    ALL_FIRECRAWL_JSON="[]"
+    REDDIT_ERRORS=""
 
-api_key = os.environ.get('FIRECRAWL_API_KEY', '')
-queries = json.loads(sys.stdin.read())
+    for query in "${SEARCH_QUERIES[@]}"; do
+        FC_PAYLOAD=$(jq -n --arg q "$query" '{query: $q, limit: 5, scrapeOptions: {formats: ["markdown"], onlyMainContent: true}}')
+
+        FC_RAW=$(curl -s --max-time 30 \
+            -X POST https://api.firecrawl.dev/v1/search \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $FIRECRAWL_API_KEY" \
+            -d "$FC_PAYLOAD" 2>&1) || true
+
+        if [ -z "$FC_RAW" ]; then
+            REDDIT_ERRORS+="Empty response for query: $query; "
+            continue
+        fi
+
+        # Check for API errors
+        FC_SUCCESS=$(echo "$FC_RAW" | jq -r '.success // empty' 2>/dev/null)
+        if [ "$FC_SUCCESS" != "true" ]; then
+            FC_ERR=$(echo "$FC_RAW" | jq -r '.error // .message // empty' 2>/dev/null)
+            REDDIT_ERRORS+="API error for '$query': ${FC_ERR:-$( echo "$FC_RAW" | head -c 200)}; "
+            continue
+        fi
+
+        # Merge results into accumulator
+        FC_DATA=$(echo "$FC_RAW" | jq '.data // []' 2>/dev/null)
+        ALL_FIRECRAWL_JSON=$(echo "$ALL_FIRECRAWL_JSON" "$FC_DATA" | jq -s '.[0] + .[1]')
+    done
+
+    if [ -n "$REDDIT_ERRORS" ]; then
+        log "WARN" "Reddit Firecrawl errors: $REDDIT_ERRORS"
+    fi
+
+    # Parse accumulated results with python3
+    REDDIT_PARSED=$(python3 -c "
+import json, sys
+
+raw = sys.stdin.read()
+try:
+    items = json.loads(raw)
+except json.JSONDecodeError as e:
+    print(f'ERROR:JSON parse failed: {e}')
+    sys.exit(0)
 
 all_results = []
 seen_urls = set()
 
-for query in queries:
-    payload = {
-        'query': query,
-        'limit': 5,
-        'scrapeOptions': {
-            'formats': ['markdown'],
-            'onlyMainContent': True
-        }
-    }
-
-    req = urllib.request.Request(
-        'https://api.firecrawl.dev/v1/search',
-        data=json.dumps(payload).encode('utf-8'),
-        headers={
-            'Content-Type': 'application/json',
-            'Authorization': f'Bearer {api_key}'
-        },
-        method='POST'
-    )
-
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read().decode('utf-8'))
-
-        for item in data.get('data', []):
-            url = item.get('url', '')
-            if url in seen_urls:
-                continue
-            if '/r/' not in url or 'developers.reddit.com' in url:
-                continue
-            seen_urls.add(url)
-            all_results.append({
-                'url': url,
-                'title': item.get('title', '').replace(' - Reddit', '').replace(' : r/', ' | r/'),
-                'description': item.get('description', ''),
-                'markdown': (item.get('markdown', '') or '')[:500]
-            })
-    except Exception:
+for item in items:
+    url = item.get('url', '')
+    if url in seen_urls:
         continue
+    if '/r/' not in url or 'developers.reddit.com' in url:
+        continue
+    seen_urls.add(url)
+    all_results.append({
+        'url': url,
+        'title': item.get('title', '').replace(' - Reddit', '').replace(' : r/', ' | r/'),
+        'description': item.get('description', ''),
+        'markdown': (item.get('markdown', '') or '')[:500]
+    })
 
 if not all_results:
-    print('ERROR:No Reddit posts found via Firecrawl')
+    print('ERROR:No Reddit posts found via Firecrawl (0 results after filtering)')
     sys.exit(0)
 
 lines = []
@@ -298,7 +312,6 @@ for r in all_results[:15]:
     if r['description']:
         lines.append(f'{r[\"description\"]}')
     if r['markdown']:
-        # Take first meaningful paragraph
         for para in r['markdown'].split(chr(10)*2):
             para = para.strip()
             if len(para) > 50 and not para.startswith('#') and not para.startswith('['):
@@ -310,7 +323,7 @@ for r in all_results[:15]:
 print('TEXT:' + chr(10).join(lines))
 if urls_list:
     print('URLS:' + chr(10).join(urls_list))
-" <<< "$(printf '%s\n' "${SEARCH_QUERIES[@]}" | jq -R . | jq -s .)" 2>/dev/null) || true
+" <<< "$ALL_FIRECRAWL_JSON") || true
 
     if [[ "$REDDIT_PARSED" == ERROR:* ]]; then
         log "WARN" "Reddit: ${REDDIT_PARSED#ERROR:}"
