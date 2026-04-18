@@ -212,6 +212,7 @@ status: active
 #### 245 AgentOS
 
 - [[prd]](200_Projects/240_MicroSaaS/245_AgentOS/prd.md) — PRD: AgentOS — серверная ОС для AI-агентов на Claude Code, Telegram-управление + веб-дашборд, Go Kratos + React
+- [[prd-phase-2]](200_Projects/240_MicroSaaS/245_AgentOS/prd-phase-2.md) — PRD Фазы 2: co-pilot архитектура (разговорная часть на OpenAI-compat LLM + исполнительные воркеры через MCP, Claude как один из воркеров), асинхронные задачи и множественные conversations
 
 #### 249 Ideas
 

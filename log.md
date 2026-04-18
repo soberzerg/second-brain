@@ -11,6 +11,12 @@ status: active
 > Формат: `## [YYYY-MM-DD] <operation> | <Title>` — grep-parseable.
 > Операции: ingest, create, update, lint, query.
 
+## [2026-04-18] create | AgentOS Phase 2 PRD — co-pilot architecture
+
+- Files created: 200_Projects/240_MicroSaaS/245_AgentOS/prd-phase-2.md
+- Files updated: index.md, log.md
+- Details: PRD Фазы 2 AgentOS — разделение на разговорную часть (OpenAI-compat LLM-loop, конфигурируемая модель) и исполнительную (Claude и прочие воркеры через MCP). Гибрид ack + debounce/batching, Event Bus на Redis Streams, множественные conversations per (user × agent), running summary через дешёвую модель. Build vs buy: go-sdk (MCP) + openai-go + telego + tiktoken-go. 6 этапов за 4 недели
+
 ## [2026-04-16] create | CLAUDE.md по принципам Karpathy - Threads тред
 
 - Source: 500_Research/520_Social_Research/2026-04-13 - Google Engineer Automates 80% with Claude Code.md (Part 1)
