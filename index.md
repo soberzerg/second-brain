@@ -409,6 +409,8 @@ status: active
 - [[2026-04-16 - Lead Magnets are Dead - MicroMagnets]](500_Research/530_YouTube/2026-04-16%20-%20Lead%20Magnets%20are%20Dead%20-%20MicroMagnets.md) — выжимка: микро-магниты вместо лид-магнитов, матрица Hot/Safe, формула Leo Burnett, воронка "лёгких да"
 - [[2026-04-16 - What Is OpenClaw - The AI That Actually Does Things]](500_Research/530_YouTube/2026-04-16%20-%20What%20Is%20OpenClaw%20-%20The%20AI%20That%20Actually%20Does%20Things.md) — выжимка: OpenClaw — self-hosted AI-ассистент, навыки + Cron Jobs, безопасность, VPS-развёртывание
 - [[2026-04-16 - ClaudeClaw The Sequel - Build Your AI As...]](500_Research/530_YouTube/2026-04-16%20-%20ClaudeClaw%20The%20Sequel%20-%20Build%20Your%20AI%20As....md) — выжимка: ClaudeClaw — персональная ОС для AI-агентов на Agent SDK, War Room, Hive Mind, многослойная безопасность
+- [[2026-04-19 - 5 Anti-Cancer Habits That Cut Your Risk Up To 61% After 50]](500_Research/530_YouTube/2026-04-19%20-%205%20Anti-Cancer%20Habits%20That%20Cut%20Your%20Risk%20Up%20To%2061%25%20After%2050.md) — выжимка: Dr. William Li о 5 привычках (гидратация, ферментация, метаболическая ходьба, сульфорафан, сон) для снижения риска рака до 61% после 50
+- [[2026-04-19 - I Built My First AI Employee (It Works 24-7)]](500_Research/530_YouTube/2026-04-19%20-%20I%20Built%20My%20First%20AI%20Employee%20(It%20Works%2024-7).md) — выжимка: Sandy Coreana о построении AI-контент-команды на Claude Code, outlier video metric, экономика $174 vs $8k/мес
 
 ### 540 Transcriptions
 

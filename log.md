@@ -11,6 +11,20 @@ status: active
 > Формат: `## [YYYY-MM-DD] <operation> | <Title>` — grep-parseable.
 > Операции: ingest, create, update, lint, query.
 
+## [2026-04-19] create | YouTube Summary — I Built My First AI Employee
+
+- Source: <https://youtu.be/zFM5elMy5Do?si=2ncCvgr_Ol2GewKm>
+- Files created: 500_Research/530_YouTube/2026-04-19 - I Built My First AI Employee (It Works 24-7).md
+- Files updated: index.md, log.md
+- Details: Выжимка видео Sandy Coreana о построении AI-команды для контент-автоматизации на Claude Code. Архитектура специализированных агентов (анализ, тренды, сценарии, миниатюры, монтаж, Shorts), outlier video metric, экономика $84–174/мес vs $7–8k/мес на human team, выбор Claude Code vs Claude Cowork, отказ от ChatGPT по этическим причинам, Whisper Flow, стек Google APIs + Descript + Nanobana Pro + OpenRouter
+
+## [2026-04-19] create | YouTube Summary — 5 Anti-Cancer Habits After 50
+
+- Source: <https://youtu.be/he0iwUMQSU0?si=ixxv9Me9NR0SMB77>
+- Files created: 500_Research/530_YouTube/2026-04-19 - 5 Anti-Cancer Habits That Cut Your Risk Up To 61% After 50.md
+- Files updated: index.md, log.md
+- Details: Выжимка видео Dr. William Li о 5 научно обоснованных привычках, снижающих риск рака до 61% у людей старше 50: гидратация, ферментированные продукты, метаболическая ходьба, сульфорафан из крестоцветных, архитектура сна. Ссылки на исследования Harvard, Stanford, UC San Diego, мета-анализ American Cancer Society
+
 ## [2026-04-18] create | AgentOS Phase 2 PRD — co-pilot architecture
 
 - Files created: 200_Projects/240_MicroSaaS/245_AgentOS/prd-phase-2.md
