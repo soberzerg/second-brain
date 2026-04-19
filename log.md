@@ -11,6 +11,12 @@ status: active
 > Формат: `## [YYYY-MM-DD] <operation> | <Title>` — grep-parseable.
 > Операции: ingest, create, update, lint, query.
 
+## [2026-04-20] create | PRD Krytex bot + AGIents Platform Capabilities
+
+- Files created: 200_Projects/210_AGIency/216_Clients/Krytex/prd.md, 200_Projects/220_AGIents/Platform Capabilities.md
+- Files updated: index.md, log.md
+- Details: PRD бота для Krytex на платформе AGIents — Telegram/VK/MAX + маркетплейс-pipeline Ozon/WB, редактор Q&A, лог escalations, 3 фазы по 2 недели. Зафиксированы текущие возможности AGIents (Inbox, Аналитика, Настройки, Пользователи, Сессионная память) отдельным документом для скоупинга клиентских проектов
+
 ## [2026-04-19] create | YouTube Summary — I Built My First AI Employee
 
 - Source: <https://youtu.be/zFM5elMy5Do?si=2ncCvgr_Ol2GewKm>
@@ -169,3 +175,9 @@ status: active
 - Files created: 500_Research/550_AI/LLM Wiki - паттерн персональной базы знаний.md
 - Files updated: index.md
 - Details: Первый ingest через новый workflow. Структурированная выжимка паттерна LLM Wiki с маппингом на наш Second Brain
+
+## [2026-04-19] query | Jensen Huang 5-layer AI cake — материал для статьи
+
+- Files created: 500_Research/590_Analysis/Jensen Huang 5-layer AI cake - материал для статьи.md
+- Files updated: index.md
+- Details: Собран полный текст поста @r0ck3t23 (298k views), оригинальные цитаты Jensen Huang из NVIDIA Blog / Davos 2026 / Dwarkesh podcast, экспертные реакции (StockSavvyShay, Cassie Kozyrkov, Aakash Gupta), 6 готовых углов для статьи и ключевые цитаты ready-to-paste

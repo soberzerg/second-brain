@@ -120,12 +120,15 @@ status: active
 **Krytex:**
 
 - [[Discovery Call 2026-04-16]](200_Projects/210_AGIency/216_Clients/Krytex/Discovery%20Call%202026-04-16.md) — discovery/демо-звонок: AI чат-бот для автохимии, Q&A по продукции, каналы Telegram/VK/Instagram
+- [[prd]](200_Projects/210_AGIency/216_Clients/Krytex/prd.md) — PRD: AI-бот Krytex на AGIents (Telegram/VK/MAX + маркетплейс-pipeline Ozon/WB, 6 недель, 3 фазы)
 
 #### 219 HR
 
 - [[vacancy-business-assistant]](200_Projects/210_AGIency/219_HR/vacancy-business-assistant.md) — вакансия: бизнес-ассистент (удалённо, 15-20 ч/нед)
 
 ### 220 AGIents
+
+- [[Platform Capabilities]](200_Projects/220_AGIents/Platform%20Capabilities.md) — текущие возможности платформы AGIents (что уже есть, что требует разработки под проект)
 
 #### 222 Research
 
@@ -454,4 +457,4 @@ status: active
 
 ### 590 Analysis
 
-(пока пусто — здесь будут результаты внутреннего анализа и синтеза)
+- [[Jensen Huang 5-layer AI cake - материал для статьи]](500_Research/590_Analysis/Jensen%20Huang%205-layer%20AI%20cake%20-%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%20%D0%B4%D0%BB%D1%8F%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8.md) — полный текст поста @r0ck3t23, цитаты Huang, реакции экспертов, 6 углов для статьи
