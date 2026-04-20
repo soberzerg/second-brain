@@ -1,3 +1,8 @@
+---
+name: reverse-engineering
+description: "Reverse engineer viral social media content. Use when the user wants to analyze top creators, scrape posts at scale, extract hook/format/CTA patterns, codify a content playbook from real data, or systematically study what's working in a niche instead of guessing. Triggers: 'reverse engineer', 'analyze viral posts', 'find patterns in top content', 'scrape competitors', 'what's working in [niche]', 'build a playbook from top posts'."
+---
+
 # Reverse Engineering Viral Content
 
 Instead of guessing what works, systematically analyze top-performing content in your niche and extract proven patterns.
@@ -188,3 +193,9 @@ Bridge from engagement to business results:
 - [ ] Created voice guidelines (specificity, brevity, emotion)
 - [ ] Built template library from patterns
 - [ ] Set up tracking for your own content performance
+
+## Related Skills
+
+- **social-content** — Применение извлечённых паттернов к написанию постов
+- **social-research** — Поиск трендов и мнений в X/Reddit
+- **web-research** — Сбор данных с веба

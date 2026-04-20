@@ -225,21 +225,6 @@ Maintain 1-2 weeks of scheduled content. Review queue weekly. Leave gaps for spo
 
 ---
 
-## Part 4: Reverse Engineering Viral Content
-
-Instead of guessing, analyze what's working:
-
-1. **Find creators** — 10-20 accounts with high engagement in your niche
-2. **Collect data** — 500+ posts for analysis
-3. **Analyze patterns** — Hooks, formats, CTAs that work
-4. **Codify playbook** — Document repeatable patterns
-5. **Layer your voice** — Apply patterns with authenticity
-6. **Convert** — Bridge attention to business results
-
-**For the complete framework**: See [resources/reverse-engineering.md](resources/reverse-engineering.md)
-
----
-
 ## File Conventions
 
 ### Naming
@@ -456,7 +441,6 @@ _DD месяц YYYY_
 - [Threads Guide](resources/threads-guide.md) — Правила Threads, типы постов, примеры
 - [X Guide](resources/x-guide.md) — Правила X/Twitter, English voice, thread structure
 - [Platforms Reference](resources/platforms.md) — Platform-specific strategies for all platforms
-- [Reverse Engineering](resources/reverse-engineering.md) — 6-step framework for analyzing viral content
 - [Post Templates](resources/post-templates.md) — Ready-to-use templates for all platforms
 
 ## Related Skills
@@ -465,6 +449,7 @@ _DD месяц YYYY_
 - **content-research-writer**: For long-form articles and tutorials with research and citations
 - **copywriting**: For marketing page copy (landing pages, pricing pages)
 - **social-research**: For researching trends and opinions from X/Reddit before writing
+- **reverse-engineering**: For analyzing top creators and extracting proven hook/format/CTA patterns before writing
 - **de-ai-ify**: For removing AI patterns from any written text
 - **launch-strategy**: For coordinating social with launches
 - **marketing-psychology**: For understanding what drives engagement
