@@ -11,6 +11,12 @@ status: active
 > Формат: `## [YYYY-MM-DD] <operation> | <Title>` — grep-parseable.
 > Операции: ingest, create, update, lint, query.
 
+## [2026-04-20] create | Threads тред — Harness становится продуктом
+
+- Files created: 300_Blog/350_Draft_Posts/351_RU/2026-04-20 Harness становится продуктом - Threads.md
+- Files updated: index.md, log.md
+- Details: Тред из 8 постов для Threads на базе 2026-04-20 AI Daily Digest и анализа Jensen Huang 5-layer cake. Хук — reverse-engineering Claude Code: 98.4% harness, 1.6% AI. Основная мысль — продукт это оркестрация, permissions, tools, memory, workflow, UX, инфра вокруг модели; модель должна быть подставляемым компонентом. Привязка к AgentOS как model-agnostic-продукту и к запуску анонса (2026-04-20). CTA — собрать у аудитории описание их harness для следующего разбора. Новый файл, черновик 04-16 не затирается (другой угол — Clario)
+
 ## [2026-04-20] create | AI Daily Digest — vault-based для фаундера/CTO
 
 - Files created: 500_Research/510_AI_Daily_Digest/2026-04-20 - AI Daily Digest.md

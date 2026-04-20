@@ -270,6 +270,7 @@ status: active
 - [[2026-02-05 Создатель Claude Code - 5 PR в день]](300_Blog/350_Draft_Posts/351_RU/2026-02-05%20Создатель%20Claude%20Code%20-%205%20PR%20в%20день.md) — черновик: workflow Бориса Черного из Anthropic
 - [[2026-02-05 Навайбкодил мобильный Claude Code за вечер]](300_Blog/350_Draft_Posts/351_RU/2026-02-05%20Навайбкодил%20мобильный%20Claude%20Code%20за%20вечер.md) — черновик: создание мобильного Claude Code за вечер
 - [[2026-04-16 Harness важнее модели - Threads]](300_Blog/350_Draft_Posts/351_RU/2026-04-16%20Harness%20важнее%20модели%20-%20Threads.md) — тред для Threads: harness из OpenClaw применили в Clario для контроля менеджеров
+- [[2026-04-20 Harness становится продуктом - Threads]](300_Blog/350_Draft_Posts/351_RU/2026-04-20%20Harness%20становится%20продуктом%20-%20Threads.md) — тред для Threads: reverse-engineering Claude Code (98.4% harness / 1.6% AI), Jensen 5-layer cake, привязка к AgentOS как model-agnostic-продукту
 - [[2026-04-16 CLAUDE.md по принципам Karpathy - Threads]](300_Blog/350_Draft_Posts/351_RU/2026-04-16%20CLAUDE.md%20по%20принципам%20Karpathy%20-%20Threads.md) — тред для Threads: один файл снижает ошибки ИИ с 40% до 3% (принципы Karpathy)
 - [[2026-02-09 Разработка становится коммодити (SHORT)]](300_Blog/350_Draft_Posts/351_RU/2026-02-09%20Разработка%20становится%20коммодити%20(SHORT).md) — черновик: тезис о коммодитизации разработки
 - [[2026-02-10 Все — продакты]](300_Blog/350_Draft_Posts/351_RU/2026-02-10%20Все%20—%20продакты.md) — черновик: каждый становится продакт-менеджером
