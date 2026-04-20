@@ -121,6 +121,7 @@ status: active
 
 - [[Discovery Call 2026-04-16]](200_Projects/210_AGIency/216_Clients/Krytex/Discovery%20Call%202026-04-16.md) — discovery/демо-звонок: AI чат-бот для автохимии, Q&A по продукции, каналы Telegram/VK/Instagram
 - [[prd]](200_Projects/210_AGIency/216_Clients/Krytex/prd.md) — PRD: AI-бот Krytex на AGIents (Telegram/VK/MAX + маркетплейс-pipeline Ozon/WB, 6 недель, 3 фазы)
+- [[proposal]](200_Projects/210_AGIency/216_Clients/Krytex/proposal.md) — КП для Krytex: setup 450 000 ₽ (30/40/30), подписка 5 ₽/запрос без минимума, 6 недель внедрения
 
 #### 219 HR
 
@@ -374,7 +375,8 @@ status: active
 
 ### 510 AI Daily Digest
 
-- AI Daily Digests (2026-02-28 -- 2026-04-07) — ежедневные сводки AI-новостей, ~39 выпусков
+- AI Daily Digests (2026-02-28 -- 2026-04-19) — ежедневные сводки AI-новостей, ~51 выпуск
+- [[2026-04-20 - AI Daily Digest]](500_Research/510_AI_Daily_Digest/2026-04-20%20-%20AI%20Daily%20Digest.md) — vault-based digest для фаундера/CTO: harness > model, vendor lock-in, cost management multi-agent, слухи об Opus 4.7 и новом Opus-class OpenAI, применение для Clario и AGIents
 
 ### 520 Social Research
 
