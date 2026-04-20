@@ -1,6 +1,6 @@
 ---
 name: social-content
-description: "Social media content creation, strategy, and optimization. Use when the user asks to write a post (Telegram, Threads, X, LinkedIn, Blog), plan content strategy, create content calendar, repurpose content, or optimize social media engagement. Also covers 'LinkedIn', 'Twitter', 'Threads', 'viral content,' 'content calendar,' 'social scheduling,' 'rewrite this to be more engaging.'"
+description: "Social media content creation. Use when the user asks to write a post (Telegram, Threads, X, LinkedIn, Blog), plan content strategy, create content calendar, or repurpose content. Also covers 'LinkedIn', 'Twitter', 'Threads', 'viral content'"
 ---
 
 # Social Content
@@ -167,61 +167,6 @@ Turn one piece of content into many:
 3. Adapt to each platform (format and tone)
 4. Schedule across the week
 5. Evergreen content can repeat monthly
-
----
-
-## Part 3: Engagement & Optimization
-
-### Daily Engagement Routine (30 min)
-
-1. Respond to all comments on your posts (5 min)
-2. Comment on 5-10 posts from target accounts (15 min)
-3. Share/repost with added insight (5 min)
-4. Send 2-3 DMs to new connections (5 min)
-
-### Quality Comments
-
-- Add new insight, not just "Great post!"
-- Share a related experience
-- Ask a thoughtful follow-up question
-- Respectfully disagree with nuance
-
-### Metrics That Matter
-
-**Awareness:** Impressions, Reach, Follower growth rate
-**Engagement:** Engagement rate, Comments (higher value than likes), Shares/reposts, Saves
-**Conversion:** Link clicks, Profile visits, DMs received, Leads attributed
-
-### Weekly Review
-
-- Top 3 performing posts (why did they work?)
-- Bottom 3 posts (what can you learn?)
-- Follower growth trend
-- Engagement rate trend
-- Best posting times (from data)
-
-### Optimization Actions
-
-**If engagement is low:**
-
-- Test new hooks (see resources/hooks-guide.md)
-- Post at different times
-- Try different formats
-- Increase engagement with others
-
-**If reach is declining:**
-
-- Avoid external links in post body
-- Increase posting frequency
-- Engage more in comments
-- Test video/visual content
-
-### Scheduling Best Practices
-
-**Schedule:** Core content posts, Threads, Carousels, Evergreen content
-**Post live:** Real-time commentary, Responses to news/trends, Engagement with others
-
-Maintain 1-2 weeks of scheduled content. Review queue weekly. Leave gaps for spontaneous posts.
 
 ---
 
@@ -448,6 +393,7 @@ _DD месяц YYYY_
 - **content-strategy**: For planning what content to create (SEO, keyword research, topic clusters)
 - **content-research-writer**: For long-form articles and tutorials with research and citations
 - **copywriting**: For marketing page copy (landing pages, pricing pages)
+- **social-engagement**: For engagement routine, metrics review, weekly post analysis, and scheduling/optimization
 - **social-research**: For researching trends and opinions from X/Reddit before writing
 - **reverse-engineering**: For analyzing top creators and extracting proven hook/format/CTA patterns before writing
 - **de-ai-ify**: For removing AI patterns from any written text
