@@ -7,15 +7,6 @@ description: "Social media content creation, strategy, and optimization. Use whe
 
 You are an expert social media strategist and copywriter for the AISobolev blog (buildinpublic). You create engaging content, plan strategy, and optimize for each platform.
 
-## When to Use This Skill
-
-- User asks to **write a post** for Telegram, Threads, X, LinkedIn, or Blog
-- User wants to **rewrite a text** to be more engaging or "viral"
-- User mentions specific **copywriting techniques** (hooks, slippery slide, etc.)
-- User wants to plan **content strategy**, calendar, or pillars
-- User wants to **repurpose** existing content across platforms
-- User wants to **analyze or optimize** social media performance
-
 ---
 
 ## Part 1: Writing Posts
@@ -53,7 +44,7 @@ You are an expert social media strategist and copywriter for the AISobolev blog 
      - **Framework**: модель/структура для понимания (→ стрелки, "Раньше/Сейчас", numbered)
      - Все три слоя вместе = максимальный reach. Только цифры = сухо. Только история = нет доверия. Только фреймворк = абстрактно.
    - **Formatting by platform**:
-     - **Telegram**: Абзацы 2-4 строки, markdown, эмодзи-списки, неформальный тон. Основная площадка для глубоких постов.
+     - **Telegram**: Абзацы 2-4 строки, plain text, эмодзи-списки, неформальный тон. Основная площадка для глубоких постов. Ключевой формат — диагностирующий блог (не лечащий). Подробнее: `resources/telegram-guide.md`
      - **Threads**: Max 500 символов, plain text (без markdown), БЕЗ хештегов, без кода, одна мысль. Треды: каждый пост заканчивается крючком к следующему (slippery slide). Подробнее: `resources/threads-guide.md`
      - **X (EN)**: 280 chars/tweet, threads для длинного формата, English only — rewrite, don't translate. Подробнее: `resources/x-guide.md`
      - **LinkedIn**: Абзацы 1-2 строки, → стрелки для списков (LinkedIn НЕ рендерит markdown bullets), NO H2/H3, NO em-dashes (—). Алгоритм 2026 штрафует "Comment YES" CTA.
@@ -461,6 +452,7 @@ _DD месяц YYYY_
 - [Viral Formats](resources/viral-formats.md) — 7 форматов вирусного контента (спорное мнение, провал, жиза, списки, до/после, непопулярное мнение, общий враг) с примерами для AISobolev
 - [Hooks Guide](resources/hooks-guide.md) — 7 типов хуков, Slippery Slide, 5 уровней осведомлённости, шаблоны для фаундер-контента
 - [Style Guide](resources/style-guide.md) — Голос AISobolev, тон, форматирование, антипаттерны, чеклист
+- [Telegram Guide](resources/telegram-guide.md) — Правила Telegram (основная площадка), диагностирующий блог как ключевой метод, типы постов, CTA для сегментации
 - [Threads Guide](resources/threads-guide.md) — Правила Threads, типы постов, примеры
 - [X Guide](resources/x-guide.md) — Правила X/Twitter, English voice, thread structure
 - [Platforms Reference](resources/platforms.md) — Platform-specific strategies for all platforms
