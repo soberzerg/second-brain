@@ -1,89 +1,107 @@
 ---
-type: ai-digest
+type: ai-daily-digest
 date: 2026-04-20
-period: 2026-04-16 — 2026-04-20
-platforms: [vault-synthesis]
-status: active
-tags: [daily-digest, ai-news, vault-based, founder-cto]
+platforms: [X/Twitter, Reddit]
+period: 2026-04-19 — 2026-04-20
+status: completed
+tags: [daily-digest, ai-news, auto-generated]
 ---
 
 # AI Daily Digest — 2026-04-20
 
-**Период:** 2026-04-16 — 2026-04-20
-**Источник:** синтез по материалам vault (последние digest'ы, YouTube-выжимки, social research, PRDs)
-**Для кого:** фаундер/CTO — фокус на решения для Clario и AGIency
+**Период:** 2026-04-19 — 2026-04-20
+**Платформы:** X/Twitter, Reddit
 
-> ⚠️ Vault-based digest. В этот запуск не было прямого доступа к X/Reddit/web — сводка собрана из свежих заметок в `500_Research/` и последних двух авто-digest'ов (2026-04-18, 2026-04-19). Ссылки на оригинальные источники сохранены в исходных заметках.
-
----
-
-## Что важно сегодня
-
-- **Harness, а не модель, становится продуктом.** Сразу несколько независимых сигналов сходятся на одном: reverse-engineering Claude Code показал ~98% кода = harness (permissions, MCP, compaction, subagents) и ~1.6% AI-логики. Jensen Huang в 5-layer cake (energy → chips → cloud → models → apps) явно смещает value в apps. Вывод для нас: инвестиции в оркестрацию и инфраструктуру вокруг модели — правильная ставка, не сами модели.
-- **Vendor lock-in вышел в топ рисков.** Кейс Anthropic-бана целой компании (@belo_app, 60+ сотрудников, апелляция через Google Form) спровоцировал широкую дискуссию. Любой бизнес на закрытых AI-платформах обязан иметь fallback и model-agnostic слой.
-- **Cost management multi-agent — новая боль прода.** Кейс «12 parallel agents = 5 часов кредитов за 32 минуты» набрал 3.5k+ лайков. Multi-agent без бюджет-контроля и явных триггеров — экономический ад. Консенсус r/AI_Agents: multi-agent оправдан только там, где single agent объективно не справляется.
-- **Claude Code форкнули под GPT/Gemini/DeepSeek/Llama.** Архитектурный стандарт agentic dev отделяется от Anthropic. Это ровно тот тренд, на который мы и закладываемся с AgentOS Phase 2 (co-pilot на OpenAI-compat LLM + Claude как один из воркеров).
-- **Enterprise MCP ускоряется.** Salesforce Headless 360: весь стек (Salesforce + Agentforce + Slack) — через MCP/API/CLI. Это крупнейший enterprise-сигнал по MCP за период.
+> AI-синтезированный анализ через Grok API (X/Twitter) + Firecrawl API (Reddit) + Claude (синтез)
 
 ---
 
-## Модели / продукты
+## Top Stories
 
-- **Слухи о параллельном релизе топ-моделей.** CEO @abacusai (@bindureddy) предсказывает выпуск новой крупной модели OpenAI уровня Opus на следующей неделе — одновременно с Opus 4.7 от Anthropic. Если сбудется, конкуренция и цены на inference могут резко сдвинуться.
-- **Claude Code как «persistent OS для AI-агентов».** В серии YouTube за 2026-04-16 («ClaudeClaw The Sequel», «What Is OpenClaw») концепция Agent SDK + Skills + Cron Jobs + War Room + Hive Mind оформляется как зрелый паттерн. Это уже не чат-бот, а self-hosted автономная рабочая среда.
-- **AI-сотрудники как контент-команда.** Выжимка 2026-04-19 (Sandy Coreana, «I Built My First AI Employee») — специализированные агенты на Claude Code (анализ, тренды, сценарии, миниатюры, монтаж, Shorts), outlier video metric, стек Google APIs + Descript + Nanobana Pro + OpenRouter. Экономика: $84–174/мес vs $7–8k/мес на human team. Рабочий шаблон того, как выглядит «AI employee» для контент-процессов.
-- **Vibe coding в новом пределе.** @HowToAI_ собрал 3D flight simulator с реальным ландшафтом прямо в браузере за выходные на Claude Code; 613k просмотров демо. Порог «сделать прототип за уик-энд» продолжает падать.
+### 1. AutoSOTA: Multi-agent система открыла 105 новых SOTA-моделей за 5 часов
+**Источник:** X/Twitter | **Ссылка:** https://x.com/jiqizhixin/status/2045915580562296921
+Система из 8 специализированных agents автоматически провела исследования в областях LLM, computer vision и time series, обнаружив 105 новых state-of-the-art моделей. Каждая бумага анализируется за ~5 часов — это принципиальный шаг к autonomous scientific research. Работа из Tsinghua демонстрирует, что multi-agent coordination уже конкурентоспособна с ручным research pipeline.
 
----
+### 2. Open-source библиотеки skills для AI agents — новый тренд экосистемы
+**Источник:** X/Twitter | **Ссылка:** https://x.com/tom_doerr/status/2045858138524365174
+Сразу две библиотеки привлекли внимание разработчиков: cybersecurity skills для AI agents (940 лайков) и 133 scientific research skills (191 лайк). Экосистема переходит от монолитных agents к composable, переиспользуемым skill libraries — аналог npm для agent capabilities. Это резко снижает порог входа для tool use в production agents.
 
-## Open source / инфраструктура
+### 3. Claude Code форкнули для работы с любыми LLM
+**Источник:** Reddit | **Ссылка:** https://www.reddit.com/r/AI_Agents/comments/1s9cnhq/claude_code_literally_got_forked_to_work_with/
+Community-форк Claude Code теперь поддерживает GPT-4o, Gemini, DeepSeek, Llama, Mistral и другие модели через единый интерфейс. Это сигнал: UX и workflow Claude Code стали стандартом, который хотят сохранить даже при смене base model. Конкуренция AI coding tools переходит в слой опыта, а не только качества модели.
 
-- **OpenClaw как референсная архитектура.** По свежему обзору (`500_Research/550_AI/551_Agents/OpenClaw - обзор платформы.md`) — пятислойный harness, 79.6% на бенчмарке с Sonnet 4.6, self-hosted, Skills + Cron Jobs + VPS-развёртывание. Рядом — собственные риски (malicious skills), их важно учитывать в обучающих материалах для клиентов.
-- **CLAUDE.md как центр системы.** Паттерн из Threads-треда 2026-04-16 и discover-вирального поста о Google-инженере (автоматизирует 80% работы) — Skills + Hooks + MCP + Subagents, собранные вокруг одного CLAUDE.md-файла. Снижение ошибок ИИ с 40% до 3% по принципам Karpathy — популярный фрейм, который стоит держать в голове при онбординге клиентских команд.
-- **Многопровайдерный harness.** Форк Claude Code под произвольные модели + анонсы SDK и MCP adoption (Salesforce, Expo/iOS simulator) подтверждают: рыночное ожидание — один harness, много моделей. Ровно то, что заложено в AgentOS Phase 2 PRD (2026-04-18): разделение разговорного LLM-loop (OpenAI-compat) и исполнительных воркеров через MCP, с Claude как одним из них.
-- **Open-source multi-agent + skill packs.** @tom_doerr продолжает выкатывать goal-driven multi-agent фреймворки и наборы skills/plugins для 12 AI coding tools. Хороший источник готовых паттернов для наших собственных скиллов.
+### 4. LangChain: Deep Agents + ACP как альтернатива Claude Code
+**Источник:** X/Twitter | **Ссылка:** https://x.com/LangChain_OSS/status/2045925400426234217
+JetBrains опубликовал гайд по построению coding agent на основе LangChain Deep Agents с ACP протоколом, human-in-the-loop и LangSmith observability. Позиционирование прямо против Claude Code — с акцентом на multi-model flexibility и enterprise контроль. Конкуренция в AI coding assistants усиливается на уровне agent frameworks.
 
----
-
-## Что это значит для Clario / AGIency
-
-**Clario (Revenue Intelligence System):**
-
-- Кейс «harness > model» подтверждает нашу ставку: value для РОПа — не в самой LLM, а в замкнутом цикле контроля менеджеров (PRD 2026-04-16 Harness Threads, AgentOS Phase 2). Акцент на скоринге, правилах, интеграциях с CRM / колл-центром — правильное направление.
-- Для голосового бота колл-центра Базис (PRD 2026-04-08) стоит заложить модельную независимость: Yandex.Speech + OpenAI-compat LLM (с возможностью свапа на Claude/Gemini) — vendor lock-in риск критичен для Казахстана.
-- Идея «AI-сотрудник» Sandy Coreana — прямой шаблон для pitch'а клиентам: не «AI-инструмент», а конкретная роль (АИ-РОП, AI-аналитик звонков) с экономикой $X/мес vs человек.
-
-**AGIency (услуги и AGIents платформа):**
-
-- Krytex KP (2026-04-20) хорошо ложится в сегодняшний нарратив: 5 ₽/запрос без минимума + setup 450 000 ₽ — это ровно про «цените app-слой, а не модель». В пресейле Mediashop24 / следующих лидов стоит явно подсвечивать: мы продаём harness и платформу, модель — взаимозаменяема.
-- Express Security Audit (212) выигрывает от темы «malicious skills» из обзора OpenClaw — можно расширить оффер: «аудит на утечки через AI-интеграции и risky skills». Это свежий, слабо освещённый угол.
-- Platform Capabilities AGIents (Inbox, Аналитика, Настройки, Пользователи, Сессионная память) стоит дополнить пунктом «model-agnostic» и «cost controls for multi-agent» — ровно болевые точки рынка за неделю.
-- AI Coding Training для Dogovor24 — апдейтнуть модуль про CLAUDE.md + Skills + Hooks под принципы Karpathy (свежий Threads-тред + вирусный кейс Google-инженера).
+### 5. Anthropic Mythos и безопасность: AI как «оружие хакера»
+**Источник:** X/Twitter (WIRED) | **Ссылка:** https://x.com/WIRED/status/2045975979214921905
+WIRED описывает новую AI-модель Anthropic как потенциальное «superweapon для хакеров», поднимая вопрос о переосмыслении подходов к cybersecurity в эпоху powerful AI agents. Контекст усиливается появлением open-source cybersecurity skills библиотек для agents — community активно изучает offensive и defensive возможности.
 
 ---
 
-## 3 action items
+## X/Twitter Highlights
 
-1. **AGIents: зафиксировать «model-agnostic + cost controls» как явные фичи.** Обновить `200_Projects/220_AGIents/Platform Capabilities.md` и добавить в шаблон КП (используется в Krytex, Mediashop24) два пункта: (a) поддержка нескольких LLM-провайдеров с fallback, (b) лимиты и мониторинг расхода на multi-agent сценариях. Это прямой ответ на кейсы Anthropic-ban и 5-часов-кредитов-за-32-минуты.
-2. **Clario: прописать в roadmap v2 многопровайдерный LLM-слой.** В `200_Projects/230_Clario/231_Roadmaps/Clario v2 RoadMap.md` и `233_PRDs/Bazis-Call-Center-Automation-PRD.md` явно добавить требование OpenAI-compat абстракции над моделью (ровно как в AgentOS Phase 2). Минимальный acceptance — свап модели без изменения бизнес-логики и фиксированный cost envelope на сессию.
-3. **Контент: пост «Почему harness важнее модели» для Threads/Telegram.** Использовать уже существующий черновик `300_Blog/350_Draft_Posts/351_RU/2026-04-16 Harness важнее модели - Threads.md` + свежие цифры из digest'а 2026-04-19 (98.4% harness / 1.6% AI-логики, 5-layer cake Huang). Выложить на этой неделе, привязать к новому лид-магниту «чеклист vendor-lock-in рисков» (параллельно с 10-processes-AI-checklist).
+**@tom_doerr** — два резонансных поста про skill libraries:
+- [Cybersecurity Skills Library](https://x.com/tom_doerr/status/2045858138524365174) (940 лайков): open-source набор cybersecurity capabilities для AI agents на базе репозитория Anthropic.
+- [133 Scientific Research Skills](https://x.com/tom_doerr/status/2045827255587242270) (191 лайк): готовые к использованию skills для autonomous research agents.
+
+**@jiqizhixin** — [AutoSOTA paper](https://x.com/jiqizhixin/status/2045915580562296921): детальный разбор multi-agent системы для automated ML research с впечатляющими benchmark результатами.
+
+**@LangChain_OSS** — [Community Spotlight](https://x.com/LangChain_OSS/status/2045925400426234217): Deep Agents + ACP Coding Agent как enterprise-ready альтернатива Claude Code, с акцентом на controllability и observability через LangSmith.
+
+**@mikefutia** — [Claude Design workflow](https://x.com/mikefutia/status/2045921591138402440) (125 лайков): практический playbook для DTC-агентств: brand system → landing page prototypes → экспорт в Claude Code. Реальный business use case AI design tools.
+
+**@RoundtableSpace** — [Claude Code update](https://x.com/RoundtableSpace/status/2045740425814888930) (835 лайков): апдейт Claude Code с возможностью сканировать весь codebase в стиле senior engineer и проактивно выявлять bugs и costly issues.
+
+**@WIRED** — [Anthropic Mythos & security](https://x.com/WIRED/status/2045975979214921905): материал о рисках powerful AI models для cybersecurity landscape.
 
 ---
 
-## Связанные документы
+## Reddit Discussions
 
-- [[2026-04-19 - AI Daily Digest]](500_Research/510_AI_Daily_Digest/2026-04-19%20-%20AI%20Daily%20Digest.md) — базовый набор историй (Anthropic ban, harness, Jensen Huang, OpenAI/Anthropic релизы)
-- [[2026-04-18 - AI Daily Digest]](500_Research/510_AI_Daily_Digest/2026-04-18%20-%20AI%20Daily%20Digest.md) — Salesforce Headless 360, форк Claude Code, multi-agent дебаты
-- [[2026-04-19 - I Built My First AI Employee (It Works 24-7)]](500_Research/530_YouTube/2026-04-19%20-%20I%20Built%20My%20First%20AI%20Employee%20(It%20Works%2024-7).md) — архитектура AI-сотрудника, экономика $174 vs $8k/мес
-- [[2026-04-16 - What Is OpenClaw]](500_Research/530_YouTube/2026-04-16%20-%20What%20Is%20OpenClaw%20-%20The%20AI%20That%20Actually%20Does%20Things.md) — Skills + Cron Jobs, самохостинг, риски malicious skills
-- [[2026-04-16 - ClaudeClaw The Sequel]](500_Research/530_YouTube/2026-04-16%20-%20ClaudeClaw%20The%20Sequel%20-%20Build%20Your%20AI%20As....md) — Agent SDK, War Room, Hive Mind, многослойная безопасность
-- [[OpenClaw - обзор платформы]](500_Research/550_AI/551_Agents/OpenClaw%20-%20обзор%20платформы.md) — 5-слойный harness, 79.6% на бенчмарке, конкуренты
-- [[2026-04-13 - Google Engineer Automates 80% with Claude Code]](500_Research/520_Social_Research/2026-04-13%20-%20Google%20Engineer%20Automates%2080%25%20with%20Claude%20Code.md) — CLAUDE.md + Everything Claude Code как рабочий шаблон
-- [[2026-04-16 Harness важнее модели - Threads]](300_Blog/350_Draft_Posts/351_RU/2026-04-16%20Harness%20важнее%20модели%20-%20Threads.md) — готовый тред, основа для поста
-- [[2026-04-16 CLAUDE.md по принципам Karpathy - Threads]](300_Blog/350_Draft_Posts/351_RU/2026-04-16%20CLAUDE.md%20по%20принципам%20Karpathy%20-%20Threads.md) — принципы Karpathy, снижение ошибок с 40% до 3%
-- [[AgentOS prd-phase-2]](200_Projects/240_MicroSaaS/245_AgentOS/prd-phase-2.md) — co-pilot архитектура: OpenAI-compat LLM + Claude/прочие воркеры через MCP
-- [[AGIents Platform Capabilities]](200_Projects/220_AGIents/Platform%20Capabilities.md) — текущие возможности платформы (куда добавить model-agnostic + cost controls)
-- [[Krytex proposal]](200_Projects/210_AGIency/216_Clients/Krytex/proposal.md) — КП, демонстрирующее модель «продаём harness/платформу, модель — взаимозаменяема»
-- [[Clario v2 RoadMap]](200_Projects/230_Clario/231_Roadmaps/Clario%20v2%20RoadMap.md) — дорожная карта, где стоит явно прописать многопровайдерный LLM-слой
-- [[Bazis Call Center Automation PRD]](200_Projects/230_Clario/233_PRDs/Bazis-Call-Center-Automation-PRD.md) — PRD колл-центра, требующий model-agnostic абстракции
-- [[a16z Big Ideas 2026]](500_Research/550_AI/a16z%20Big%20Ideas%202026%20-%20Andreessen%20Horowitz%20Predictions.md) — макроконтекст венчурных трендов 2026
+**r/AI_Agents** — активная дискуссия о practical value multi-agent систем:
+- [Do We Actually Need Multi-Agent AI?](https://www.reddit.com/r/AI_Agents/comments/1j9bwl7/) — консенсус: multi-agent оправдан только когда single agent не справляется. Много overcomplexity в продакшне.
+- [Multi-agent vs single powerful AI](https://www.reddit.com/r/AI_Agents/comments/1s37aj7/) — практики сходятся: для complex multi-step workflows multi-agent выигрывает, для простых задач — нет.
+- [10+ Multi-Agent Systems at Enterprise Scale](https://www.reddit.com/r/AI_Agents/comments/1npg0a9/) — разбор patterns: параллельная обработка 20k документов, banking risk assessment, синхронизация через message passing.
+- [Claude Code literally got forked](https://www.reddit.com/r/AI_Agents/comments/1s9cnhq/) — обсуждение community-форка, который отвязал Claude Code UI от Anthropic models.
+
+**r/BuildToShip / r/cursor / r/vibecoding** — продолжающийся Cursor vs Claude Code debate:
+- [Cursor vs Claude Code: 30 days](https://www.reddit.com/r/BuildToShip/comments/1ozznz9/) — ёмкая формулировка: «Cursor делает тебя быстрее в том, что ты уже умеешь. Claude Code делает вещи за тебя».
+- [Which AI tool in 2026?](https://www.reddit.com/r/AI_Agents/comments/1slczzz/) — Cursor побеждает для frontend с визуальным контролем, Claude Code — для автономных задач.
+
+**r/Anthropic / r/OpenAI / r/GeminiAI** — модельные сравнения:
+- [ChatGPT vs Claude vs Gemini](https://www.reddit.com/r/Anthropic/comments/1qrx8op/) — Gemini лучший для research, Claude лучший для creation — устойчивый консенсус сообщества.
+
+---
+
+## Тренды дня
+
+- **Skill libraries как инфраструктура для agents** — экосистема движется к composable, переиспользуемым capability пакетам; skill marketplace становится реальностью
+- **Autonomous research agents** — AutoSOTA демонстрирует, что AI может самостоятельно проводить ML research на уровне, сопоставимом с human researchers
+- **Фрагментация AI coding tools** — Claude Code форкнули, LangChain строит альтернативы; лидерство определяется UX и workflow, а не только качеством модели
+- **AI + cybersecurity tension** — одновременно растут и offensive capabilities (WIRED об Anthropic Mythos) и defensive skill libraries; security становится горячей темой в agent space
+- **Multi-agent pragmatism** — community приходит к зрелому взгляду: overhead координации реален, multi-agent оправдан только для genuinely parallel complex tasks
+
+---
+
+## Релевантность для проектов
+
+### AGIents.pro
+
+- **Skill libraries** — прямой сигнал для платформы: модуль marketplace готовых agent skills (cybersecurity, research, coding) — высокий спрос уже подтверждён вовлечённостью на X. Стоит рассмотреть раздел «Skill Store» или интеграцию с open-source библиотеками
+- **AutoSOTA pattern** — архитектура из 8 специализированных agents с periodic sync — готовый reference pattern для шаблонов агентов на платформе
+- **Multi-agent pragmatism** — Reddit-дискуссии дают чёткий UX-инсайт: пользователи хотят guidance «когда использовать multi-agent», а не просто конструктор. Стоит добавить decision helper или рекомендательную логику
+- **ACP protocol** (из LangChain spotlight) — если платформа планирует interoperability, ACP появляется как emerging standard для agent communication
+
+### AISobolev Blog
+
+- **«Когда multi-agent — не нужен»** — высокоспросовая тема по Reddit-сигналам, можно написать практическую статью с decision framework
+- **Разбор AutoSOTA** — глубокий технический пост о multi-agent для scientific research: архитектура, результаты, применимость в других доменах
+- **Skill libraries как новая парадигма** — обзорный пост: от монолитных LLM-приложений к composable agent skills; тренд только набирает обороты
+- **Cursor vs Claude Code: честное сравнение 2026** — тема активно обсуждается, материал с личным опытом и чёткими критериями выбора получит трафик
+
+---
+
+*Auto-generated by ai-daily-digest.sh*
+*APIs: Grok API (X/Twitter) + Firecrawl Search (Reddit) + Claude SDK (synthesis)*
