@@ -263,6 +263,7 @@ status: active
 ### 340 Lead Magnets
 
 - [[10-processes-AI-checklist]](300_Blog/340_Lead_Magnets/10-processes-AI-checklist.md) — чек-лист: 10 процессов, которые ИИ может заменить в бизнесе
+- [[Лид-магнит - Git для вайбкодера]](300_Blog/340_Lead_Magnets/Лид-магнит%20-%20Git%20для%20вайбкодера.md) — мини-гайд по Git через UI VS Code: установка, коммиты, откаты, ветки, push на GitHub
 
 ### 350 Draft Posts
 

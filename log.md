@@ -199,3 +199,9 @@ status: active
 - Files created: 500_Research/590_Analysis/Jensen Huang 5-layer AI cake - материал для статьи.md
 - Files updated: index.md
 - Details: Собран полный текст поста @r0ck3t23 (298k views), оригинальные цитаты Jensen Huang из NVIDIA Blog / Davos 2026 / Dwarkesh podcast, экспертные реакции (StockSavvyShay, Cassie Kozyrkov, Aakash Gupta), 6 готовых углов для статьи и ключевые цитаты ready-to-paste
+
+## [2026-04-22] create | Вайб-кодинг лайфхак №5 — Git + лид-магнит
+
+- Files created: 300_Blog/350_Draft_Posts/351_RU/2026-04-22 Вайб-кодинг лайфхак 5 Git.md, 300_Blog/340_Lead_Magnets/Лид-магнит - Git для вайбкодера.md
+- Files updated: index.md
+- Details: Тред для Threads (8 постов) + Telegram-версия про git для вайбкодеров + лид-магнит мини-гайд по git через UI VS Code (установка, коммит, откат, ветки, push на GitHub), Mac+Win
