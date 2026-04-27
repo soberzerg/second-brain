@@ -205,3 +205,14 @@ status: active
 - Files created: 300_Blog/350_Draft_Posts/351_RU/2026-04-22 Вайб-кодинг лайфхак 5 Git.md, 300_Blog/340_Lead_Magnets/Лид-магнит - Git для вайбкодера.md
 - Files updated: index.md
 - Details: Тред для Threads (8 постов) + Telegram-версия про git для вайбкодеров + лид-магнит мини-гайд по git через UI VS Code (установка, коммит, откат, ветки, push на GitHub), Mac+Win
+
+## [2026-04-25] create | Память для агентов и Ralph Loop — пост для Threads
+
+- Files created: 300_Blog/350_Draft_Posts/351_RU/2026-04-25 Память для агентов и Ralph Loop.md
+- Files updated: index.md
+- Details: Драфт поста для Threads (494 символа) о том, что проблема агентов не в памяти, а в системе управления + база знаний. Включена справка про Ralph Loop (Geoffrey Huntley, 2025) и анонс собственной ОС для агентов с многосессионным выполнением задач на 1М контекста. В файле — 3 варианта хука (провокация / рефрейм / отсылка) и итоговый драфт.
+
+## [2026-04-26] update | Память для агентов и Ralph Loop — развёрнут в тред
+
+- Files updated: 300_Blog/350_Draft_Posts/351_RU/2026-04-25 Память для агентов и Ralph Loop.md, index.md
+- Details: Single post развёрнут в тред из 4 постов со slippery slide. Пост 1 — хук+провокация (157 симв), Пост 2 — рефрейм (194), Пост 3 — Ralph Loop с механикой (237), Пост 4 — ОС для агентов + вопрос для engagement (230). Single-post версия сохранена как альтернатива.
