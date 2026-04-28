@@ -11,6 +11,22 @@ status: active
 > Формат: `## [YYYY-MM-DD] <operation> | <Title>` — grep-parseable.
 > Операции: ingest, create, update, lint, query.
 
+## [2026-04-28] ingest | Лайфхаки при создании Claude Code skills
+
+- Source: 000_Inbox/Лайфхаки при создании skills.md
+- Destination: 500_Research/550_AI/551_Agents/Лайфхаки при создании Claude Code skills.md
+- Files created: 500_Research/550_AI/551_Agents/Лайфхаки при создании Claude Code skills.md
+- Files updated: index.md, log.md
+- Details: Конденсированный чеклист из 20 правил по созданию качественных Agent Skills на основе официальной доки Anthropic (Skill authoring best practices + Agent Skills overview). Покрывает naming, description с триггерами, progressive disclosure, workflow по шагам, output templates, examples, validation loop, scripts для детерминированных операций, dependencies, тесты на 3+ сценариях. Применимо к аудиту существующих custom skills и обучению клиентов AGIency. Кандидат на Threads-лонгрид и материал для AI Coding Training в Dogovor24
+
+## [2026-04-28] ingest | Own Your Harness — Sau Sheong (Medium)
+
+- Source: 000_Inbox/2026-04-28 08.04.30 Own Your Harness What compaction in Claude Code a.txt
+- Destination: 500_Research/550_AI/551_Agents/Own Your Harness - Sau Sheong.md
+- Files created: 500_Research/550_AI/551_Agents/Own Your Harness - Sau Sheong.md
+- Files updated: index.md, log.md
+- Details: Глубокий разбор compaction-стратегий в Claude Code и OpenClaw как иллюстрация того, почему harness — ключевой дифференциатор продукта, а не "тонкая обёртка над моделью". Документирует 8 механизмов compaction в Claude Code, противоположный preemptive-подход OpenClaw, разницу в schema (narrative vs structural), recovery (lossy + circuit breaker vs snapshot + cancel), memory (substitute vs supplement). Содержит цифры из production telemetry Anthropic: "1,279 sessions с 50+ failures, ~250K API calls/день", "2.79% vs 0.01% tool calls во время compaction Sonnet 4.6 vs 4.5". Прямое применение к проекту orchestrator (AGIents) — готовый чеклист дизайн-решений для собственного harness. Сильный кандидат на блог-пост на русском
+
 ## [2026-04-20] create | Threads тред — Harness становится продуктом
 
 - Files created: 300_Blog/350_Draft_Posts/351_RU/2026-04-20 Harness становится продуктом - Threads.md

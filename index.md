@@ -8,7 +8,7 @@ status: active
 # Wiki Index
 
 > Навигационный индекс хранилища. Обновляется при каждой операции ingest/create.
-> Последнее обновление: 2026-04-08
+> Последнее обновление: 2026-04-28
 
 ## 000 Inbox
 
@@ -442,6 +442,8 @@ status: active
 - [[Open-Source альтернативы Claude Code]](500_Research/550_AI/551_Agents/Open-Source%20альтернативы%20Claude%20Code%20-%20исследование%202026.md) — исследование open-source альтернатив для сервиса Second Brain
 - [[OpenClaw - автоматизация TikTok контента]](500_Research/550_AI/551_Agents/OpenClaw%20-%20автоматизация%20TikTok%20контента%20через%20ИИ-агента.md) — гайд: автоматизация TikTok-контента через OpenClaw
 - [[OpenClaw - обзор платформы]](500_Research/550_AI/551_Agents/OpenClaw%20-%20обзор%20платформы.md) — полный обзор OpenClaw: архитектура agent harness, 5 слоёв, возможности, бенчмарки, конкуренты
+- [[Own Your Harness - Sau Sheong]](500_Research/550_AI/551_Agents/Own%20Your%20Harness%20-%20Sau%20Sheong.md) — разбор compaction в Claude Code vs OpenClaw: 8 механизмов, две противоположные стратегии, аргумент "владей своим harness"
+- [[Лайфхаки при создании Claude Code skills]](500_Research/550_AI/551_Agents/Лайфхаки%20при%20создании%20Claude%20Code%20skills.md) — 20 правил + чеклист по созданию качественных skills на основе официальной доки Anthropic
 
 **552 RAG:**
 
