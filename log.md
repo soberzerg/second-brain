@@ -11,6 +11,68 @@ status: active
 > Формат: `## [YYYY-MM-DD] <operation> | <Title>` — grep-parseable.
 > Операции: ingest, create, update, lint, query.
 
+## [2026-05-04] ingest | AGIency Design System v1.0
+
+- Source: 000_Inbox/AGIency_design_system_v1.docx
+- Destination: 200_Projects/210_AGIency/217_Brand/
+- Files created:
+  - 200_Projects/210_AGIency/217_Brand/Design System v1.md
+  - 200_Projects/210_AGIency/217_Brand/README.md
+- Files updated: index.md, log.md
+- Details: Полный бренд-документ AGIency v1.0 с .docx переведён в Markdown. 9 секций: основа бренда (формула Понимание→Конструкция→Результат, архетипы Мудрец/Творец/Герой), 5 принципов (системность, минимализм, инженерность, фокус на результате, читаемость), цветовая палитра (фон #FAF8F5, графит #1F1F1F, акцент красный #E53935 — отказ от фиолетового и AI-клише), типографика (Manrope), логотип (выделение AGI с красной точкой в A), UI-язык (схемы/оси/сетки, тонкие границы), тон коммуникации, запреты (нет градиентам/неону/3D), формула «светлая база + инженерная строгость + один сильный акцент». Создана новая поддиректория 217_Brand/ для брендовых материалов AGIency. Source-файл .docx оставлен в Inbox (бинарный оригинал может пригодиться).
+
+## [2026-04-30] create | Контент-план на 30 дней — май 2026
+
+- Files created:
+  - 300_Blog/315_Content_Plans/2026-04-30 Контент-план на 30 дней (май 2026).md
+- Files updated: index.md, log.md
+- Details: Goal #16 / task #33 (AgentOS orchestrator). Собран месячный контент-план для AISobolev на 01.05–30.05.2026 на основе существующего контекста vault — без запросов к пользователю. Опора: [[Карта экспертности]], [[Нейроанализ ЦА - Фаундеры]] (80%), [[Нейроанализ ЦА - Директора МСБ]] (20%), [[Упаковка блога]], [[Система контента]], [[Оффер и продуктовая линейка]], [[Руководство - Диагностирующий блог]], [[2026 Yearly Plan]], [[2026-03-16 Threads Strategy]], публикационный пакет [[instagram-carousels-final-10]]. Структура: резюме стратегии, 8 бизнес-целей с метриками (TG 210→350+, Threads 297→500+, лид-магниты 25–40, трипваеры 4–6 шт.), 5 пилларов с пропорциями (Диагностика 28% / Кейсы 22% / Buildinpublic 22% / Мнение 18% / Продающий 10%), рубрикатор по дням недели, 4 тематические недели (Реальность ИИ / Цифры / AGIents.pro buildinpublic / Позиция и приглашение), календарь на 30 дней по платформам с CTA, банк хуков для 17 TG-постов, паттерны Threads, 4 запланированные Instagram-карусели (3 готовы, 4-я — Opus/Sonnet/Haiku — нужно создать к 26.05), repurposing-схема TG→Threads/X/LinkedIn/Insta с бюджетом 5.8–8.3 ч/нед, лид-магниты МОЗГ/ДИАГНОЗ/GIT с воронкой до ретейнера, метрики для ретро 30.05, чеклист запуска. Явно зафиксированы 9 допущений и пробелов vault: базовые цифры подписчиков, статус ботов, согласия клиентов на кейсы, цены аудита, baseline метрик X/LinkedIn, риск раскрытия закрытых проектов AgentOS Phase 2 / Ralph Loop. Тип создан как `content-plan`, размещён в новой поддиректории 300_Blog/315_Content_Plans/ (между 310 идеями и 320 контекстом). Привязка к Q2-плану из [[2026 Yearly Plan]]: рост подписчиков и лидов под запуск AGIents.pro.
+
+## [2026-04-29] query | Agentic OS — приоритизация фич сообществом
+
+- Files created:
+  - 500_Research/520_Social_Research/2026-04-29 - Agentic OS - Приоритизация фич сообществом.md
+- Files updated: index.md, log.md
+- Details: Reddit r/artificial пост u/ramirez_tn про governed multi-agent execution platform (score 0, ratio 0.44, 13 комментариев). Дословно собран пост и все 12 валидных комментариев через MCP reddit-search + JSON endpoint (MCP-выжимка скрывала score'ы и часть текста). Сформирована приоритизация фич по силе валидации сообществом: P0 (zero shared state + structured handoffs, governance/RBAC + audit log) — 4 положительных голоса; P1 (HITL operator console с RBAC-scoped monitoring — pab_guy; прозрачная escalation policy — Low_Blueberry_6711) — конкретные просьбы расширить; P2 (reputation scoring, task versioning, evaluation engine) — упомянуто автором, не отрефлексировано сообществом, риск over-engineering; P3 (team presets, 5-слойная архитектура) — стандартное, не дифференциатор. Рекомендации: фокус на P0+P1 в demo/landing (audit-trail визуализация + operator console с HITL queue), опубликовать DSL/YAML для escalation policy, отложить reputation scoring и evaluation engine. Ключевое наблюдение: ratio 0.44 = silent-аудитория голосует против, поэтому положительные комментарии не = полная валидация рынка.
+
+## [2026-04-29] create | Санатории — ручное исследование гипотез поиска контактов ЛПР
+
+- Files created:
+  - 200_Projects/220_AGIents/222_Research/Санатории - Ручное исследование гипотез поиска контактов ЛПР.md
+- Files updated: index.md, log.md
+- Details: Goal #15 / task #31 (AgentOS orchestrator). Зафиксирована выборка из 5 санаториев (Машук Аква-Терм, СКК Знание, Янган-Тау, Загорские дали, Полтава-Крым) — разные регионы, размеры, формы собственности. Прогнаны 11 гипотез поиска ЛПР без платных enrichment: H1 офсайт, H2 RusProfile/checko, H3 zakupki.gov.ru, H4 PDF, H5–H7 соцсети (VK/Telegram/Instagram/OK/Дзен/MAX/YouTube), H8 hh.ru, H9 LinkedIn, H10 email-шаблоны, H11 СМИ/интервью. Для каждой гипотезы зафиксированы шаги, объём просмотренного, yield по выборке, типы получаемых контактов, ограничения. Сведена таблица контактов на ~70 строк по 5 санаториям с метками direct/fallback и confidence high/medium/low; для каждой записи указан источник (URL или конкретная страница). Главный наблюдённый разрыв: 0/5 прямых персональных каналов CEO/директора по продажам, но 5/5 ФИО формальных руководителей и 5/5 близких к ЛПР каналов отделов (sales@/marketing@/b2b@/market@). Рекомендации: автоматизировать H1+H2+H10 как базовый слой (DaData + парсинг офсайтов + Hunter.io), H8 как сигнал зрелости, H11 оставить ручным на топ-N аккаунтов перед outreach, LinkedIn для РФ-санаториев не подключать. Все ФИО/email-ы взяты из открытых источников; противоречия (Машук — Боков vs Карлова; Полтава — Попов vs Ракоцило) явно помечены как low confidence.
+
+## [2026-04-29] create | Instagram-карусель «5 ИИ-агентов экономят соло-фаундеру 10 ч/нед» — драфт + 6 PNG
+
+- Files created:
+  - 300_Blog/350_Draft_Posts/351_RU/2026-04-29 Instagram-карусель 5 ИИ-агентов соло-фаундеру.md
+  - 300_Blog/390_Images/2026-04-29-5-ai-agents-solo-founder/slide-01-cover.png (1080×1350)
+  - 300_Blog/390_Images/2026-04-29-5-ai-agents-solo-founder/slide-02-research-agent.png (1080×1350)
+  - 300_Blog/390_Images/2026-04-29-5-ai-agents-solo-founder/slide-03-inbox-agent.png (1080×1350)
+  - 300_Blog/390_Images/2026-04-29-5-ai-agents-solo-founder/slide-04-content-agent.png (1080×1350)
+  - 300_Blog/390_Images/2026-04-29-5-ai-agents-solo-founder/slide-05-sales-agent.png (1080×1350)
+  - 300_Blog/390_Images/2026-04-29-5-ai-agents-solo-founder/slide-06-analytics-agent.png (1080×1350)
+- Files updated: index.md, log.md
+- Details: Goal #13 / task #27 (AgentOS orchestrator). Развёрнут outline темы #8 из публикационного пакета `instagram-carousels-final-10` в готовый к публикации markdown-черновик и шесть слайдов карусели. Структура: обложка + 5 ролей агентов (Research, Inbox, Контент, Sales, Analytics) с разбивкой по часам — 2 + 2 + 3 + 2 + 1 = 10 ч/нед, CTA встроен в последний слайд. Caption в стиле AISobolev (личный тон, конкретные часы, итоговое уравнение, вопрос в финале). 12 хэштегов RU/EN. Изображения сгенерированы через nano-banana (Gemini 2.5 Flash Image), единая палитра — deep navy #0E1525 + emerald #10B981, минимализм, крупный читаемый Cyrillic, без stock-клише и без отсылок к Claude Code/CLAUDE.md. Все артефакты приведены к точному размеру 1080×1350 (sips), формат PNG. Тема выдержана сквозь markdown, caption, hashtags, prompt'ы и сами изображения.
+
+## [2026-04-28] create | Instagram-карусель CLAUDE.md 10 секций — финальный текст
+
+- Files created: 300_Blog/350_Draft_Posts/351_RU/2026-04-28 Instagram-карусель CLAUDE.md 10 секций.md
+- Files updated: index.md, log.md
+- Details: Goal #12 / task #23 (AgentOS orchestrator). Развёрнут outline темы #2 из публикационного пакета (instagram-carousels-final-10) в готовый к публикации markdown-черновик: 10 слайдов по 15–60 слов (обложка + структура / команды / code style / тестирование / безопасность / hooks / агенты / выбор модели + CTA), Instagram-подпись 248 знаков, 8 хэштегов (#claudecode #claude #vibecoding #вайбкодинг #aiagents #aiфаундер #нейросети #aiproductivity). Все тексты без placeholder'ов, в стиле AISobolev (короткие предложения, конкретика, без корпоративного жаргона), готовы к копированию в редактор каруселей.
+
+## [2026-04-28] create | Instagram-карусели для сохранений — публикационный пакет 10 тем
+
+- Files created: 300_Blog/310_Content_Ideas/instagram-carousels-final-10.md
+- Files updated: log.md
+- Details: Goal #11 / task #19 (AgentOS orchestrator). Финальный публикационный пакет на основе отбора task #18: 10 тем оформлены едиными подпунктами «заголовок с цифрой / причина сохраняемости / количество слайдов». Распределение по форматам: чек-лист 2 / пошаговая 3 / подборка 3 / сравнение 2. Слайды подобраны по плотности контента в рамках ориентиров (чек-лист 7-10, пошаговые 8-12, подборки 10-12, сравнения 6-8).
+
+## [2026-04-28] create | Instagram-карусели для сохранений — финальный отбор 10 тем
+
+- Files created: 300_Blog/310_Content_Ideas/2026-04-28 Instagram-карусели для сохранений - 10 тем.md
+- Files updated: index.md, log.md
+- Details: Goal #11 / task #18 (AgentOS orchestrator). Из пула предыдущей подзадачи отобрано 10 тем для Instagram-каруселей с ориентацией на сохранения. Покрыты все 4 требуемых формата: 2 чек-листа (12 пунктов перед MVP, 10 секций CLAUDE.md), 3 пошаговых (первый Claude skill за 30 минут, Ralph Loop на ночь, 4 уровня памяти агента), 3 подборки (7 ежедневных skills, 10 промптов соло-фаундера, 5 экономящих 10 ч/нед агентов), 2 сравнения (Opus/Sonnet/Haiku, Cursor/Claude Code/Aider). Для каждой темы зафиксирован формат + обоснование.
+
 ## [2026-04-28] ingest | Лайфхаки при создании Claude Code skills
 
 - Source: 000_Inbox/Лайфхаки при создании skills.md

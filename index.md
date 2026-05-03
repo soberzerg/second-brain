@@ -8,7 +8,7 @@ status: active
 # Wiki Index
 
 > Навигационный индекс хранилища. Обновляется при каждой операции ingest/create.
-> Последнее обновление: 2026-04-28
+> Последнее обновление: 2026-05-04 (ingest: AGIency Design System v1.0)
 
 ## 000 Inbox
 
@@ -123,6 +123,10 @@ status: active
 - [[prd]](200_Projects/210_AGIency/216_Clients/Krytex/prd.md) — PRD: AI-бот Krytex на AGIents (Telegram/VK/MAX + маркетплейс-pipeline Ozon/WB, 6 недель, 3 фазы)
 - [[proposal]](200_Projects/210_AGIency/216_Clients/Krytex/proposal.md) — КП для Krytex: setup 450 000 ₽ (30/40/30), подписка 5 ₽/запрос без минимума, 6 недель внедрения
 
+#### 217 Brand
+
+- [[Design System v1]](200_Projects/210_AGIency/217_Brand/Design%20System%20v1.md) — дизайн-система AGIency v1.0: цвет (#FAF8F5 / #1F1F1F / #E53935), Manrope, логотип AGI/ency, инженерный UI-язык
+
 #### 219 HR
 
 - [[vacancy-business-assistant]](200_Projects/210_AGIency/219_HR/vacancy-business-assistant.md) — вакансия: бизнес-ассистент (удалённо, 15-20 ч/нед)
@@ -141,6 +145,7 @@ status: active
 - [[Workflow Automation Platforms (with AI Integration)]](200_Projects/220_AGIents/222_Research/Workflow%20Automation%20Platforms%20(with%20AI%20Integration).md) — обзор платформ автоматизации: n8n, Make, Zapier и др.
 - [[Рынок No-Code_Low-Code AI-Платформ]](200_Projects/220_AGIents/222_Research/Рынок%20No-Code_Low-Code%20AI-Платформ%20для%20ИИ-агентов%20и%20Автоматизации%20(Россия,%202026).md) — глубокий анализ рынка no-code/low-code AI-платформ в России
 - [[Positioning Doc - AGIents x a16z Trends 2026]](200_Projects/220_AGIents/222_Research/Positioning%20Doc%20-%20AGIents%20x%20a16z%20Trends%202026.md) — позиционирование AGIents относительно трендов a16z 2026
+- [[Санатории - Ручное исследование гипотез поиска контактов ЛПР]](200_Projects/220_AGIents/222_Research/Санатории%20-%20Ручное%20исследование%20гипотез%20поиска%20контактов%20ЛПР.md) — ручная проверка 11 гипотез на 5 санаториях: yield по источникам + таблица контактов + рекомендации по автоматизации
 
 #### 223 PRDs
 
@@ -228,6 +233,11 @@ status: active
 
 - [[AI-агенты работают пока ты отдыхаешь]](300_Blog/310_Content_Ideas/AI-агенты%20работают%20пока%20ты%20отдыхаешь.md) — идея провокационного поста про агентов
 - [[Первые идеи постов]](300_Blog/310_Content_Ideas/Первые%20идеи%20постов.md) — банк идей для блога AISobolev: bootstrapping, AI, кейсы
+- [[2026-04-28 Instagram-карусели для сохранений - 10 тем]](300_Blog/310_Content_Ideas/2026-04-28%20Instagram-карусели%20для%20сохранений%20-%2010%20тем.md) — финальный отбор 10 тем для каруселей: 2 чек-листа, 3 пошаговых, 3 подборки, 2 сравнения
+
+### 315 Content Plans
+
+- [[2026-04-30 Контент-план на 30 дней (май 2026)]](300_Blog/315_Content_Plans/2026-04-30%20Контент-план%20на%2030%20дней%20%28май%202026%29.md) — месячный контент-план AISobolev на 01.05–30.05.2026: 5 пилларов, 4 недельных темы, календарь TG/Threads/Insta/X/LinkedIn, repurposing, метрики, допущения
 
 ### 320 Context
 
@@ -273,6 +283,8 @@ status: active
 - [[2026-04-16 Harness важнее модели - Threads]](300_Blog/350_Draft_Posts/351_RU/2026-04-16%20Harness%20важнее%20модели%20-%20Threads.md) — тред для Threads: harness из OpenClaw применили в Clario для контроля менеджеров
 - [[2026-04-20 Harness становится продуктом - Threads]](300_Blog/350_Draft_Posts/351_RU/2026-04-20%20Harness%20становится%20продуктом%20-%20Threads.md) — тред для Threads: reverse-engineering Claude Code (98.4% harness / 1.6% AI), Jensen 5-layer cake, привязка к AgentOS как model-agnostic-продукту
 - [[2026-04-25 Память для агентов и Ralph Loop]](300_Blog/350_Draft_Posts/351_RU/2026-04-25%20Память%20для%20агентов%20и%20Ralph%20Loop.md) — тред для Threads (4 поста): проблема не в памяти агентов, а в системе управления — Ralph Loop (Huntley, 2025) + ОС для агентов на 5+ сессий по 1М контекста
+- [[2026-04-28 Instagram-карусель CLAUDE.md 10 секций]](300_Blog/350_Draft_Posts/351_RU/2026-04-28%20Instagram-карусель%20CLAUDE.md%2010%20секций.md) — карусель на сохранения (10 слайдов) + caption (~250 знаков) + 8 хэштегов: 10 обязательных секций CLAUDE.md, без которых агент работает как джун
+- [[2026-04-29 Instagram-карусель 5 ИИ-агентов соло-фаундеру]](300_Blog/350_Draft_Posts/351_RU/2026-04-29%20Instagram-карусель%205%20ИИ-агентов%20соло-фаундеру.md) — карусель на сохранения (6 слайдов: cover + 5 агентов с встроенным CTA) + caption + 12 хэштегов + 6 PNG 1080×1350 в `390_Images/2026-04-29-5-ai-agents-solo-founder/`: тема #8 из публикационного пакета — Research / Inbox / Контент / Sales / Analytics-агенты, 2+2+3+2+1 = 10 ч/нед
 - [[2026-04-16 CLAUDE.md по принципам Karpathy - Threads]](300_Blog/350_Draft_Posts/351_RU/2026-04-16%20CLAUDE.md%20по%20принципам%20Karpathy%20-%20Threads.md) — тред для Threads: один файл снижает ошибки ИИ с 40% до 3% (принципы Karpathy)
 - [[2026-02-09 Разработка становится коммодити (SHORT)]](300_Blog/350_Draft_Posts/351_RU/2026-02-09%20Разработка%20становится%20коммодити%20(SHORT).md) — черновик: тезис о коммодитизации разработки
 - [[2026-02-10 Все — продакты]](300_Blog/350_Draft_Posts/351_RU/2026-02-10%20Все%20—%20продакты.md) — черновик: каждый становится продакт-менеджером
@@ -391,6 +403,7 @@ status: active
 - [[2026-03-23 - X Twitter Authors Research]](500_Research/520_Social_Research/2026-03-23%20-%20X%20Twitter%20Authors%20Research%20for%20AISobolev.md) — исследование топ-авторов X/Twitter для контент-стратегии
 - [[2026-04-05 - CRM for Solo Founders]](500_Research/520_Social_Research/2026-04-05%20-%20CRM%20for%20Solo%20Founders%20-%20Social%20Research.md) — исследование: есть ли запрос на CRM для соло-фаундеров
 - [[2026-04-13 - Google Engineer Automates 80% with Claude Code]](500_Research/520_Social_Research/2026-04-13%20-%20Google%20Engineer%20Automates%2080%25%20with%20Claude%20Code.md) — вирусный пост X: автоматизация 80% работы через Claude Code, CLAUDE.md, Everything Claude Code
+- [[2026-04-29 - Agentic OS - Приоритизация фич сообществом]](500_Research/520_Social_Research/2026-04-29%20-%20Agentic%20OS%20-%20Приоритизация%20фич%20сообществом.md) — Reddit r/artificial: разбор поста про governed multi-agent OS + приоритизация фич по реакции сообщества
 
 ### 530 YouTube
 
