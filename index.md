@@ -8,7 +8,7 @@ status: active
 # Wiki Index
 
 > Навигационный индекс хранилища. Обновляется при каждой операции ingest/create.
-> Последнее обновление: 2026-05-04 (ingest: AGIency Design System v1.0)
+> Последнее обновление: 2026-05-07 (create: шаблон договора на техподдержку AGIents)
 
 ## 000 Inbox
 
@@ -169,6 +169,7 @@ status: active
 - [[Week 1 Action Checklist]](200_Projects/220_AGIents/225_BizDev/Week%201%20Action%20Checklist.md) — чеклист действий на первую неделю
 - [[Week 1 Progress Summary]](200_Projects/220_AGIents/225_BizDev/Week%201%20Progress%20Summary.md) — итоги первой недели: 70%+ завершено
 - [[Пост-приглашение на касдев - варианты]](200_Projects/220_AGIents/225_BizDev/Пост-приглашение%20на%20касдев%20-%20варианты.md) — варианты постов-приглашений на CustDev-интервью
+- [[Договор техподдержки - шаблон]](200_Projects/220_AGIents/225_BizDev/Договор%20техподдержки%20-%20шаблон.md) — рамочный шаблон договора на техподдержку ИИ-агента (S/M/L/XL, ФЗ-152, SLA, ИС)
 
 ### 230 Clario
 
