@@ -123,6 +123,10 @@ status: active
 - [[prd]](200_Projects/210_AGIency/216_Clients/Krytex/prd.md) — PRD: AI-бот Krytex на AGIents (Telegram/VK/MAX + маркетплейс-pipeline Ozon/WB, 6 недель, 3 фазы)
 - [[proposal]](200_Projects/210_AGIency/216_Clients/Krytex/proposal.md) — КП для Krytex: setup 450 000 ₽ (30/40/30), подписка 5 ₽/запрос без минимума, 6 недель внедрения
 
+**Svet.kz:**
+
+- [[proposal]](200_Projects/210_AGIency/216_Clients/Svet.kz/proposal.md) — КП от Clario для svet.kz: дорожная карта 4 этапов (1: розница свет, 2: розница краски, 3: B2B свет, 4: B2B краски). Текущее предложение — Этап 1: AI-агент квалификации лидов 24/7 на Clario.Agents, Instagram + WhatsApp через Открытые Линии Bitrix24 → подписка 50 000 ₸/мес (50 млн токенов, +500 ₸ за 1 млн сверх квоты)
+
 #### 217 Brand
 
 - [[Design System v1]](200_Projects/210_AGIency/217_Brand/Design%20System%20v1.md) — дизайн-система AGIency v1.0: цвет (#FAF8F5 / #1F1F1F / #E53935), Manrope, логотип AGI/ency, инженерный UI-язык
